@@ -1,0 +1,209 @@
+button
+  margin: 10rem
+  &.button-1
+    border-radius: 2rem
+    border: none
+    padding: 1rem 3rem 1rem 7rem
+    background-color: #121821
+    position: relative
+    color: white
+    font-size: 1.6rem
+    transition: all 250ms
+    cursor: pointer
+    z-index: 1
+    position: relative
+    &:focus
+      outline: none
+    &:hover
+      &::after
+        width: 100%
+        right: 0
+    img
+      top: 1.3rem
+      left: 1.1rem
+      z-index: 2
+      position: absolute
+      width: 1.5rem
+      height: 1.5rem
+    span
+      z-index: 2
+      position: relative
+    &::after
+      width: 3.9rem
+      height: 3.9rem
+      border-radius: 2rem
+      background-color: $red
+      content: ""
+      display: block
+      position: absolute
+      z-index: 1
+      left: 0
+      top: 0
+      transition: all 250ms
+
+  &.button-2
+    border-radius: 2rem
+    border: none
+    padding: 1rem 3rem 1rem 3rem
+    background-color: #121821
+    position: relative
+    color: white
+    font-size: 1.6rem
+    transition: all 250ms
+    cursor: pointer
+    z-index: 1
+    position: relative
+    &::before
+      width: 100%
+      height: 100%
+      border-radius: 2rem
+      border: 0.1rem solid $red
+      content: ""
+      display: block
+      position: absolute
+      z-index: 1
+      left: 0
+      top: 0
+      opacity: 0
+    &:hover
+      &::before
+        animation: 1000ms border infinite
+
+  &.button-3
+    border: none
+    background-color: transparent
+    padding: 0
+    position: relative
+    span
+      display: block
+      padding: 1rem 3rem 1rem 3rem
+      border-radius: 2rem
+      background-color: #121821
+      position: absolute
+      color: white
+      font-size: 1.6rem
+      transition: all 250ms
+      cursor: pointer
+      z-index: 2
+      position: relative
+      &:hover
+        color: $glow1
+    &::before
+      filter: blur(30px)
+      background-color: $glow1
+      border-radius: 2rem
+      content: ""
+      z-index: 1
+      width: 50%
+      height: 100%
+      position: absolute
+      display: block
+      transition: all 250ms
+      animation-delay: 2s
+      opacity: 0
+    &::after
+      filter: blur(30px)
+      background-color: $glow2
+      border-radius: 2rem
+      content: ""
+      z-index: 1
+      width: 50%
+      bottom: 0
+      transition: all 250ms
+      right: 0
+      height: 100%
+      position: absolute
+      display: block
+      opacity: 0
+    &:hover
+      &::before, &::after
+        opacity: 1
+        animation: backGlow 7s ease infinite
+
+
+svg
+  position: absolute
+  top: -4000px
+  left: -4000px
+
+#gooey-button
+  padding: 1rem
+  font-size: 2rem
+  border: none
+  color: $background
+  filter: url('#gooey')
+  position: relative
+  background-color: $red
+
+  &:focus
+    outline: none
+
+  .bubbles
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+
+    .bubble
+      background-color: $red
+      border-radius: 100%
+      position: absolute
+      bottom: 0
+      left: 0
+      display: block
+      z-index: -1
+
+      @for $bubble from 1 through 10
+        &:nth-child(#{$bubble})
+          $size: 25px
+          left: (random(90) + 10)+px
+          width: $size
+          height: $size
+          animation: move-#{$bubble} #{3 + $bubble*0.02}s infinite
+          animation-delay: #{$bubble*0.2}s
+
+@for $bubble from 1 through 10
+  @keyframes move-#{$bubble}
+    0%
+      transform: translate(0, 0)
+      background: linear-gradient(0deg, $orange 0%, $red 0%)
+    80%
+      background: linear-gradient(0deg, $orange 0%, $red 100%)
+    99%
+      transform: translate(0, + (random(80) + 50)+px)
+    100%
+      transform: translate(0, 0)
+      opacity: 0
+
+
+svg
+  display: none
+
+
+
+@keyframes border
+  0%
+    transform: scale(1, 1)
+    opacity: 1
+  100%
+    opacity: 0
+    transform: scale(1.3, 1.6)
+
+
+@keyframes backGlow
+  0%
+    transform: translate(0, 0) scale(1)
+    opacity: 0.2
+  25%
+    transform: translate(15%, 0%) scale(0.9)
+    opacity: 1
+  50%
+    transform: translate(25%, 15%) scale(0.8)
+    opacity: 0.3
+  75%
+    transform: translate(0%, 5%) scale(1.2)
+    opacity: 0.7
+  100%
+    transform: translate(0%, 0%) scale(0.9)
+    opacity: 0.2

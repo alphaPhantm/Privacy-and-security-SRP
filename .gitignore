@@ -130,3 +130,7 @@ dmypy.json
 
 # IDE configuration
 /.idea
+
+#Style chache
+
+/static/styles/.sass-cache/
