@@ -161,61 +161,61 @@ svg {
       display: block;
       z-index: -1; }
       #gooey-button .bubbles .bubble:nth-child(1) {
-        left: 84px;
+        left: 31px;
         width: 25px;
         height: 25px;
         animation: move-1 3.02s infinite;
         animation-delay: 0.2s; }
       #gooey-button .bubbles .bubble:nth-child(2) {
-        left: 20px;
+        left: 75px;
         width: 25px;
         height: 25px;
         animation: move-2 3.04s infinite;
         animation-delay: 0.4s; }
       #gooey-button .bubbles .bubble:nth-child(3) {
-        left: 65px;
+        left: 95px;
         width: 25px;
         height: 25px;
         animation: move-3 3.06s infinite;
         animation-delay: 0.6s; }
       #gooey-button .bubbles .bubble:nth-child(4) {
-        left: 55px;
+        left: 77px;
         width: 25px;
         height: 25px;
         animation: move-4 3.08s infinite;
         animation-delay: 0.8s; }
       #gooey-button .bubbles .bubble:nth-child(5) {
-        left: 73px;
+        left: 20px;
         width: 25px;
         height: 25px;
         animation: move-5 3.1s infinite;
         animation-delay: 1s; }
       #gooey-button .bubbles .bubble:nth-child(6) {
-        left: 69px;
+        left: 75px;
         width: 25px;
         height: 25px;
         animation: move-6 3.12s infinite;
         animation-delay: 1.2s; }
       #gooey-button .bubbles .bubble:nth-child(7) {
-        left: 76px;
+        left: 29px;
         width: 25px;
         height: 25px;
         animation: move-7 3.14s infinite;
         animation-delay: 1.4s; }
       #gooey-button .bubbles .bubble:nth-child(8) {
-        left: 39px;
+        left: 35px;
         width: 25px;
         height: 25px;
         animation: move-8 3.16s infinite;
         animation-delay: 1.6s; }
       #gooey-button .bubbles .bubble:nth-child(9) {
-        left: 30px;
+        left: 39px;
         width: 25px;
         height: 25px;
         animation: move-9 3.18s infinite;
         animation-delay: 1.8s; }
       #gooey-button .bubbles .bubble:nth-child(10) {
-        left: 72px;
+        left: 17px;
         width: 25px;
         height: 25px;
         animation: move-10 3.2s infinite;
@@ -228,7 +228,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 97px); }
+    transform: translate(0, 117px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -239,7 +239,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 79px); }
+    transform: translate(0, 125px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -250,7 +250,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 128px); }
+    transform: translate(0, 93px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -261,7 +261,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 129px); }
+    transform: translate(0, 85px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -272,7 +272,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 123px); }
+    transform: translate(0, 62px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -283,7 +283,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 124px); }
+    transform: translate(0, 118px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -294,7 +294,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 62px); }
+    transform: translate(0, 57px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -305,7 +305,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 110px); }
+    transform: translate(0, 92px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -316,7 +316,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 82px); }
+    transform: translate(0, 74px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -327,7 +327,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 85px); }
+    transform: translate(0, 75px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -357,6 +357,51 @@ svg {
   100% {
     transform: translate(0%, 0%) scale(0.9);
     opacity: 0.2; } }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI Light", monospace; }
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../pictures/AdobeStock_337239519.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-content: center;
+  justify-content: space-between; }
+
+.logo {
+  width: 120px;
+  cursor: pointer; }
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative; }
+  .navbar ul li a {
+    text-decoration: none;
+    color: #F8F8FF;
+    text-transform: uppercase; }
+  .navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #C40233;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s; }
+  .navbar ul li:hover::after {
+    width: 100%; }
+
 h1.heading-1 {
   color: #F8F8FF;
   margin-left: 50px; }
