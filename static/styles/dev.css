@@ -1,55 +1,196 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI Light", monospace;
-}
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../pictures/AdobeStock_337239519.jpeg");
-    background-size: cover;
-    background-position: center;
+    font-family: "Segoe UI Light", sans-serif;
+    font-size: 20px;
+
+    box-sizing: border-box;
 }
 
-.navbar{
+body{
+    position: relative;
+    background: #121212;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-right: 2em;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 5em;
+    width: 5em;
+}
+
+.logo span {
+    color: #F8F8FF;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.navbar {
     width: 85%;
     margin: auto;
     padding: 35px 0;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
 }
-
-.logo{
-    width: 120px;
+.navbar .logo {
+    width: 20%;
     cursor: pointer;
+    display: inline-flex;
 }
 
-.navbar ul li{
+.navbar .navItems ul li {
     list-style: none;
-    display: inline-block;
+    display: inline-flex;
     margin: 0 20px;
     position: relative;
 }
 
-.navbar ul li a{
+.navbar .navItems ul li a {
     text-decoration: none;
-    color: #F8F8FF;
+    color: #f8f8ff;
     text-transform: uppercase;
 }
 
-.navbar ul li::after{
-    content: "";
-    height: 3px;
+.navbar .navItems ul li .nav-item::after {
+    content: '';
+    height: 1px;
     width: 0;
-    background: #C40233;
+    background: #c40233;
     position: absolute;
     left: 0;
     bottom: -5px;
     transition: 0.5s;
 }
 
-.navbar ul li:hover::after{
+.navbar .navItems ul li .nav-item:hover::after {
     width: 100%;
 }
 
+.navbar .navItems ul li .active::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #c40233;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar .navItems ul li .nav-spacer {
+    position: relative;
+    top: 10px;
+}
+
+
+/* Ab hier ist das Such ding */
+
+
+.wrapper, .search-data{
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper{
+    position: fixed;
+    height: 0px;
+    width: 0px;
+    border-radius: 100%;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    transition: all 0.4s linear;
+}
+.wrapper.active{
+    height: 4000px;
+    width: 4000px;
+}
+.search-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.search-btn span{
+    color: #fff;
+    font-size: 22px;
+    line-height: 60px;
+}
+.search-data{
+    position: absolute;
+    height: 50px;
+    width: 400px;
+    display: flex;
+    text-align: center;
+    /* display: none; */
+}
+.search-data input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.search-data .line{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.4s 0.3s linear;
+}
+.search-data .line.active{
+    transform: scaleX(1);
+}
+.search-data label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgba(255,255,255,0.7);
+}
+.search-data input:valid ~ label{
+    opacity: 0;
+}
+.search-data span{
+    color: #fff;
+    position: absolute;
+    width: 50px;
+    font-size: 25px;
+    right: 0;
+    top: 0;
+    line-height: 45px;
+    cursor: pointer;
+}
+.close-btn{
+    position: absolute;
+    z-index: 99;
+    right: 25px;
+    top: 25px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+.search-data, .search-data span,
+.search-data label, .close-btn{
+    display: none;
+}

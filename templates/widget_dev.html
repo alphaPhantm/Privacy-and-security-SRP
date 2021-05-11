@@ -1,25 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>Widget Dev</title>
-    <link rel="stylesheet" href="../static/styles/main_style.css">
+    <title>Widget Development</title>
+    <link rel="stylesheet" href="../static/styles/dev.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
 
-    <div class="banner">
-        <div class="navbar">
-            <img src="../static/icons/Element14.svg" alt="" class="logo">
+    <div class="navbar">
+        <div class="logo">
+            <img src="../static/icons/Element15.svg" alt="">
+            <span>Privacy and security</span>
+        </div>
+
+        <div class="navItems">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a class="spacer">|</a></li>
-                <li><a href="">Home</a></li>
-                <li><a class="spacer">|</a></li>
-                <li><a href="">Home</a></li>
-                <li><a class="spacer">|</a></li>
-                <li><a href="">Home</a></li>
+                <li><a class="nav-item" href="#">Home</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="#">Bedroom</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="#">Dining</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="#">Kitchen</a></li>
             </ul>
+            <div class="close-btn">
+                <span class="fas fa-times"></span>
+            </div>
+            <div class="wrapper">
+                <div class="search-btn">
+                    <span class="fas fa-search"></span>
+                </div>
+                <div class="search-data">
+                    <input type="text" required>
+                    <div class="line"></div>
+                    <label>Type to search..</label>
+                    <span class="fas fa-search"></span>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <script>
+        $(".search-btn").click(function(){
+            $(".wrapper").addClass("active");
+            $(this).css("display", "none");
+            $(".search-data").fadeIn(500);
+            $(".close-btn").fadeIn(500);
+            $(".search-data .line").addClass("active");
+            setTimeout(function(){
+                $("input").focus();
+                $(".search-data label").fadeIn(500);
+                $(".search-data span").fadeIn(500);
+            }, 800);
+        });
+        $(".close-btn").click(function(){
+            $(".wrapper").removeClass("active");
+            $(".search-btn").fadeIn(800);
+            $(".search-data").fadeOut(500);
+            $(".close-btn").fadeOut(500);
+            $(".search-data .line").removeClass("active");
+            $("input").val("");
+            $(".search-data label").fadeOut(500);
+            $(".search-data span").fadeOut(500);
+        });
+    </script>
+
 </body>
 </html>
