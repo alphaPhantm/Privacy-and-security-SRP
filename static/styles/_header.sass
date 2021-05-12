@@ -1,51 +1,205 @@
+* 
+  margin: 0
+  padding: 0
+  font-family: "Segoe UI Light", sans-serif
+  font-size: 20px
+
+  box-sizing: border-box
 
 
+body
+  position: relative
+  background: #121212
+
+.logo 
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  width: 100px
+  margin-right: 2em
+  text-decoration: none
 
 
+.logo img 
+  height: 5em
+  width: 5em
 
 
-.navChildItem
+.logo span 
+  color: #F8F8FF
+  text-transform: uppercase
+  margin-left: 20px
+
+
+.navbar 
+  width: 85%
+  margin: auto
+  padding: 35px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+
+.navbar .logo 
+  width: 20%
+  cursor: pointer
+  display: inline-flex
+
+
+.navbar .navItems ul li 
   list-style: none
-  display: inline-block
+  display: inline-flex
   margin: 0 20px
   position: relative
 
-  a
-    text-decoration: none
-    color: #F8F8FF
-    text-transform: uppercase
 
-  &::after
-    content: ""
-    height: 3px
-    width: 0
-    background: #C40233
-    position: absolute
-    left: 0
-    bottom: -5px
-    transition: 0.5s
+.navbar .navItems ul li a 
+  text-decoration: none
+  color: #F8F8FF
+  text-transform: uppercase
 
-  &:hover::after
-    width: 100%
 
-.navAdultItem
-  list-style: none
-  display: inline-block
-  margin: 0 20px
+.navbar .navItems ul li .nav-item::after 
+  content: ''
+  height: 1px
+  width: 0
+  background: #c40233
+  position: absolute
+  left: 0
+  bottom: -5px
+  transition: 0.5s
+
+
+.navbar .navItems ul li .nav-item:hover::after 
+  width: 100%
+
+
+.navbar .navItems ul li .active::after 
+  content: ''
+  height: 1px
+  width: 100%
+  background: #c40233
+  position: absolute
+  left: 0
+  bottom: -5px
+  transition: 0.5s
+
+
+.navbar .navItems ul li .nav-spacer 
   position: relative
-
-  a
-    text-decoration: none
-    color: #F8F8FF
-    text-transform: uppercase
+  top: 10px
 
 
-.navSpacer
-  list-style: none
-  display: inline-block
-  margin: 0 20px
-  position: relative
 
-  a
-    text-decoration: none
-    color: $red
+/* Ab hier ist das Such ding */
+
+
+.wrapper, .search-data
+  transform: translate(-50%, -50%)
+
+.wrapper
+  position: fixed
+  margin-top: -5px
+  height: 0
+  width: 0
+  border-radius: 100%
+  background: #c40233
+  transition: all 0.4s linear
+
+.wrapper.active
+  height: 4000px
+  width: 4000px
+
+.search-btn
+  transform: translate(-50%, -50%)
+  height: 40px
+  width: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  border-radius: 50%
+  border: solid 1px #c40233
+  background: none
+  fill: #c40233
+
+
+.navbar .navItems ul .wrapper .search-btn svg
+  width: 70%
+
+
+.search-btn:hover
+  fill: #121212
+  border: none
+  background: #c40233
+
+
+.search-data
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-250%, 600%)
+  height: 50px
+  width: 400px
+  display: flex
+  text-align: center
+/* display: none */
+
+.search-data input
+  height: 100%
+  width: 100%
+  background: none
+  border: none
+  outline: none
+  font-size: 22px
+  font-weight: 500
+  color: #121212
+
+
+.search-data .line
+  position: absolute
+  height: 3px
+  width: 100%
+  background: #121212
+  bottom: 0
+  transform: scaleX(0)
+  transition: transform 0.4s 0.3s linear
+
+.search-data .line.active
+  transform: scaleX(1)
+
+.search-data label
+  position: absolute
+  top: 50%
+  left: 0
+  font-size: 20px
+  transform: translateY(-50%)
+  pointer-events: none
+  color: #121212
+
+.search-data input:valid ~ label
+  opacity: 0
+
+.search-data span
+  color: #121212
+  position: absolute
+  width: 50px
+  font-size: 25px
+  right: 0
+  top: 0
+  line-height: 45px
+  cursor: pointer
+
+.close-btn
+  position: fixed
+  z-index: 99
+  right: 25px
+  top: 25px
+  font-size: 25px
+  color: #121212
+  cursor: pointer
+
+.search-data, .search-data span,
+.search-data label, .close-btn
+  display: none

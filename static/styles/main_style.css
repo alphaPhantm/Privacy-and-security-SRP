@@ -161,61 +161,61 @@ svg {
       display: block;
       z-index: -1; }
       #gooey-button .bubbles .bubble:nth-child(1) {
-        left: 39px;
+        left: 70px;
         width: 25px;
         height: 25px;
         animation: move-1 3.02s infinite;
         animation-delay: 0.2s; }
       #gooey-button .bubbles .bubble:nth-child(2) {
-        left: 22px;
+        left: 36px;
         width: 25px;
         height: 25px;
         animation: move-2 3.04s infinite;
         animation-delay: 0.4s; }
       #gooey-button .bubbles .bubble:nth-child(3) {
-        left: 40px;
+        left: 82px;
         width: 25px;
         height: 25px;
         animation: move-3 3.06s infinite;
         animation-delay: 0.6s; }
       #gooey-button .bubbles .bubble:nth-child(4) {
-        left: 51px;
+        left: 38px;
         width: 25px;
         height: 25px;
         animation: move-4 3.08s infinite;
         animation-delay: 0.8s; }
       #gooey-button .bubbles .bubble:nth-child(5) {
-        left: 53px;
+        left: 89px;
         width: 25px;
         height: 25px;
         animation: move-5 3.1s infinite;
         animation-delay: 1s; }
       #gooey-button .bubbles .bubble:nth-child(6) {
-        left: 40px;
+        left: 77px;
         width: 25px;
         height: 25px;
         animation: move-6 3.12s infinite;
         animation-delay: 1.2s; }
       #gooey-button .bubbles .bubble:nth-child(7) {
-        left: 11px;
+        left: 66px;
         width: 25px;
         height: 25px;
         animation: move-7 3.14s infinite;
         animation-delay: 1.4s; }
       #gooey-button .bubbles .bubble:nth-child(8) {
-        left: 44px;
+        left: 73px;
         width: 25px;
         height: 25px;
         animation: move-8 3.16s infinite;
         animation-delay: 1.6s; }
       #gooey-button .bubbles .bubble:nth-child(9) {
-        left: 82px;
+        left: 54px;
         width: 25px;
         height: 25px;
         animation: move-9 3.18s infinite;
         animation-delay: 1.8s; }
       #gooey-button .bubbles .bubble:nth-child(10) {
-        left: 37px;
+        left: 94px;
         width: 25px;
         height: 25px;
         animation: move-10 3.2s infinite;
@@ -228,7 +228,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 88px); }
+    transform: translate(0, 124px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -239,7 +239,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 116px); }
+    transform: translate(0, 89px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -250,7 +250,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 89px); }
+    transform: translate(0, 85px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -272,7 +272,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 58px); }
+    transform: translate(0, 52px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -283,7 +283,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 120px); }
+    transform: translate(0, 55px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -294,7 +294,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 78px); }
+    transform: translate(0, 61px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -305,7 +305,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 117px); }
+    transform: translate(0, 56px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -316,7 +316,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 67px); }
+    transform: translate(0, 68px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -327,7 +327,7 @@ svg {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 113px); }
+    transform: translate(0, 119px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -357,52 +357,190 @@ svg {
   100% {
     transform: translate(0%, 0%) scale(0.9);
     opacity: 0.2; } }
-.navChildItem {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  position: relative; }
-  .navChildItem a {
-    text-decoration: none;
-    color: #F8F8FF;
-    text-transform: uppercase; }
-  .navChildItem::after {
-    content: "";
-    height: 3px;
-    width: 0;
-    background: #C40233;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s; }
-  .navChildItem:hover::after {
-    width: 100%; }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI Light", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box; }
 
-.navAdultItem {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  position: relative; }
-  .navAdultItem a {
-    text-decoration: none;
-    color: #F8F8FF;
-    text-transform: uppercase; }
+body {
+  position: relative;
+  background: #121212; }
 
-.navSpacer {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  position: relative; }
-  .navSpacer a {
-    text-decoration: none;
-    color: #C40233; }
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-right: 2em;
+  text-decoration: none; }
 
-h1.heading-1 {
+.logo img {
+  height: 5em;
+  width: 5em; }
+
+.logo span {
   color: #F8F8FF;
-  margin-left: 50px; }
+  text-transform: uppercase;
+  margin-left: 20px; }
 
-p {
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.navbar .logo {
+  width: 20%;
+  cursor: pointer;
+  display: inline-flex; }
+
+.navbar .navItems ul li {
+  list-style: none;
+  display: inline-flex;
+  margin: 0 20px;
+  position: relative; }
+
+.navbar .navItems ul li a {
+  text-decoration: none;
   color: #F8F8FF;
-  margin-left: 50px; }
+  text-transform: uppercase; }
+
+.navbar .navItems ul li .nav-item::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #c40233;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s; }
+
+.navbar .navItems ul li .nav-item:hover::after {
+  width: 100%; }
+
+.navbar .navItems ul li .active::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #c40233;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s; }
+
+.navbar .navItems ul li .nav-spacer {
+  position: relative;
+  top: 10px; }
+
+/* Ab hier ist das Such ding */
+.wrapper, .search-data {
+  transform: translate(-50%, -50%); }
+
+.wrapper {
+  position: fixed;
+  margin-top: -5px;
+  height: 0;
+  width: 0;
+  border-radius: 100%;
+  background: #c40233;
+  transition: all 0.4s linear; }
+
+.wrapper.active {
+  height: 4000px;
+  width: 4000px; }
+
+.search-btn {
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid 1px #c40233;
+  background: none;
+  fill: #c40233; }
+
+.navbar .navItems ul .wrapper .search-btn svg {
+  width: 70%; }
+
+.search-btn:hover {
+  fill: #121212;
+  border: none;
+  background: #c40233; }
+
+.search-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-250%, 600%);
+  height: 50px;
+  width: 400px;
+  display: flex;
+  text-align: center; }
+
+/* display: none */
+.search-data input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: #121212; }
+
+.search-data .line {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #121212;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.4s 0.3s linear; }
+
+.search-data .line.active {
+  transform: scaleX(1); }
+
+.search-data label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #121212; }
+
+.search-data input:valid ~ label {
+  opacity: 0; }
+
+.search-data span {
+  color: #121212;
+  position: absolute;
+  width: 50px;
+  font-size: 25px;
+  right: 0;
+  top: 0;
+  line-height: 45px;
+  cursor: pointer; }
+
+.close-btn {
+  position: fixed;
+  z-index: 99;
+  right: 25px;
+  top: 25px;
+  font-size: 25px;
+  color: #121212;
+  cursor: pointer; }
+
+.search-data, .search-data span,
+.search-data label, .close-btn {
+  display: none; }
 
 /*# sourceMappingURL=main_style.css.map */

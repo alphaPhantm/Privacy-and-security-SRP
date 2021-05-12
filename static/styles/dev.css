@@ -40,6 +40,7 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar .logo {
     width: 20%;
     cursor: pointer;
@@ -99,8 +100,9 @@ body{
 }
 .wrapper{
     position: fixed;
-    height: 0px;
-    width: 0px;
+    margin-top: -5px;
+    height: 0;
+    width: 0;
     border-radius: 100%;
     background: #c40233;
     transition: all 0.4s linear;
@@ -110,23 +112,29 @@ body{
     width: 4000px;
 }
 .search-btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    height: 60px;
-    width: 60px;
-    text-align: center;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border-radius: 50%;
+    border: solid 1px #c40233;
+    background: none;
+    fill: #c40233;
 }
 
-
-.search-btn span{
-    color: #121212;
-    font-size: 22px;
-    line-height: 60px;
+ .navbar .navItems ul .wrapper .search-btn svg{
+     width: 70%;
 }
+
+ .search-btn:hover{
+     fill: #121212;
+     border: none;
+     background: #c40233;
+ }
+
 .search-data{
     position: absolute;
     top: 50%;
