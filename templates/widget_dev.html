@@ -1,76 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Widget Development</title>
+    <title>Footer Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../static/styles/dev.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-<header>
-    <div class="navbar">
-        <div class="logo">
-            <img src="../static/icons/Element15.svg" alt="">
-            <span>Privacy and security</span>
-        </div>
 
-        <div class="navItems">
-            <ul>
-                <li><a class="nav-item" href="#">general</a></li>
-                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
-                <li><a class="nav-item" href="#">informatic</a></li>
-                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
-                <li><a class="nav-item" href="#">history and civics</a></li>
-                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
-                <li><a class="nav-item" href="#">about me</a></li>
-                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
-                <li>
-                <div class="close-btn">
-                    <span class="fas fa-times"></span>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>general</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>informatic</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>history and civics</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>about me</h4>
+                <ul>
+                    <li><a href="#">Me in this project</a></li>
+                </ul>
+                <br>
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="https://github.com/alphaPhantm"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="wrapper">
-                    <div class="search-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.56 144.63"><g id="Ebene_2"><g id="Ebene_1-2"><path d="M87.22,25.05a43.81,43.81,0,0,0-11.48-8.27,2.17,2.17,0,1,0-1.93,3.89,39.48,39.48,0,1,1-29.68-2.24A39.88,39.88,0,0,1,62.06,17a2.17,2.17,0,1,0,.64-4.29A43.79,43.79,0,0,0,25.21,25.05a43.85,43.85,0,1,0,62,0Z"/><path d="M141.14,124.66,103.2,86.73A56.2,56.2,0,0,0,56.11,0h0A56.15,56.15,0,1,0,86.65,103.27l37.94,37.94a11.7,11.7,0,1,0,16.55-16.55Zm-3.07,13.48a7.35,7.35,0,0,1-10.41,0L88.46,99a2.18,2.18,0,0,0-1.53-.64,2.14,2.14,0,0,0-1.24.39A51.8,51.8,0,1,1,56.1,4.34h0A51.82,51.82,0,0,1,98.66,85.7a93.52,93.52,0,0,1-7.53,8.42,2.17,2.17,0,0,0-.21,3.06,2.13,2.13,0,0,0,1.64.75A2.17,2.17,0,0,0,94,97.4a76.21,76.21,0,0,0,6.59-7.18l37.51,37.51A7.37,7.37,0,0,1,138.07,138.14Z"/></g></g></svg>
-                    </div>
-                    <div class="search-data">
-                        <input type="text" required>
-                        <div class="line"></div>
-                        <label>Type to search..</label>
-                        <span class="fas fa-search"></span>
-                    </div>
-                </div>
-                </li>
-            </ul>
-
+            </div>
         </div>
     </div>
-</header>
+    <div class="copyrights">
+        <hr>
+        <div class="text">
+            <a class="out">© 2021 </a><a class="inner">Noah Kessinger</a><a class="out"> All rights reserved.</a>
+        </div>
 
-    <script>
-        $(".search-btn").click(function(){
-            $(".wrapper").addClass("active");
-            $(this).css("display", "none");
-            $(".search-data").fadeIn(500);
-            $(".close-btn").fadeIn(500);
-            $(".search-data .line").addClass("active");
-            setTimeout(function(){
-                $("input").focus();
-                $(".search-data label").fadeIn(500);
-                $(".search-data span").fadeIn(500);
-            }, 800);
-        });
-        $(".close-btn").click(function(){
-            $(".wrapper").removeClass("active");
-            $(".search-btn").fadeIn(800);
-            $(".search-data").fadeOut(500);
-            $(".close-btn").fadeOut(500);
-            $(".search-data .line").removeClass("active");
-            $("input").val("");
-            $(".search-data label").fadeOut(500);
-            $(".search-data span").fadeOut(500);
-        });
-    </script>
+    </div>
+
+</footer>
 
 </body>
 </html>

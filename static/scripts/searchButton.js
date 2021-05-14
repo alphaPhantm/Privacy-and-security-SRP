@@ -1,5 +1,3 @@
-
-
 $(".search-btn").click(function(){
     $(".wrapper").addClass("active");
     $(this).css("display", "none");

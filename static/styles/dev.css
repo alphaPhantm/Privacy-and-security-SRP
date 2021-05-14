@@ -1,206 +1,115 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Segoe UI Light", sans-serif;
-    font-size: 20px;
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
-
-body{
-    position: relative;
-    background: #121212;
+.container{
+    max-width: 1170px;
+    margin:auto;
 }
-.logo {
+.row{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    margin-right: 2em;
-    text-decoration: none;
+    flex-wrap: wrap;
 }
-
-.logo img {
-    height: 5em;
-    width: 5em;
-}
-
-.logo span {
-    color: #F8F8FF;
-    text-transform: uppercase;
-    margin-left: 20px;
-}
-
-.navbar {
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo {
-    width: 20%;
-    cursor: pointer;
-    display: inline-flex;
-}
-
-.navbar .navItems ul li {
+ul{
     list-style: none;
-    display: inline-flex;
-    margin: 0 20px;
-    position: relative;
 }
-
-.navbar .navItems ul li a {
-    text-decoration: none;
+.footer{
+    background-color: #121212;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
     color: #F8F8FF;
     text-transform: uppercase;
-}
-
-.navbar .navItems ul li .nav-item::after {
-    content: '';
-    height: 1px;
-    width: 0;
-    background: #c40233;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-}
-
-.navbar .navItems ul li .nav-item:hover::after {
-    width: 100%;
-}
-
-.navbar .navItems ul li .active::after {
-    content: '';
-    height: 1px;
-    width: 100%;
-    background: #c40233;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-}
-
-.navbar .navItems ul li .nav-spacer {
+    margin-bottom: 35px;
+    font-weight: 500;
     position: relative;
-    top: 10px;
 }
-
-
-/* Ab hier ist das Such ding */
-
-
-.wrapper, .search-data{
-    transform: translate(-50%, -50%);
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #c40233;
+    height: 1px;
+    box-sizing: border-box;
+    width: 50px;
 }
-.wrapper{
-    position: fixed;
-    margin-top: -5px;
-    height: 0;
-    width: 0;
-    border-radius: 100%;
-    background: #c40233;
-    transition: all 0.4s linear;
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
 }
-.wrapper.active{
-    height: 4000px;
-    width: 4000px;
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #F8F8FF;
+    display: block;
+    transition: all 0.3s ease;
 }
-.search-btn{
-    transform: translate(-50%, -50%);
+.footer-col ul li a:hover{
+    color: #F8F8FF;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
     height: 40px;
     width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 50%;
-    border: solid 1px #c40233;
-    background: none;
-    fill: #c40233;
-}
-
- .navbar .navItems ul .wrapper .search-btn svg{
-     width: 70%;
-}
-
- .search-btn:hover{
-     fill: #121212;
-     border: none;
-     background: #c40233;
- }
-
-.search-data{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-250%, 600%);
-    height: 50px;
-    width: 400px;
-    display: flex;
+    background-color: #121212;
+    margin:0 10px 10px 0;
     text-align: center;
-    /* display: none; */
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
-.search-data input{
-    height: 100%;
-    width: 100%;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 22px;
-    font-weight: 500;
+.footer-col .social-links a:hover{
     color: #121212;
+    background-color: #F8F8FF;
+}
+footer .copyrights {
+    margin-top: 20px;
+    text-align: center;
+}
 
+footer .copyrights hr{
+    border: 1px solid #c40233;
 }
-.search-data .line{
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #121212;
-    bottom: 0;
-    transform: scaleX(0);
-    transition: transform 0.4s 0.3s linear;
+
+footer .copyrights .text{
+    margin-top: 20px;
+    margin-bottom: -50px;
 }
-.search-data .line.active{
-    transform: scaleX(1);
+
+footer .copyrights .text .out{
+    color: #F8F8FF;
 }
-.search-data label{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    font-size: 20px;
-    transform: translateY(-50%);
-    pointer-events: none;
-    color: #121212;
+
+footer .copyrights .text .inner{
+    color: #F8F8FF;
+    text-transform: uppercase;
+    font-weight: bold;
 }
-.search-data input:valid ~ label{
-    opacity: 0;
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
-.search-data span{
-    color: #121212;
-    position: absolute;
-    width: 50px;
-    font-size: 25px;
-    right: 0;
-    top: 0;
-    line-height: 45px;
-    cursor: pointer;
-}
-.close-btn{
-    position: fixed;
-    z-index: 99;
-    right: 25px;
-    top: 25px;
-    font-size: 25px;
-    color: #121212;
-    cursor: pointer;
-}
-.search-data, .search-data span,
-.search-data label, .close-btn{
-    display: none;
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
 }
