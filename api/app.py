@@ -15,10 +15,10 @@ def calculate():
         shift = ""
 
 
-        id, text, shift= request.form["id"], request.form["text"], request.form["shift"]
-        erg = control.control(id, text, shift)
-        print(erg)
-    return render_template("result.html", erg=erg)
+        id, text, shift= request.form["type"], request.form["text"], request.form["shift"]
+
+        print(id, text, shift)
+    return render_template("result.html")
 
 
 if __name__ == '__main__':

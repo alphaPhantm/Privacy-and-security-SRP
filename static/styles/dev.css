@@ -13,6 +13,7 @@ body{
     transform: translate(-50%, -50%);
     background: #121212;
     text-align: center;
+
 }
 
 .box h1{
@@ -33,7 +34,9 @@ body{
     color: #F8F8FF;
     border-radius: 24px;
     transition: 0.25s;
+    box-shadow: 1px 6px 11px #000000;
 }
+
 
 .box input[type = "text"]:focus{
     width: 280px;
@@ -53,6 +56,7 @@ body{
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
+    box-shadow: 1px 6px 11px #000000;
 }
 
 .box input::placeholder{
@@ -64,15 +68,12 @@ body{
     color: #121212;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #111;
-}
+
 .btn{
     position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
     height: 56px;
 }
 .btn input{
@@ -93,7 +94,7 @@ body{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #111;
+    color: #121212;
 }
 .btn input:before{
     content: "ON";
@@ -114,37 +115,37 @@ body{
     transition: 0.2s -0.1s;
 }
 .btn.btn-1 input:checked{
-    background: #fff;
+    background: #F8F8FF;
 }
 .btn.btn-1 input:checked:before{
-    color: #111;
+    color: #121212;
     transition: color 0.5s 0.2s;
 }
 .btn.btn-1 input:checked:after{
-    color: #111;
+    color: #121212;
     transition: color 0.5s;
 }
 .btn.btn-1 input:checked + label{
     left: 10px;
     right: 100px;
-    background: #d2ab21;
+    background: #c40233;
     transition: left 0.5s, right 0.4s 0.2s;
 }
 .btn.btn-1 input:not(:checked){
-    background: #d2ab21;
+    background: #c40233;
     transition: background 0.5s -0.1s;
 }
 .btn.btn-1 input:not(:checked):before{
-    color: #111;
+    color: #121212;
     transition: color 0.5s;
 }
 .btn.btn-1 input:not(:checked):after{
-    color: #1e1e1e;
+    color: #121212;
     transition: color 0.5s 0.2s;
 }
 .btn.btn-1 input:not(:checked) + label{
     left: 100px;
     right: 10px;
-    background: #fff;
+    background: #F8F8FF;
     transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
 }
