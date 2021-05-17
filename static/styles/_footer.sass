@@ -1,0 +1,100 @@
+.container
+  max-width: 1170px
+  margin: auto
+
+.row
+  display: flex
+  flex-wrap: wrap
+
+ul
+  list-style: none
+
+.footer
+  position: sticky
+  top: 100%
+  background-color: #121212
+  padding: 70px 0
+
+.footer-col
+  width: 25%
+  padding: 0 15px
+
+  h4
+    font-size: 18px
+    color: #F8F8FF
+    text-transform: uppercase
+    margin-bottom: 35px
+    font-weight: 500
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -10px
+      background-color: #c40233
+      height: 1px
+      box-sizing: border-box
+      width: 50px
+
+  ul li
+    &:not(:last-child)
+      margin-bottom: 10px
+
+    a
+      font-size: 16px
+      text-transform: capitalize
+      text-decoration: none
+      font-weight: 300
+      color: #F8F8FF
+      display: block
+      transition: all 0.3s ease
+
+      &:hover
+        color: #F8F8FF
+        padding-left: 8px
+
+  .social-links a
+    display: inline-block
+    height: 40px
+    width: 40px
+    background-color: #121212
+    margin: 0 10px 10px 0
+    text-align: center
+    line-height: 40px
+    border-radius: 50%
+    color: #ffffff
+    transition: all 0.5s ease
+
+    &:hover
+      color: #121212
+      background-color: #F8F8FF
+
+footer .copyrights
+  margin-top: 20px
+  text-align: center
+
+  hr
+    border: 1px solid #c40233
+
+  .text
+    margin-top: 20px
+    margin-bottom: -50px
+
+    .out
+      color: #F8F8FF
+
+    .inner
+      color: #F8F8FF
+      text-transform: uppercase
+      font-weight: bold
+
+/*responsive
+@media (max-width: 767px)
+  .footer-col
+    width: 50%
+    margin-bottom: 30px
+
+@media (max-width: 574px)
+  .footer-col
+    width: 100%
