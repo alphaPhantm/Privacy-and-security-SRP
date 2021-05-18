@@ -15,9 +15,11 @@ def calculate():
         shift = ""
 
 
-        id, text, shift= request.form["type"], request.form["text"], request.form["shift"]
 
-        print(id, text, shift)
+        id, text, shift = request.form["id"], request.form["text"], request.form["shift"]
+
+        print(id)
+
     return render_template("result.html")
 
 

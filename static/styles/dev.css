@@ -37,7 +37,6 @@ body{
     box-shadow: 1px 6px 11px #000000;
 }
 
-
 .box input[type = "text"]:focus{
     width: 280px;
     color: #F8F8FF;
@@ -68,7 +67,6 @@ body{
     color: #121212;
 }
 
-
 .btn{
     position: relative;
     display: block;
@@ -97,11 +95,11 @@ body{
     color: #121212;
 }
 .btn input:before{
-    content: "ON";
+    content: "Ent";
     left: 40px;
 }
 .btn input:after{
-    content: "OFF";
+    content: "Ver";
     right: 40px;
 }
 .btn label{
