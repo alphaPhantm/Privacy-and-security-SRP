@@ -18,9 +18,9 @@ def calculate():
 
         id, text, shift = request.form["id"], request.form["text"], request.form["shift"]
 
-        print(id)
+        erg = control.control(id, text, shift)
 
-    return render_template("result.html")
+    return render_template("result.html", erg=erg)
 
 
 if __name__ == '__main__':
