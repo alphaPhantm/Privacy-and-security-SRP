@@ -1,5 +1,4 @@
 def encrypt(text, shift):
-
     erg = ""
     char = [char for char in text]
 
@@ -36,7 +35,6 @@ def encrypt(text, shift):
             char[i] = char[i] + int(shift)
             if char[i] > ord('@'):
                 char[i] = char[i] - (ord('@') - ord(':')) - 1
-
 
         char[i] = chr(int(char[i]))
         erg += char[i]
