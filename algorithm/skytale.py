@@ -1,4 +1,3 @@
-
 def skytale_encrypt(text, umfang):
     umfang = round(umfang)
     text = ensureSideCondition(text, umfang)
@@ -7,7 +6,6 @@ def skytale_encrypt(text, umfang):
     for x in range(0, umfang):
         for y in range(x, length, umfang):
             cipher += text[y]
-
     return cipher
 
 
@@ -19,7 +17,6 @@ def ensureSideCondition(text, umfang):
         text += " "
         length = len(text)
         remainder = length % umfang
-
     return text
 
 
@@ -28,9 +25,10 @@ def skytale_decrypt(text, umfang):
     length = len(text)
     umfang = length/umfang
     plaintext = skytale_encrypt(text, umfang)
-
     return plaintext
 
 
 if __name__ == '__main__':
-    print(skytale_decrypt("Mein Name ist Noah", 4))
+    print(skytale_encrypt("Mein Name ist Noah", 4))
+    print(skytale_decrypt(skytale_encrypt("Mein Name ist Noah!", 4), 4))
+    print(skytale_decrypt("M etaeN  hiaiN nmso!", 4))
