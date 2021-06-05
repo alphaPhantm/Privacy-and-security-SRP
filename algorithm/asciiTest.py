@@ -1,12 +1,12 @@
-import string
 
-characters = list(map(chr, range(58, 127)))
-print(characters)
+text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-print(ord("z"))
+key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-chr = 'a'
-chr = ord(chr)
-while True:
-    if chr in range(ord('a'), ord('z')+1):
-        print("Drine")
+text_char = [char for char in text]
+
+key_char = [char for char in key]
+
+print(chr(ord("B") + (ord("C") - ord("A") )))
+
+
