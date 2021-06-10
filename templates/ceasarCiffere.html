@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy and security</title>
+  <link rel="stylesheet" href="../static/styles/main_style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+<body>
+
+<form class="box" action="calculate" method="post">
+
+  <h1>Ceasar Chiffre</h1>
+
+  <input type="hidden" id="id" name="id" value="0">
+
+  <div class="btn btn-1">
+    <input onchange="myFunction()" type="checkbox" id="switch">
+    <label for="switch"></label>
+  </div>
+
+  <label>
+    <input type="text" name="text" placeholder="Text">
+  </label>
+
+  <label>
+    <input type="text" name="shift" placeholder="Verschiebung">
+  </label>
+
+  <input type="submit" name="" value="Verschlüsseln">
+
+</form>
+
+<script src="../static/scripts/setTypeValue.js"></script>
+
+</body>
+</html>

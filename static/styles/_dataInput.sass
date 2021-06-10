@@ -1,0 +1,138 @@
+.box
+  width: 300px
+  padding: 40px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+
+  h1
+    color: #F8F8FF
+    text-transform: uppercase
+    font-weight: lighter
+
+  input
+    &[type="text"]
+      background: none
+      display: block
+      margin: 20px auto
+      text-align: center
+      border: 1px solid #c40233
+      padding: 14px 10px
+      width: 200px
+      outline: none
+      color: #F8F8FF
+      border-radius: 24px
+      transition: 0.25s
+      box-shadow: 1px 6px 11px #000000
+
+      &:focus
+        width: 280px
+        color: #F8F8FF
+
+    &[type="submit"]
+      background: none
+      display: block
+      margin: 20px auto
+      text-align: center
+      border: 1px solid #c40233
+      padding: 14px 40px
+      outline: none
+      color: #F8F8FF
+      border-radius: 24px
+      transition: 0.25s
+      cursor: pointer
+      box-shadow: 1px 6px 11px #000000
+
+    &::placeholder
+      color: #F8F8FF
+
+    &[type="submit"]:hover
+      background: #c40233
+      color: #121212
+
+.btn
+  position: relative
+  display: block
+  justify-content: center
+  align-items: center
+  height: 50px
+  margin: 0
+
+  input
+    position: relative
+    width: 200px
+    height: 50px
+    border-radius: 24px
+    outline: none
+    cursor: none
+    appearance: none
+    font-family: 'Raleway', sans-serif
+    font-weight: bold
+    box-shadow: none
+
+    /*box-shadow: 1px 6px 11px #000000;
+
+    &:before, &:after
+      z-index: 2
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      color: #121212
+
+    &:before
+      content: "Ent"
+      left: 40px
+
+    &:after
+      content: "Ver"
+      right: 40px
+
+  label
+    z-index: 1
+    position: absolute
+    width: 200px
+    height: 30px
+    top: 25%
+    bottom: 25%
+    left: 20%
+    border-radius: 24px
+
+  &.btn-1 input
+    transition: 0.2s -0.1s
+
+    &:checked
+      background: #F8F8FF
+
+      &:before
+        color: #121212
+        transition: color 0.5s 0.2s
+
+      &:after
+        color: #121212
+        transition: color 0.5s
+
+      + label
+        left: 50%
+        width: 90px
+        background: #c40233
+        transition: left 0.5s, right 0.4s 0.2s
+
+    &:not(:checked)
+      background: #c40233
+      transition: background 0.5s -0.1s
+
+      &:before
+        color: #121212
+        transition: color 0.5s
+
+      &:after
+        color: #121212
+        transition: color 0.5s 0.2s
+
+      + label
+        right: 10px
+        width: 90px
+        background: #F8F8FF
+        transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s

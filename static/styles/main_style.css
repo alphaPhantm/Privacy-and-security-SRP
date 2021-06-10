@@ -161,61 +161,61 @@ button {
       display: block;
       z-index: -1; }
       #gooey-button .bubbles .bubble:nth-child(1) {
-        left: 88px;
+        left: 38px;
         width: 25px;
         height: 25px;
         animation: move-1 3.02s infinite;
         animation-delay: 0.2s; }
       #gooey-button .bubbles .bubble:nth-child(2) {
-        left: 47px;
+        left: 80px;
         width: 25px;
         height: 25px;
         animation: move-2 3.04s infinite;
         animation-delay: 0.4s; }
       #gooey-button .bubbles .bubble:nth-child(3) {
-        left: 48px;
+        left: 99px;
         width: 25px;
         height: 25px;
         animation: move-3 3.06s infinite;
         animation-delay: 0.6s; }
       #gooey-button .bubbles .bubble:nth-child(4) {
-        left: 95px;
+        left: 18px;
         width: 25px;
         height: 25px;
         animation: move-4 3.08s infinite;
         animation-delay: 0.8s; }
       #gooey-button .bubbles .bubble:nth-child(5) {
-        left: 51px;
+        left: 27px;
         width: 25px;
         height: 25px;
         animation: move-5 3.1s infinite;
         animation-delay: 1s; }
       #gooey-button .bubbles .bubble:nth-child(6) {
-        left: 15px;
+        left: 90px;
         width: 25px;
         height: 25px;
         animation: move-6 3.12s infinite;
         animation-delay: 1.2s; }
       #gooey-button .bubbles .bubble:nth-child(7) {
-        left: 87px;
+        left: 100px;
         width: 25px;
         height: 25px;
         animation: move-7 3.14s infinite;
         animation-delay: 1.4s; }
       #gooey-button .bubbles .bubble:nth-child(8) {
-        left: 61px;
+        left: 24px;
         width: 25px;
         height: 25px;
         animation: move-8 3.16s infinite;
         animation-delay: 1.6s; }
       #gooey-button .bubbles .bubble:nth-child(9) {
-        left: 94px;
+        left: 78px;
         width: 25px;
         height: 25px;
         animation: move-9 3.18s infinite;
         animation-delay: 1.8s; }
       #gooey-button .bubbles .bubble:nth-child(10) {
-        left: 67px;
+        left: 88px;
         width: 25px;
         height: 25px;
         animation: move-10 3.2s infinite;
@@ -228,7 +228,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 88px); }
+    transform: translate(0, 100px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -239,7 +239,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 92px); }
+    transform: translate(0, 82px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -250,7 +250,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 113px); }
+    transform: translate(0, 60px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -261,7 +261,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 82px); }
+    transform: translate(0, 97px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -272,7 +272,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 128px); }
+    transform: translate(0, 129px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -283,7 +283,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 124px); }
+    transform: translate(0, 52px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -305,7 +305,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 81px); }
+    transform: translate(0, 114px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -316,7 +316,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 85px); }
+    transform: translate(0, 60px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -327,7 +327,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 82px); }
+    transform: translate(0, 56px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -625,6 +625,123 @@ footer .copyrights {
 @media (max-width: 574px) {
   .footer-col {
     width: 100%; } }
+.box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .box h1 {
+    color: #F8F8FF;
+    text-transform: uppercase;
+    font-weight: lighter; }
+  .box input[type="text"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #c40233;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #F8F8FF;
+    border-radius: 24px;
+    transition: 0.25s;
+    box-shadow: 1px 6px 11px #000000; }
+    .box input[type="text"]:focus {
+      width: 280px;
+      color: #F8F8FF; }
+  .box input[type="submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #c40233;
+    padding: 14px 40px;
+    outline: none;
+    color: #F8F8FF;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: 1px 6px 11px #000000; }
+  .box input::placeholder {
+    color: #F8F8FF; }
+  .box input[type="submit"]:hover {
+    background: #c40233;
+    color: #121212; }
+
+.btn {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 0; }
+  .btn input {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 24px;
+    outline: none;
+    cursor: none;
+    appearance: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    box-shadow: none;
+    /*box-shadow: 1px 6px 11px #000000; */ }
+    .btn input:before, .btn input:after {
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #121212; }
+    .btn input:before {
+      content: "Ent";
+      left: 40px; }
+    .btn input:after {
+      content: "Ver";
+      right: 40px; }
+  .btn label {
+    z-index: 1;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    top: 25%;
+    bottom: 25%;
+    left: 20%;
+    border-radius: 24px; }
+  .btn.btn-1 input {
+    transition: 0.2s -0.1s; }
+    .btn.btn-1 input:checked {
+      background: #F8F8FF; }
+      .btn.btn-1 input:checked:before {
+        color: #121212;
+        transition: color 0.5s 0.2s; }
+      .btn.btn-1 input:checked:after {
+        color: #121212;
+        transition: color 0.5s; }
+      .btn.btn-1 input:checked + label {
+        left: 50%;
+        width: 90px;
+        background: #c40233;
+        transition: left 0.5s, right 0.4s 0.2s; }
+    .btn.btn-1 input:not(:checked) {
+      background: #c40233;
+      transition: background 0.5s -0.1s; }
+      .btn.btn-1 input:not(:checked):before {
+        color: #121212;
+        transition: color 0.5s; }
+      .btn.btn-1 input:not(:checked):after {
+        color: #121212;
+        transition: color 0.5s 0.2s; }
+      .btn.btn-1 input:not(:checked) + label {
+        right: 10px;
+        width: 90px;
+        background: #F8F8FF;
+        transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s; }
+
 .content-spacer {
   border: 1px solid #C40233; }
 

@@ -75,9 +75,3 @@ def encrypt(text, key):
         erg += char_text[i]
 
     return erg
-
-
-
-
-if __name__ == '__main__':
-    print(encrypt("Ich Liebe dich so sehr Leonie du bist was mich jeden tag gücklich macht und meinem Leben einen Sinn gibt!", "Du-bist_mein.Knuffi!"))

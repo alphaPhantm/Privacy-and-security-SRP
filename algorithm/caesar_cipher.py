@@ -83,4 +83,4 @@ def decrypt(text, shift):
         char[i] = chr(int(char[i]))
         erg += char[i]
 
-    return erg
+    return
