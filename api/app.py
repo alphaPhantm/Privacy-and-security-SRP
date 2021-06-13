@@ -6,7 +6,7 @@ app = Flask(__name__, template_folder="../templates", static_folder="../static")
 
 @app.route("/")
 def index():
-    return render_template("widget_dev.html")
+    return render_template("ceasarCiffere.html")
 
 @app.route("/calculate", methods=["POST"])
 def calculate():

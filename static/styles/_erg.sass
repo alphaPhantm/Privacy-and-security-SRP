@@ -1,0 +1,52 @@
+.erg
+  width: 100%
+  padding: 40px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+
+  h1
+    color: #F8F8FF
+    text-transform: uppercase
+    font-weight: lighter
+
+  input
+    &[type="text"]
+      background: none
+      display: block
+      margin: 20px auto
+      text-align: center
+      border: 1px solid #c40233
+      padding: 14px 10px
+      width: 100%
+      outline: none
+      color: #F8F8FF
+      border-radius: 24px
+      transition: 0.25s
+      box-shadow: 1px 6px 11px #000000
+
+
+
+    &[type="submit"]
+      background: none
+      display: block
+      margin: 20px auto
+      text-align: center
+      border: 1px solid #c40233
+      padding: 14px 40px
+      outline: none
+      color: #F8F8FF
+      border-radius: 24px
+      transition: 0.25s
+      cursor: pointer
+      box-shadow: 1px 6px 11px #000000
+
+    &::placeholder
+      color: #F8F8FF
+
+    &[type="submit"]:hover
+      background: #c40233
+      color: #121212
+

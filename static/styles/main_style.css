@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body, html {
   background-color: #121212;
   /*display: flex */
@@ -161,61 +165,61 @@ button {
       display: block;
       z-index: -1; }
       #gooey-button .bubbles .bubble:nth-child(1) {
-        left: 51px;
+        left: 59px;
         width: 25px;
         height: 25px;
         animation: move-1 3.02s infinite;
         animation-delay: 0.2s; }
       #gooey-button .bubbles .bubble:nth-child(2) {
-        left: 64px;
+        left: 63px;
         width: 25px;
         height: 25px;
         animation: move-2 3.04s infinite;
         animation-delay: 0.4s; }
       #gooey-button .bubbles .bubble:nth-child(3) {
-        left: 25px;
+        left: 39px;
         width: 25px;
         height: 25px;
         animation: move-3 3.06s infinite;
         animation-delay: 0.6s; }
       #gooey-button .bubbles .bubble:nth-child(4) {
-        left: 40px;
+        left: 51px;
         width: 25px;
         height: 25px;
         animation: move-4 3.08s infinite;
         animation-delay: 0.8s; }
       #gooey-button .bubbles .bubble:nth-child(5) {
-        left: 29px;
+        left: 89px;
         width: 25px;
         height: 25px;
         animation: move-5 3.1s infinite;
         animation-delay: 1s; }
       #gooey-button .bubbles .bubble:nth-child(6) {
-        left: 23px;
+        left: 74px;
         width: 25px;
         height: 25px;
         animation: move-6 3.12s infinite;
         animation-delay: 1.2s; }
       #gooey-button .bubbles .bubble:nth-child(7) {
-        left: 81px;
+        left: 27px;
         width: 25px;
         height: 25px;
         animation: move-7 3.14s infinite;
         animation-delay: 1.4s; }
       #gooey-button .bubbles .bubble:nth-child(8) {
-        left: 75px;
+        left: 64px;
         width: 25px;
         height: 25px;
         animation: move-8 3.16s infinite;
         animation-delay: 1.6s; }
       #gooey-button .bubbles .bubble:nth-child(9) {
-        left: 62px;
+        left: 36px;
         width: 25px;
         height: 25px;
         animation: move-9 3.18s infinite;
         animation-delay: 1.8s; }
       #gooey-button .bubbles .bubble:nth-child(10) {
-        left: 76px;
+        left: 96px;
         width: 25px;
         height: 25px;
         animation: move-10 3.2s infinite;
@@ -228,7 +232,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 65px); }
+    transform: translate(0, 79px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -239,7 +243,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 57px); }
+    transform: translate(0, 90px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -250,7 +254,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 96px); }
+    transform: translate(0, 54px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -261,7 +265,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 99px); }
+    transform: translate(0, 93px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -272,7 +276,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 77px); }
+    transform: translate(0, 106px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -283,7 +287,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 90px); }
+    transform: translate(0, 120px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -294,7 +298,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 92px); }
+    transform: translate(0, 125px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -305,7 +309,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 94px); }
+    transform: translate(0, 104px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -316,7 +320,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 52px); }
+    transform: translate(0, 110px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -327,7 +331,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 95px); }
+    transform: translate(0, 82px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -354,13 +358,6 @@ button {
   100% {
     transform: translate(0%, 0%) scale(0.9);
     opacity: 0.2; } }
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI Light", sans-serif;
-  font-size: 20px;
-  box-sizing: border-box; }
-
 body {
   position: relative;
   background: #121212; }
@@ -384,6 +381,7 @@ body {
   margin-left: 20px; }
 
 .navbar {
+  font-size: 20px;
   width: 85%;
   margin: auto;
   padding: 35px 0;
@@ -781,6 +779,50 @@ footer .copyrights {
   width: 60%;
   height: 60%;
   border-radius: 24px; }
+
+.erg {
+  width: 100%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .erg h1 {
+    color: #F8F8FF;
+    text-transform: uppercase;
+    font-weight: lighter; }
+  .erg input[type="text"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #c40233;
+    padding: 14px 10px;
+    width: 100%;
+    outline: none;
+    color: #F8F8FF;
+    border-radius: 24px;
+    transition: 0.25s;
+    box-shadow: 1px 6px 11px #000000; }
+  .erg input[type="submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #c40233;
+    padding: 14px 40px;
+    outline: none;
+    color: #F8F8FF;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: 1px 6px 11px #000000; }
+  .erg input::placeholder {
+    color: #F8F8FF; }
+  .erg input[type="submit"]:hover {
+    background: #c40233;
+    color: #121212; }
 
 .content-spacer {
   border: 1px solid #C40233; }
