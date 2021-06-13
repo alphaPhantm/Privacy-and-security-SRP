@@ -10,6 +10,7 @@ def index():
 
 @app.route("/calculate", methods=["POST"])
 def calculate():
+
     if request.method == "POST":
         text = ""
         shift = ""
@@ -17,8 +18,9 @@ def calculate():
 
 
         id, text, shift = request.form["id"], request.form["text"], request.form["shift"]
-
+        print(text)
         erg = control.control(id, text, shift)
+        print(erg)
 
     return render_template("result.html", erg=erg)
 
