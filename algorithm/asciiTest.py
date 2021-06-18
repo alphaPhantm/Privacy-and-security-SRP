@@ -1,2 +1,6 @@
-for i in range(100):
-    print(chr(i))
+print(ord())
+
+
+
+ÖÄÜ
+öäü
