@@ -130,6 +130,7 @@ button
   padding: 1rem
   font-size: 2rem
   border: none
+  width: 200px
   color: $background
   filter: url('#gooey')
   position: relative
@@ -157,7 +158,7 @@ button
       @for $bubble from 1 through 10
         &:nth-child(#{$bubble})
           $size: 25px
-          left: (random(90) + 10)+px
+          left: (random(150) + 10)+px
           width: $size
           height: $size
           animation: move-#{$bubble} #{3 + $bubble*0.02}s infinite

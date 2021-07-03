@@ -144,6 +144,7 @@ button {
   padding: 1rem;
   font-size: 2rem;
   border: none;
+  width: 200px;
   color: #121212;
   filter: url("#gooey");
   position: relative;
@@ -165,61 +166,61 @@ button {
       display: block;
       z-index: -1; }
       #gooey-button .bubbles .bubble:nth-child(1) {
-        left: 94px;
+        left: 56px;
         width: 25px;
         height: 25px;
         animation: move-1 3.02s infinite;
         animation-delay: 0.2s; }
       #gooey-button .bubbles .bubble:nth-child(2) {
-        left: 55px;
+        left: 113px;
         width: 25px;
         height: 25px;
         animation: move-2 3.04s infinite;
         animation-delay: 0.4s; }
       #gooey-button .bubbles .bubble:nth-child(3) {
-        left: 48px;
+        left: 65px;
         width: 25px;
         height: 25px;
         animation: move-3 3.06s infinite;
         animation-delay: 0.6s; }
       #gooey-button .bubbles .bubble:nth-child(4) {
-        left: 47px;
+        left: 96px;
         width: 25px;
         height: 25px;
         animation: move-4 3.08s infinite;
         animation-delay: 0.8s; }
       #gooey-button .bubbles .bubble:nth-child(5) {
-        left: 71px;
+        left: 50px;
         width: 25px;
         height: 25px;
         animation: move-5 3.1s infinite;
         animation-delay: 1s; }
       #gooey-button .bubbles .bubble:nth-child(6) {
-        left: 28px;
+        left: 60px;
         width: 25px;
         height: 25px;
         animation: move-6 3.12s infinite;
         animation-delay: 1.2s; }
       #gooey-button .bubbles .bubble:nth-child(7) {
-        left: 85px;
+        left: 36px;
         width: 25px;
         height: 25px;
         animation: move-7 3.14s infinite;
         animation-delay: 1.4s; }
       #gooey-button .bubbles .bubble:nth-child(8) {
-        left: 53px;
+        left: 91px;
         width: 25px;
         height: 25px;
         animation: move-8 3.16s infinite;
         animation-delay: 1.6s; }
       #gooey-button .bubbles .bubble:nth-child(9) {
-        left: 70px;
+        left: 158px;
         width: 25px;
         height: 25px;
         animation: move-9 3.18s infinite;
         animation-delay: 1.8s; }
       #gooey-button .bubbles .bubble:nth-child(10) {
-        left: 71px;
+        left: 24px;
         width: 25px;
         height: 25px;
         animation: move-10 3.2s infinite;
@@ -232,7 +233,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 80px); }
+    transform: translate(0, 96px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -243,7 +244,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 129px); }
+    transform: translate(0, 97px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -254,7 +255,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 99px); }
+    transform: translate(0, 107px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -265,7 +266,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 117px); }
+    transform: translate(0, 51px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -276,7 +277,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 84px); }
+    transform: translate(0, 111px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -287,7 +288,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 77px); }
+    transform: translate(0, 81px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -298,7 +299,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 63px); }
+    transform: translate(0, 119px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -309,7 +310,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 125px); }
+    transform: translate(0, 110px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -320,7 +321,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 69px); }
+    transform: translate(0, 94px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -331,7 +332,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 68px); }
+    transform: translate(0, 126px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -683,7 +684,6 @@ footer .copyrights {
     height: 50px;
     border-radius: 24px;
     outline: none;
-    cursor: none;
     appearance: none;
     font-family: "Raleway", sans-serif;
     font-weight: bold;

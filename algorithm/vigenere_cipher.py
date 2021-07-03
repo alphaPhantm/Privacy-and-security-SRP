@@ -161,8 +161,4 @@ def decrypt(text, key):
 
 if __name__ == '__main__':
 
-    print(encrypt("Ich Liebe dich mein Knuffi!", "Mauschen"))
-    print("")
-    print("")
-    time.sleep(3)
-    print(decrypt('Ucb"Npioq xaeo$zqih"Muysri%', "Mauschen"))
+    print(encrypt("Noah", "Lena"))

@@ -84,7 +84,3 @@ def decrypt(text, shift):
         erg += char[i]
 
     return erg
-
-
-if __name__ == '__main__':
-    print(encrypt(" ", 4))

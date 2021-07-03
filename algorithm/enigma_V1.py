@@ -98,4 +98,3 @@ def apply_board_encryption(text, board_left, board_right):
 if __name__ == '__main__':
     print(get_index_of_char('A', 0))
     print(get_index_of_char('A', 26))
-
