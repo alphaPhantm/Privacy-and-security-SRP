@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,19 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            Ist der Datenschutz vielen noch wichtig?
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Der Datenschutz ist vielen tatsächlich noch sehr wichtig. Das bewegt sich mit wichtigen und berechtigten Gründen. Man könnte meinen, soviel Zeit wie die Deutschen in Social Media investieren, kann es doch unmöglich sein, dass einer von denen überhaupt über Datenschutz nachdenkt. Doch laut mehreren Studien, welche das Gegenteil behaupten, ist das nicht der Fall. Viele der Deutschen setzen auf Selbstbestimmung und ihr Recht „Online“ sich frei ausleben zu können, aber auch geschützt zu werden. Schon einige Male misstraute die deutsche Bevölkerung ihrer Regierung, da diese damals zwei Diktaturen ertragen mussten. In diesen Diktaturen wurden die Bürger versucht zu kontrollieren, indem man ihnen fast alle Rechte nahm. Keiner konnte offen über regierungskritische Aspekte reden, denn in diesem Fall konnte es passieren, dass jemand dies hörte und die Person verriet. In Deutschland wurden während der Diktaturzeit sehr viele Informationen über Bürger gesammelt, ob der Bürger nun nach den Wünschen der Regierung lebte oder nicht. Überall wurde man ausspioniert, Wanzen wurden versteckt, Menschen damit abgehört. Sobald die eigene Meinung geäußert wurde, man einen Aufstand plante oder nur daran dachte sich gegen die Diktatoren aufzustellen, so wurde man ohne Gnade bestraft. Heutzutage wäre das in Deutschland undenkbar, dennoch haben die Deutschen ein gewisses, aber auch verständliches Misstrauen gegenüber der Regierung. Dabei bleibt es nicht. Noch mehr Misstrauen bekommen (nicht nur) die Deutschen durch die Medien. Der Fall Edward Snowden öffnete vielen die Augen, denn so eine Datenmenge an Informationen ist unfassbar. Als nun aktueller wurde, was große Konzerne wie Google oder Facebook machen, wurden viele Menschen fast schon panisch. Google verdiente sein Geld nicht mehr nur damit, dass Menschen diese Suchmaschine benutzten, sondern auch damit, dass sie Werbungen einen Ort gaben sich zu entfalten. Fast genau dasselbe Problem gibt es mit Facebook. Umso mehr man verstand wie Facebook sein Geld verdient, umso vorsichtiger wurden die Menschen. Jeder der beiden Konzerne sammelte mehrere Millionen (personenbezogene) Daten, damit passende Werbung geschaltet werden kann oder diese verkauft werden können. Den Deutschen ist der Datenschutz also sehr wichtig, nicht nur wegen der oben genannten Diktaturen, wo man natürlich nicht abstreiten kann, dass sie es unterstützt haben, sondern auch wegen Edward Snowden und vielen weiteren Faktoren.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

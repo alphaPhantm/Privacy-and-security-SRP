@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,19 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            Einführung.
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Kommen wir nun zum Kernpunkt des Problems, warum genau Datenschutz und Sicherheit an erster Stelle im Internet stehen sollten. „Data Mining“ ist nicht vielen Menschen ein Begriff, denn keine Firma geht zu einer Privatperson und erzählt dieser, dass sie Data Mining betreiben. Doch befasst man sich mit diesem Thema, wird einem klar, dass (fast) jede Firma „Data Mining“ betreibt. Zu Deutsch bedeutet Data Mining „Datenauswertung“. Im Prozess der Datenauswertung werden Daten erfasst, danach gespeichert und anschließend verarbeitet. Dieser Prozess passiert heutzutage automatisch, da es Algorithmen gibt, welche sich um den Job kümmern. Denn heutzutage sind die Datenmengen, welche auf dieser Welt existieren, immens riesig und werden immer grösser. Jeden Tag begeben wir Menschen uns im Internet auf der Suche nach neuen Artikeln, mal brauchen wir ein neues Sofa ein anderes Mal benötigen wir ein Ersatzteil für unsere Gitarre. All das sind Daten, die von den Firmen gesammelt werden. Umso öfter man sich ein Produkt anschaut, umso mehr wird dieses Produkt oder ähnliche derselben Plattform mir als Werbung auf meinem technischen Gerät widergespiegelt. Nicht nur das Merken sich die Algorithmen, auch mein Kaufverhalten wird bis ins Detail genau analysiert. Und so funktioniert Data Mining nur im Kleinen. Der Hauptgrund ist es, Daten zu erfassen, also wie ich erklärte, was wird am meisten gekauft oder welches Produkt kommt gar nicht gut an. Der nächste Schritt ist dann das Speichern der Daten, welche erfasst worden sind. Darauf folgt das Auswerten der Daten. So merken Firmen, welches ihrer Produkte am beliebtesten ist und welches eher weniger. Darauf können die Firmen in verschiedenster Weise reagieren: sie könnten das beliebte Produkt teurer machen, verändern oder sogar verbessern, in der Hoffnung, dass sich daraus ein Trend entwickelt. Im Gegensatz dazu könnten die Firmen auch das eher wenig gekaufte Produkt billiger machen, um so einen Anreiz zu wecken, es zu kaufen. Data Mining befasst sich, wie wir jetzt also gelernt haben, mit Angebot und Nachfrage von Produkten. Aber nicht nur das ist möglich. Data Mining kann in den verschiedensten Branchen hilfreich sein und entweder zum Guten oder zum Schlechten beitragen. Oft wird Data Mining auch in einem falschen Kontext gesehen. Es wird damit verwechselt Daten zu entwickeln, aber das stimmt nicht. Die Daten werden zusammengesucht und ausgewertet. Durch Data Mining gewinnt man immer mehr Wissen, nicht nur über das Kaufverhalten, sondern auch wie zum Beispiel ein Mensch lebt, was findet dieser schön, von was neigt dieser eher ab. Ein weiterer Punkt ist, dass Data Mining ein riesiges Feld ist. Es gibt nicht nur das „eine“ Data Mining, sondern es gibt noch viele weitere Arten, Daten zu analysieren und jedes unterscheidet sich auf seine eigene Art und Weise.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

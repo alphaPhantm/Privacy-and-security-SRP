@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,19 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            mittelalter.
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Zwischen den Jahren 500 und 1400 erstreckte sich das Mittelalter. In dieser Zeit kamen viele kryptographische Erfolge aus der arabischen Welt. Das erste Buch zu diesem Thema stammt von dem islamischen Theologen und Philosophen al-Kindī, der auch als erster statistische Methoden zur Kryptoanalyse beschrieb. Im europäischen Raum gibt es hingegen nur wenig Neuerungen. Karl der Große soll ein geheimes Alphabet in Verbindung mit einfacher Substitution benutzt haben. Die einzige namentliche bekannte Neuerung in diesem Zeitalter, die aus Europa stammt, kommt von einem englischen Mönch und Universalgelehrten “Roger Bacon”. Er hat sieben Verschlüsselungsmethoden aufgezählt, wie z.B. das Weglassen von Vokalen oder Verwendung eines unbekannten Alphabets.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

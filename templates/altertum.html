@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,19 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            altertum.
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Wie in der Einführung beschrieben, besteht der Wunsch nach geheimer Daten- bzw. Nachrichtenübermittlung schon seit die Menschheit mit dieser begonnen hat. Erste richtige Erfolge zeichnete die Wissenschaft der Kryptographie in der Epoche des Altertums, welche den Zeitraum von der Mitte des 4. Jahrtausend v. Chr. bis 6. Jahrhundert n. Chr. beschreibt, auf. Der erste Einsatz von Kryptographie wurde im 3. Jahrtausend v. Chr. im altägyptischen Reich gefunden. Hier wurden altägyptische mythologische und religiöse Texte verschlüsselt. Hauptverschlüsslungsmethode war eine Verschlüsselung aufzubauen auf dem Prinzip des Rebus und der Akrophonie. Rebus, auch Bildrätsel genannt, ist ein Rätsel, welches hauptsächlich aus Bildern besteht, und erst einen Sinn ergibt, wenn die Wortlaute der Bilder aneinandergereiht werden und durch Abstraktion ein oder mehrere neue Worte ergeben. Akrophonie hingegen beschreibt die Benennung von Buchstaben in einer Schrift nach Tieren oder Gegenständen. Aber nicht nur die Ägypter starteten in der Epoche des Altertums mit der Entwicklung diverser kryptographischen Verfahren. Die Griechen entwickelten im 5. Jahrhundert v. Chr. einen Verschlüsselungsstab namens: „Skytale“. Etwas später entwickelte Julius Cäsar die nach ihm benannte „Cäsar-Chiffre“.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

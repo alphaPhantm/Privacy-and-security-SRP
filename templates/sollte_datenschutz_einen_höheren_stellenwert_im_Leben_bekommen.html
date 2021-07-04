@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,19 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            Sollte Datenschutz einen höheren Stellenwert im Leben bekommen?
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Um diese Frage zu beantworten muss man verschiedene Gesichtspunkte des Themas betrachten. Zu Beginn, denken wir darüber nach was in Datenschutz alles inbegriffen ist und was passieren würde, wenn wir dem Datenschutz keinen Stellenwert in unserem Leben gäben. Für viele Menschen ist der Datenschutz gerade deswegen sehr wichtig, weil es ein Grundrecht ist und jedem Menschen zusteht. Auch durch verschiedene Einflüsse in der Vergangenheit haben viele Menschen ein verankertes Misstrauen in sich. Gerade wo bemerkbar wird, dass das Internet wächst und mit dem Internet auch Betrüger, Hacker und vieles mehr. Ich möchte nicht abstreiten, dass es vertrauenswürdige Seiten gibt im Internet und dass das Internet nur ein böser Ort wäre. Allerdings auch wenn es gute Dinge gibt, entstehen dadurch auch Negative. Negative Aspekte des Internets sind, dass sehr viele Einflüsse auf einmal existieren und auch schon junge Menschen, welche noch nicht genau wissen wie das Internet funktioniert, unterwegs sind. Nicht nur junge Menschen kommen hier zu schaden, auch Menschen, welche aus der Zeit kommen, in der das Internet noch nicht existierte, kommen zu Schaden und verstehen nicht genau wie. Diese Aspekte könnten durch einen höheren Stellenwert unterdrückt werden, denn die Menschen sollen nicht das Internet als Feind ansehen, sondern müssen aufgeklärt werden und im Bewusstsein sein, was genau und wie genau das Internet funktioniert. Um weiter auf Datenschutz einzugehen, müssen wir uns nicht nur das Internet anschauen, denn auch mit dem Internet sind Soziale Medien groß geworden und vieles mehr. Die heutige Generation ist Gefahren ausgesetzt, welche sie noch nicht einmal verstehen und ohne Bedenken verwenden. Apps, wie Instagram können eine dieser Gefahren darstellen, denn gerade junge Menschen können sehr leicht manipuliert werden, sie laufen Gefahr zu persönliche Daten freizugeben über sich, welche sehr sensibel sind und sie angreifbar machen. Nicht selten kommt es vor, dass Jugendliche Cybermobbing zum Opfer fallen. Würden Kinder darüber aufgeklärt werden, würden sie besser verstehen was richtig und was ein falsches Verhalten ausmacht. Genauso gilt dies für die Erwachsenen, welche die Welt der neuen Technologien noch nicht ganz verstanden haben. Denn immer das gleiche Passwort zu verwenden und wildfremden Leuten zu vertrauen, welche es gar nicht gut mit der Person meinen, kann zu vielem führen bis hin zu Geldverlust durch Fremde. So erkennen wir, Aufklärung ist wichtig, vor allem wenn es um Datenschutz geht. Sollte nun der Stellenwert höher sein? Ja, denn wenn wir uns weniger um Datenschutz kümmern, werden wir nicht nur darunter leiden, sondern auch irgendwann unsere Kinder, welche nicht wissen, wie die Welt funktioniert und auf Werbungen hereinfallen. Doch kann man sich vor so etwas schützen?
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

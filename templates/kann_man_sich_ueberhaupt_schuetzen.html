@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,22 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            Kann man sich überhaupt schützen
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="teaser">
+            wenn man Online unterwegs ist
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
+        <p class="content">
+            Wenn man an das denkt, was Medien pushen und erzählen, dann glaubt man kaum, dass man im Internet oder irgendwo anders sicher sein könnte. Doch das stimmt nicht, es gibt verschiedene Methoden, welche uns ein wenig Sicherheit in dem ganzen Chaos bieten können. Viele Menschen befassen sich mit dieser Frage der Sicherheit und ob ein Schutz geboten werden kann, denn in der Schule ist oft diese Information verwehrt. Man lernt viel, aber nicht wie das Internet funktioniert oder Soziale Medien. Obwohl oft das die heiklen Punkte sind, bei denen gerade Schüler aufgeklärt werden sollten. Durch das eigene Präsentieren und Verteilen von persönlichen Informationen, dadurch dass viele Jugendliche entweder im Internet oder in den Sozialen Medien ihr ganzes Leben freigeben, macht sie das zu einer einfachen Angriffsfläche für Betrüger und weiteres. Durch Gruppenzwang und Sucht hängen die Jugendlichen täglich mehrere Stunden vor Sozialen Medien, reden mit Fremden, wissen oft nicht einmal ob diese Personen überhaupt die sind, welche sie vorgeben zu sein. Denn in vielen Fällen kann es sein, dass es Menschen gibt, welche sich als jüngere ausgeben aber in Wirklichkeit um einiges älter sind. Auch werden Jugendliche oft unzufriedener durch das Nutzen dieser Medien, denn diese bieten sehr viele Eindrücke. Du folgst dem Trend nicht? Dann bist du „out“. So kaufen sich die Jugendlichen schlussendlich alles nur damit sie dem Trend folgen können und nicht zum Außenseiter werden. Auch Erwachsene verbringen heutzutage sehr viel Zeit vor ihren Technologien und merken es gar nicht, wenn sie manipuliert werden, um Geld auszugeben oder noch mehr Zeit damit zu verbringen Werbung anzugucken. Den Schutz, von welchem wir hier reden, muss man selbst in die Wege leiten. Niemand wird hingehen und dein Handy und dich beschützen vor den bösen Folgen der Bildschirmzeit oder des leeren Geldbeutels. Man selbst ist dazu verpflichtet, sich zu schützen. Denn es ist möglich sich zu schützen, vor all den Punkten, welche ich gerade nannte. Ein Hackerangriff kann schon dadurch vermieden werden nicht überall, dasselbe Passwort zu verwenden. Auch wenn man glaubt es ist schwierig so viele Passwörter zu merken oder welche zu erfinden. Dafür gibt es sogenannte Passwortmanager, in denen werden Passwörter generiert und gespeichert. Auch gibt es nicht nur Passwortmanager, denn mehrere Passwörter reichen nicht aus. Der Computer an sich hat meistens selbst ein sogenanntes Anti-Viren Programm, dieses sorgt dafür, dass kein Virus (personenbezogene) Daten stehlen kann. Leider ist das computereigene Virenprogramm nicht das zuverlässigste, deshalb gibt es auch hier verschiedene Anbieter, welche man vergleichen kann, um zu schauen welches die meiste Sicherheit bietet. Um sich im Internet nicht manipulieren zu lassen, gibt es Werbungsblocker, welche einen davor bewahren, sich unnötige Produkte zuzulegen und die Brieftasche schonen. Um sich vor E-Mail-Betrügern zu schützen, vermeidet man am besten das schnelle Drücken auf die eigenen Mails. Denn auch wenn eine Mail sehr echt aussieht, kann sie dennoch nicht echt sein und eine Kopie der anderen, welche einem dann einen Virus herunterlädt. Um es dazu gesagt zu haben: Sobald unechte Mails herumgeschickt werden, wird dies oft gemeldet und die Benutzer bekommen sofort Bescheid. Ein Beispiel dafür ist die Sparkasse, welche oft warnt vor solchen Mails, sobald diese im Umlauf sind. Und um zum Abschluss zu kommen, es gibt natürlich auch Aufklärungskurse für Kinder und Erwachsene. Meist nicht weit verbreitet, aber es gibt sie, hier erfährt man noch genauer was genau ein richtiges Verhalten mit Internet, Sozialen Medien und den allgemeinen neuen Technologien ausmacht. Hier unterhält man sich auch darüber wie man nicht nur sich selbst schützt, sondern auch seine Kinder.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

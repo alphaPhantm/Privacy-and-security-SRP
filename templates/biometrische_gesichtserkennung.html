@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,20 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            Biometrische Gesichtserkennung.
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Die Biometrische Gesichtserkennung ist also die Identifizierung eines Menschen durch sein Gesicht.  Es ist ein üblicher Prozess, welcher nicht nur zu Zeiten der neuen Technologien verwendet worden ist. Schon früher versuchte zum Beispiel die Polizei, Täter anhand von Zeichnungen ausfindig zu machen. Oft fragen Polizisten nach genauen Merkmalen im Gesicht oder weiteres. Hatte der Täter ein breites Gesicht, ein markantes Kinn? Mittlerweile funktioniert die Gesichtserkennung auch digital. Personen werden anhand digitaler Bilder (oder handgemachter Bilder) in einer Datenbank verglichen. Diese Datenbank beinhaltet Menschen, welche entweder schon eine Straftat begangen haben oder bei einer Kontrolle in der Datenbank aufgenommen worden sind. Das bedeutet, es sind nicht nur straffällig gewordene Menschen in dieser Datenbank. Anhand besonderer Merkmale untersucht die Datenbank die vorhandenen Bilder, welche mit dem des Täters übereinstimmen. Wie beschrieben, wird die biometrische Gesichtserkennung eingesetzt um die Sicherheit eines spezifischen Landes (nicht nur Deutschland) zu erhöhen. Die momentanen Systeme, welche die biometrische Gesichtserkennung durchführen verwenden sogenannte numerische Codes, auch Faceprints genannt. Damit analysiert das System zum Beispiel die Nase, die breite des Gesichts, die Höhe der Stirn und weitere äußerliche Merkmale. Doch diese Systeme waren anfangs noch sehr unzuverlässig, da diese Systeme sobald das Gesicht zum Teil nicht erkennbar sind oder das Gesicht leicht mit Schatten belegt ist, nicht funktionieren und die Person schlussendlich nicht identifizieren können. Aber auch diese Fehler werden mit den Jahren behoben, mittlerweile ist es der Software auch möglich in schwierigen Bildverhältnissen die Person zu erkennen und zu identifizieren.
+            Aber nicht nur die Polizei verwendet die Gesichtserkennung, auch Videospiele oder Videospielplattformen, wie XBOX verwenden sie, um zwischen Spielern differenzieren zu können, um sie beim Spielen so auseinanderzuhalten. Umso mehr Technologien entstehen, umso mehr gibt es die Möglichkeit die biometrische Gesichtserkennung zu verwenden. Handys besitzen diese Form von Software, um dem Besitzer des Handys Zugang zu seinem Gerät zu gewähren. Auch viele Laptops besitzen eine biometrische Gesichtserkennung, genauso wie Smart- Home-Türen auch und viele weitere neue Technologien. Aber nicht nur für solche Dinge wird die Gesichtserkennung verwendet, auch verschiedene Apps verwenden sie. Facebook zum Beispiel verwendet die biometrische Gesichtserkennung um mehrere Personen, welche auf einem Bild sind, „taggen“ zu können. „Taggen“ bedeutet schlicht und einfach, dass man Personen auf seinem gemachten Bild markieren kann, damit diese eine Benachrichtigung bekommen in einem der hochgeladenen Bilder zu sein. Nicht nur Facebook verwendet die Gesichtserkennung auch weitere Social Media Apps und normale Apps. Die Samsung Galerie App verwendet die Gesichtserkennung, um anzuzeigen ob eine Person, mit welcher man ein Foto gemacht hat, bereits in der Galerie vorgekommen ist. In Deutschland allerdings wird die Biometrische Gesichtserkennung hauptsächlich verwendet, um Straftaten aufzuklären, ansonsten wird die Software hauptsächlich für Technologien verwendet. China hat das ganze etwas zu ernst genommen, hier wird die biometrische Gesichtserkennung verwendet um Menschen, welche sich nicht an die Norm halten ausfindig zu machen, jede einzelne persönliche Information raussuchen, um dann diese Person öffentlich zu diskriminieren oder systematisch auszugrenzen.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy and security</title>
+    <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
+            <span>Privacy and security</span>
+        </div>
+
+        <div class="navItems">
+            <ul>
+                <li><a class="nav-item" href="{{url_for('home') }}">home</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('it') }}">informatik</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('ggk') }}">history and civics</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('me') }}">about me</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li>
+                    <div class="close-btn">
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="wrapper">
+                        <div class="search-btn">
+                            <span class="fas fa-search"></span>
+                        </div>
+                        <div class="search-data">
+                            <input type="text" required>
+                            <div class="line"></div>
+                            <label>Type to search..</label>
+                            <span class="fas fa-search"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="../static/scripts/searchButton.js"></script>
+
+</header>
+
+<body>
+
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Was passiert mit unseren Daten?
+        </p>
+        <p class="teaser">
+            Geldverdienen an Daten
+        </p>
+        <p class="content">
+            Nicht unbekannt sollte uns sein, dass große Konzerne, wie Amazon und Co., durch unsere Daten Geld verdienen. Nicht nur, weil unsere Daten verkauft werden. Sondern auch, weil umso mehr Daten ein Konzern hat umso besser kann dieser Werbung schalten, umso mehr kaufen wir ein bei den Herstellern. Zum ersten Aspekt, unsere Daten werden häufig in großen Mengen verkauft. Doch was macht unsere Daten interessant? Hier schließt sich der Kreis der Manipulation. Umso mehr unsere Daten an andere Konzerne weitergegeben werden, umso mehr Werbung können diese uns schalten. Der Kreis besteht also darin, ein Konzern sammelt unsere Daten, speichert diese ab und verwendet diese zu eigenen Zwecken und verdient Geld daran. Ein Schritt weiter: Verkauft er diese an andere Konzerne, verdient dadurch noch mehr Geld und bei dem nächsten Konzern, welcher unsere Daten gekauft hat, beginnt dieser Teufelskreis von vorne.
+        </p>
+        <br>
+        <p class="teaser">
+            Wirtschaftsinteresse an Daten
+        </p>
+        <p class="content">
+            Die Wirtschaft ist groß und wird immer grösser. Am liebsten würden Konzerne einfach alles über uns wissen wollen, denn umso mehr Daten Konzerne über uns haben, umso erfolgreicher werden ihre Strategien uns auszunutzen. Damit die Wirtschaft stetig wachsen kann, müssen Angebot und Nachfrage stimmen. Früher war das alles um einiges schwieriger. Heutzutage gibt es Algorithmen, welche sich um den Teil kümmern, den Menschen kaum erledigen können. Der „online“ Markt setzt auf Werbung, nicht nur die uns bekannten Shoppingseiten machen das, auch Konzerne wie YouTube schalten Werbungen in der Hoffnung, dass wir das Produkt holen, damit diese Profit daraus bekommen. Um uns besser beeinflussen zu können, braucht es Datenmassen. So setzen Firmen daran so viel wie möglich über uns zu erfahren. Ein passendes Zitat hierzu: „We are drowning in data but starving for knowledge. “Und es geht weiter mit der Sucht nach mehr und mehr Wissen. In der Wirtschaft gibt es keine Grenzen. Umso mehr sie wissen, umso besser können sie agieren und handeln.
+        </p>
+        <br>
+        <p class="teaser">
+            Weitere Aspekte
+        </p>
+        <p class="content">
+            Aspekte, welche ich noch kurz erwähnen möchte, sind Kinderpornographie, Abzocke im Internet und Spamanrufe. Viele dieser Aspekte werden sie in „Missbrauchen von Daten“ genauer beschrieben wiederfinden, hier werde ich sie nur kurz anschneiden. Der Punkt Kinderpornographie ist ein sehr sensibles Thema für viele Eltern vor allem, doch meist ist den Eltern gar nicht bewusst, wie genau ihr Kind es auf so eine Seite „geschafft“ hat. Oft posten diese niedliche Kinderbilder auf Facebook, wie Anna zum ersten Mal im Pool. Auf dem Bild sieht man ein Kind, was nur eine Bikinihose trägt aber kein Oberteil. Wenn dann das Profil auch noch öffentlich ist, hat jeder Mensch Zugriff auf diese Bilder und kann damit machen, was er möchte. Und so sammeln Menschen sensible Daten, in diesem Fall Fotos und verwenden sie würde nicht so erfreuliche Sachen. Genauso wie bei der Abzocke, hier werden systematisch von Menschengruppen Daten von vielen Menschen gesammelt, um diese dann entweder gegen sie zu verwenden oder sie unterbewusst um Geld zu erleichtern. Auch Spamanrufe funktionieren so: Daten, welche Online von uns preisgegeben werden, werden gegen uns verwendet, um uns zu belästigen oder uns zu ärgern.
+        </p>
+        <br>
+        <p class="teaser">
+            Missbrauch von unseren Daten
+        </p>
+        <p class="content">
+            Unsere Daten werden oft gesammelt, obwohl dies oft nicht nötig ist. Der Missbrauch von unseren Daten ist gar nicht so selten, denn gerade heute existieren so viele Daten, dass wir selbst kaum einen Überblick haben können. Die unterbewusste Manipulation durch Werbeschaltungen zählt auch zu diesem Missbrauch unserer Daten, denn wir werden dazu aufgerufen Produkte zu kaufen, welche wir meistens nicht einmal benötigen. Schlussendlich erreichen die Werbeartikel, welche wir gekauft haben, unsere Wohnung und wir wissen nichts damit anzufangen. Dadurch finden viele Produkte ihre neue Heimat bei uns, oft sind es Klamotten, welche man schlussendlich nicht einmal mehr anzieht und nach langer Zeit dann entsorgt. Nicht nur leeren die Konzerne unsere Brieftaschen, auch gibt es viele Menschen im Internet, die es nicht gut mit uns meinen. Oft landen in unseren E-Mail-Fächern lauter E-Mails, da klickt man aus Versehen auf eine Mail, welche uns bekannten Anbietern ähnlichsieht und hat einen Virus und muss Geld zahlen. Sobald wir unsere E-Mail-Adressen auf einer Seite angeben oder bei Social Media preisgeben und auf weiteren Sozialen Plattformen müssen wir damit rechnen, dass wir Mails bekommen von sogenannten „Scammern“. Meist ist deren Intention, sehr viel Geld zu bekommen und gleichzeitig noch mehr Daten über den Betroffenen zu erhaschen. Selbstverständlich sind diese Vorhaben oft illegal bzw. datenschutzwidrig und verfassungswidrig, allerdings ist es oft schwierig den Pfad dieser Person nachzuweisen und herauszufinden, wer genau dahintersteckt, denn es ist nicht immer nur eine Person. Meistens stecken ganze Organisationen hinter solchen datenmissbräuchlichen Straftaten. Ein weiterer Punkt ist, dass Bilder, welche wir auf Sozialen Medien hochladen, auch missbräuchlich verwendet werden können. Genau deswegen warnen Internetexperten davor, sein Kind auf solchen Plattformen preiszugeben, denn Bilder von Kindern können auf kinderpornographischen Seiten enden. Kein Elternteil erwartet so eine Art von Straftat, dennoch kommt es häufiger vor als man denken kann. Auch hier ist es meistens schwierig die Täter herauszufinden, denn diese Plattformen werden nicht nur von wenigen Usern benutzt. Um nicht nur an ein „Worst Case“ zu denken, es reicht allein schon aus, dass man von Bildern einer anderen Person Screenshots machen kann, was mit denen angestellt wird, wissen die Opfer meistens nicht. Was auch zu Datenmissbrauch zählt, sind Identitätsdiebe. Identitätsdiebe gibt es auch in Automatisch, also damit gemeint ist, dass Algorithmen, welche Daten sammeln, diese verwenden, um Profile zu erstellen, wo auch Bilder von der geklauten Identität sind. Identitätsdiebstahl gibt es in riesiger Form auf verschiedenen Sozialen Plattformen. Persönliche Daten werden gestohlen und für die eigenen ausgegeben. Und das ist keine Seltenheit, erst letztens gab es auf YouTube einen Fall des Identitätsdiebstahls, ein 702.000 Abonnenten schwerer YouTuber namens Tomary fand selbst heraus, dass es auf Instagram (Soziale Plattform für Jugendliche) einen zweiten Tomary gab, welcher dieselben persönlichen Informationen besaß, das gleiche Bild und mehrere Bilder hochgeladen hatte, welche Tomary auch hochgeladen hatte mit genau derselben Beschriftung. Es stellte sich heraus, dass die Person hinter diesem „Fake“ darauf aus war, Menschen Geld abzunehmen, um eigene Profite daraus zu holen. Wie unschwer erkennbar wird: Unsere Daten werden oft missbraucht für unschöne Zwecke. Gerade deswegen sollte den Datenschutzbehörden mehr Aufmerksamkeit geschenkt werden, damit uns diese einen funktionierenden Datenschutz bieten können.
+        </p>
+    </div>
+
+
+</div>
+
+</body>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>general</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>informatic</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>history and civics</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>about me</h4>
+                <ul>
+                    <li><a href="#">Me in this project</a></li>
+                </ul>
+                <br>
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="https://github.com/alphaPhantm"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <hr>
+        <div class="text">
+            <a class="out">© 2021 </a><a class="inner">Noah Kessinger</a><a class="out"> All rights reserved.</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>

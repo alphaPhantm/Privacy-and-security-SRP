@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,20 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            Sind kulturelle Werte mit den neuen Technologien vereinbar?
         </p>
 
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Um genauer auf die Frage eingehen zu können, befassen wir uns kurz mit kulturellen Werten. Was sind diese kulturellen Werte und wer bestimmt sie? Kulturelle Werte entstehen häufig über einen langen Zeitraum, sie entstehen durch historische, sowie religiöse oder traditionelle Erfahrungen. Schon seit langer Zeit befassen sich Menschen mit Ethik, Religion, Technik, Recht, Bildungssystemen, Umweltproblematiken, materiellen und immateriellen Produkten. Diese gesammelten Erfahrungen werden über Generationen vermittelt, an die Kinder und deren Kinder und der Kreis geht weiter. Kulturelle Werte sind nicht konstant, sie können sich auch über die Zeit ändern, denn sie sind ein stetiger Prozess. Eine Community kann so wie ein Nationalstaat eine Kultur widerspiegeln mit eigenen Werten und Ansichten, welche über Jahrzehnte gesammelt und vermittelt worden sind. Änderungen in kulturellen und sozialen Werten nennt man auch eine „soziale Wende“. Meist identifizieren sich Menschen mit so einem kulturellen Wert und gehören zu einem passenden Kollektiv dazu. Dies nennt sich dann kulturelle Identität. Es gibt auch nicht nur einen kulturellen Wert auf dieser Erde, jedes Land, jede Gemeinschaft und jeder Mensch besitzt unterschiedliche kulturelle Werte oder gehört einer speziellen Kultur an. Jede Kultur hat ihre spezifischen Weltansichten und vertritt die Werte dazu unterschiedlich. Auch wenn man tiefer in die Materie geht, kann man zwischen zwei verschiedenen Formen von Kulturen unterscheiden, zwischen dem kollektivistischen Kulturen und individualistischen Kulturen. Welche Werte sind vertretbar? Mit welchen kann man sich vereinbaren? Menschen setzen ihre Werte unterschiedlich und gebe diese weiter. Erkennbar wurde das in einer Studie, in der man herausfand, dass französische Manager ihr Werte eher auf ein aufregendes, aber doch harmonisches Leben setzen. Im Gegensatz zum Deutschen, der seine Werte eher auf die Sicherheit der Familie und auf eine friedliche Welt setzt. In Deutschland gehört auch zu unseren kulturellen Werten zum Beispiel das Pflegen unserer Natur. Der Schwarzwald ist ein unfassbar wichtiges Kulturgut geworden. Ein wichtiger kultureller Wert ist auch, die Gemeinschaft mit der Familie und das soziale Wesen. Hilfsbereitschaft ist ein Wert, welcher uns von klein auf vermittelt wurde, zu allen nett zu sein. Die neuen Technologien könnten in dem Aspekt dagegensprechen, welcher die sozialen Kontakte betrifft. Durch unsere technischen Endgeräte verbringen wir viel Zeit vor unseren Bildschirmen und verbringen so weniger Zeit mit unserer Familie. Unsere Freunde treffen wir oft in Onlinespielen und kommunizieren über Messenger.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

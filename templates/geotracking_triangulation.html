@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,19 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            Geotracking (Triangulation).
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Geotracking wird verwendet um jemanden genau ausfindig zu machen. Hierfür gibt es Triangulation, hierzu benötigt man drei Punkte, um genau ausmachen zu können wo eine Person sich gerade befindet. Handys loggen sich in Handymasten ein, so wird aufgezeichnet wo man zu welchem Zeitpunkt war. In vielen Serien und Filmen wird diese Form von Geotracking verwendet, um einen Täter ausfindig zu machen, auch im realen Leben wird sie in dieser Form genutzt. Handymasten stehen in Deutschland beispielweise stark verbreitet herum, um ein gutes Signal bieten zu können. Ist man mit seinem Handy in einem Lörracher Handymast eingeloggt, so werden noch zwei weitere gesucht, mit welchen das Handy in den letzten Stunden bzw. Minuten verbunden war. Viele verschiedene Apps fragen im Hintergrund den Standort ab, so findet der Entwickler einen Algorithmus heraus, wo genau die Person sich befindet. So könnte man diese Daten sammeln und herausfinden in welcher Region diese App am meisten benutzt wird. Selbst Spiele-Apps benutzen häufig die Standortabfragen oder funktionieren nicht mal ohne diese. Ein Beispiel dafür ist Pokémon Go. Das Spiel befasst sich damit spezielle Tiere zu finden um diese in einem virtuellen Ball festzuhalten. Dieses Spiel wird dann mit Standortabfrage verwendet, da diese Tiere durch Algorithmen an verschiedenen Orten platziert werden und durch den Standort auffindbar gemacht werden. In Social Media Apps wird der Standort verwendet, um Personen aus der Gegend vorzuschlagen, genauso wie bei Dating Apps. Auch verschiedene Internetseiten verwenden Geotracking. Mit demselben Prinzip wie sich App-Hersteller umschauen, welches Produkt zum Beispiel in welchem Land/Ort/Stadt am meisten verkauft wird. Oft funktioniert vieles gar nicht mehr ohne Standort, jede App möchte den Standort wissen und jeder Handymast weiß bereits wo man sich aufhielt.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

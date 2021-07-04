@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,25 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            renaissance.
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Mit dem Beginn der Renaissance, welche sich über das Ende des 14. Jahrhunderts bis frühes 17. Jahrhundert erstreckt, erlebten viele Wissenschaften einen erheblichen Aufschwung. Die seit Jahrtausenden bekannten Methoden, um Daten bzw. Nachrichten zu verschlüsseln, wurden in dieser Zeit maßgeblich weiterentwickelt. 1466 wurde die bedeutendste Entwicklung von dem Italiener Leon Battista Alberti (1404–1472) beschrieben. Er beschrieb eine Chiffrierscheibe. Durch diese wurde Italien in dieser Zeit zu der führenden Nation in der Kryptographie. Italien entwickelte in dieser Zeit viel Kryptographisches, da es viele verfeindete Stadtstaaten gab. Diese hatten Angst vor Mitlesern und entwickelten und nutzten deshalb solche Verfahren. Ein unbekanntes Alphabet mit unüblichen Zeichen verwendete Giambattista della Porta (1535–1615) auf seiner Chiffrierscheibe aus dem Jahr 1563. Auf dieser wurde die Technik der einfachen Substitution verwendet. Ein ähnliches Prinzip verfolgten die Chiffrierschieber. Hierbei wurden zum Beispiel im England zur Zeit Elizabeth I. (1533–1603) zwei gegeneinander verschiebbare Lineale zur Verschlüsselung benutzt.
+            <br>
+            <br>
+            Etwas später veröffentliche Blaise de Vigenère aus den durch den deutschen Benediktinerabt Johannes Trithemius (1462–1516) im Jahre 1508 im fünften Band seines in lateinischer Sprache geschriebenen sechsbändigen Werkes Polygraphiae libri sex (Sechs Bücher zur Polygraphie) entnommene Tabula recta unter eigenem Namen. Diese unter falschen Namen veröffentlichte Vigenère-Chiffre galt lange als unknackbar.  Dieser Algorithmus wurde erst nach fast 300 Jahren von Charles Babbage systematisch entziffert.
+            <br>
+            <br>
+            Selbst bei Gräueltaten wie dem Babington – Komplott wurde die Wissenschaft der Kryptografie weiterentwickelt. Der Babington - Komplott, war eine Gruppe, welche den Plan hatte, Queen Elizabeth I zu töten und Maria Stuart aus dem Gefängnis zu befreien und sie an die Macht von Großbritannien zu setzen.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

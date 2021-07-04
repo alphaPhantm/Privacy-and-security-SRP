@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,30 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            2. Weltkrieg.
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="teaser">
+            In wessen Interesse wurde verschlüsselt?
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
+        <p class="content">
+            Im zweiten Weltkrieg wurde weitläufig verschlüsselt. Vor allem während des Krieges, denn ohne eine Verschlüsselung wären manche Züge, bevor sie durchgeführt werden konnten, gestoppt. Auf See konnte man nicht ohne technische Geräte mit dem Land reden, so erfand man Verschlüsselungen, sodass die anderen Länder, welche erobert werden sollten, nicht verstanden was diese vorhatten. Allerdings rechneten die Deutschen nicht damit, dass die von ihnen entwickelte „Enigma“ Verschlüsselung von den Amerikanern und Engländern früh aufgedeckt worden ist. Die Chiffreverschlüsselungen der Deutschen waren nicht erfolgreich genug, die Alliierten waren schlauer. Die Engländer waren schlau genug, um die Besten an die deutschen Verschlüsselungen zu setzten, um diese dann zu entschlüsseln. Auch verbesserten die Engländer die Verschlüsselungsformen / Dechiffriermethoden der Deutschen. Daraufhin bauten die Engländer ihre eigenen Verschlüsselungsmaschinen namens „Typex“. Selbst die US-Amerikaner bauten eine Maschine, welche die der Deutschen übertrumpfte, namens „Sigaba“. Nun könnte man sich die Frage stellen, was haben die Deutschen denn nur falsch gemacht? Ihr größter Fehler war, dass sie unterschiedlichste Gruppen besaßen, welche sich um Verschlüsselungen und Entschlüsselungen kümmerten. Zu viele Menschen arbeiteten daran und ein weiteres Problem war, dass diese Gruppen nicht miteinander arbeiteten. Jede der Gruppen brachte Ergebnisse und seine eigenen Verschlüsselungen und Entschlüsselungen. Noch ein Problem, welches Deutschland besaß, war, dass keine wirklichen Verschlüsselungs- und Entschlüsselungs-Maschinen existierten. Im Vergleich zu den Amerikanern und Engländern bauten die Deutschen schlechte Maschinen. Hauptsächlich entschlüsselte und verschlüsselte Deutschland handschriftlich, was den anderen Ländern einen wahnsinnigen Vorteil gab, denn die Deutschen waren zu langsam. Durch die Lorenz-Verschlüsselungsmaschine erhofften sich die Deutschen einen Vorsprung, da sie sich sicher waren, dass diese Maschine stärker ist als viele andere. Allerdings hatten die Engländer nach geringem Zeitaufwand kein Problem jedes Gespräch zwischen den Deutschen abzuhören. Was die Deutschen nicht wussten, war, dass ihre entwickelte Methode „Enigma“ hätte verbessert werden können. Es gab nämlich nur einen kleinen Fehler, welcher nicht passiert wäre, wenn die deutschen Entschlüsselungs- und Verschlüsselungs-Gruppen miteinander gearbeitet hätten.
+            <br>
+            <br>
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
+        <p class="teaser">
+            Was war das Ziel der Verschlüsselung?
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
+        <p class="content">
+            Dass eigentliche Ziel der Verschlüsselung war, dass Kriegspläne in Sicherheit bleiben und nicht entdeckt werden. Genauso wenig sollten die Änderungen in Kriegsplänen ohne Mithörer mitgeteilt werden können. Sowie spontane Pläne, welche mitgeteilt werden müssen. Private Unterhaltungen zwischen Hitler und seinen Komplizen mussten auch geheim gehalten werden.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

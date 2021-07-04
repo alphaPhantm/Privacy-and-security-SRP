@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,22 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            Fortschritt.
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="teaser">
+            Im Bereich Datenschutz und neue Technologien
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
+        <p class="content">
+            Unsere Zukunft ist ein Thema, welches viele Menschen beschäftigt. Aktuelle Themen wie der Klimawandel beschäftigen uns, genauso wie die Digitalisierung, welche in der Zukunft hoffentlich endlich glückt. Trotz all des Leids, welches uns Forscher vorhersagen, können wir zuversichtlich in die Zukunft schauen. Denn nicht nur wir kämpfen für eine gelungene Zukunft. Viele Unterstützter des Datenschutzes, vor allem Datenschutzexperten werden weiter darum kämpfen, dass riesige Konzerne uns nicht weiter ausbeuten. Die DSGVO wird sich auch weiterhin in der Zukunft für unseren Datenschutz einsetzen und die Gesetze darin uns beschützen. Erst vor einiger Zeit wurde ein Gesetz für das „NetzDG“ erlassen, dass diese auch in Zukunft dazu gezwungen sind, härter gegen Hass, Terror und weiteres auf Sozialen Medien vorzugehen. In Zukunft muss der Fortschritt bezüglich des Datenschutzes grösser werden, vor allem in der Politik. Denn dort sieht man, dass einige Lücken vorhanden sind. Das Ziel sollte sein, dass die Politiker sich mehr mit den Datenschutz-Experten bzw. Datenschutzbehörden befassen und mit ihnen zusammenarbeiten. Soweit der Datenschutz besser wird und voranschreitet, so wird auch die Digitalisierung schneller und besser werden. Allerdings im Gegenzug bedeutet das, dass die Digitalisierung nicht ohne den Datenschutz funktionieren wird, denn soweit Technologien inbegriffen sind, so ist es auch der Datenschutz. Der Fortschritt im Bereich „Smart Home“ wird ebenfalls immer grösser, denn es wird immer öfter danach gefragt und wird stetig beliebter. „Smart Home“ Artikel wie Alexa, ein Sprachassistent, werden schon heute immer besser, allerdings noch nicht was den Datenschutz betrifft. Ein weiterer Faktor, welcher in Zukunft sicherlich mehr Fortschritt erreichen wird, sind mehr Aufklärungsmöglichkeiten für Erwachsene sowie auch für Kinder. Kinder werden zwar früher digitalisiert, allerdings müssen auch diese erst lernen mit Technologien umzugehen. Doch auch wenn wir uns Hoffnungen bezüglich des Datenschutzes machen und viele Forscher uns voraussagen, dass dieser besser wird, so gibt es Aspekte, welche lange brauchen bis sie sich verbessern. Schon jetzt wird versucht große Konzerne zurückzudrücken, allerdings ist das schwierig, da diese stetig wachsen und auch weiterhin versuchen ihr Geld durch uns zu machen. Werden wir in Zukunft also den Datenschutz vernachlässigen, werden wir kaum einen Fortschritt sehen. Werden wir uns nicht für Datenschutz einsetzen, werde wir den anderen ohne Misstrauen vertrauen, so werden die Firmen weiter manipulieren und ausnutzen.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,19 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Was macht einen Überwachungsstaat aus
+            Wer sammelt unsere Daten?
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
+        <p class="content">
+            Wer sich für seine persönlichen Daten interessiert, fragt sich nun sicherlich was mit ihnen passiert und wer die Daten sammelt. Hierzu könnte man die Gegenfrage stellen, wer sammelt meine Daten denn nicht? Gerade im heutigen Zeitalter sind Daten sehr wichtig geworden. Der Nachfolger des schwarzen Goldes. Nicht für die Polizei, sondern auch für Firmen, Internetseiten, Suchmaschinen, Apps und vieles mehr. Selbst Handys sammeln Daten, denn diese werden gesammelt, um die Handyqualität besser zu machen bzw. zu verbessern. Nicht nur die uns bekannten Internet-Giganten sammeln unsere Daten, auch kleine und unscheinbare Apps oder Spiele machen das. Aber wie erwähnt, auch die Internet Giganten, wie Google, Facebook, Amazon und Microsoft sammeln unsere Daten. Google verwendet unsere Daten und zeigt uns Werbung, bzw. schlägt uns gewisse Seiten zuerst vor, welche am meisten auf uns und unseren Geschmack zutreffen. Facebook sammelt unsere Daten, um uns Freundschaftsvorschläge machen zu können oder um uns auf Facebook Werbung zu schalten, welche wir uns am besten lange ansehen und schlussendlich vielleicht sogar kaufen. Genauso funktioniert dieser Vorgang auch bei Amazon oder Microsoft und weiteren Konzernen. Das Muster dahinter ist es, uns anzubieten, was die Firmen denken, dass wir es sehen oder sogar haben wollen. Mit den Konzernen hört es aber nicht auf, auch Apps sammeln unsere Daten, um entweder unser Spielerlebnis zu verbessern oder auch uns Werbung schalten zu können, bei welcher wir uns begeistern lassen, das beworbene Produkt zu kaufen. Fast jeder der unsere Daten „Online“ sammelt, zielt darauf ab uns Werbung zu schalten, damit wir uns schlussendlich von dem Produkt begeistern lassen und es kaufen. Wer glaubt hier hört das Sammeln von Daten auf, den muss ich enttäuschen. Es geht weiter auf der Liste, denn nicht nur Konzerne, App-Hersteller und Co. sammeln unsere Daten, auch Regierungen in großer oder geringer Form. In Deutschland ist das Sammeln der Daten noch nicht so populär wie in China, dort wird jede kleine Information über eine Person gesammelt. China besitzt für die Datensammlung extra dafür errichtete Datenzentren. In Deutschland werden unsere Daten für die Polizei gesammelt, fährt jemand zu schnell oder über eine rote Ampel, wird von dieser Person ein Foto gemacht und die Person anhand des Autos bzw. des Autokennzeichens ausfindig gemacht und bekommt einen Strafzettel. Das deutsche System sammelt also unsere Daten, um die Sicherheit zu steigern, genauso wie bei der biometrischen Gesichtserkennung. Um allgemeiner zu werden: Daten werden überall gesammelt, wo ich Informationen über mich preisgeben muss. Egal wo ich mich einlogge, egal was ich im Internet mache, es hinterlässt Spuren und diese werden gesammelt.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Amerika anhand Edward Snowdens Enthüllung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

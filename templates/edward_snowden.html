@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,137 +51,22 @@
 
 </header>
 
-
 <body>
 
-<! Was macht einen Überwachungsstaat aus>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Was macht einen Überwachungsstaat aus
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/was_macht_einen_ueberwachungsstaat_aus" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist China ein Überwachungsstaat>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist China ein Überwachungsstaat
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_china_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Ist Deutschland ein Überwachungsstaat?>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Ist Deutschland ein Überwachungsstaat?
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/ist_deutschland_ein_ueberwachungsstaat" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Politische Rahmenbedingungen damit digitale Sicherheit und Privatsphäre gegeben sind und warum sie oft nicht umgesetzt werden>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Politische Rahmenbedingungen
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/politische_rahmenbedingungen" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Amerika anhand Edward Snowdens Enthüllung>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
             Amerika anhand Edward Snowdens Enthüllung
         </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/edward_snowden" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Resümee>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Resümee
+        <p class="content">
+            Der Name Edward Snowden ist oben schon einmal gefallen. Er ist eine Persönlichkeit, die 2013 die NSA-Affäre durch seine Enthüllungen zu “Überwachungs- und Spionagepraktiken von Geheimdiensten” auslöste, bekannt geworden ist. Doch inwiefern ist das mit dem Datenschutz verknüpft? Edward Snowden war ein bekannter und beliebter NSA Mitarbeiter, für ihn steht der Datenschutz schon immer an erster Stelle. Nach einiger Zeit stellte er fest, dass die NSA nicht nur zum Nutzen der Bürger und Bürgerinnen Amerikas arbeitet. In diesem Teil beginnt einer der größten Skandale im Kontext der Spionage. Amerika ist nun bekannt für die 2013 aufgedeckte „Globale Überwachungs- und Spionageaffäre“. Über Jahre übermitteln Länder und Firmen den Vereinigten Staaten von Amerika sensible Informationen von Einwohnern der eigenen Länder. Betroffene Länder sind Spanien, Frankreich und insbesondere Deutschland. Es gibt noch viele weitere Länder, welche von den USA ausgenutzt worden sind, damit diese an für sie entscheidende Informationen kommen. Dennoch ist auch bekannt, dass einige der Länder die Informationen freiwillig weitergegeben haben, damit diese entweder im Gegenzug auch Informationen oder sogar Geld bekamen. Und so verteilte die NSA auf der ganzen Welt ihre eigenen Rechenzentren, einige tausend in jedes betroffene Land. Diese Rechenzentren waren allerdings speziell, denn sie wurden mit Schadsoftware infiziert, die dann weitergegeben wurde. So infizierten sich technische Geräte mit dieser Schadsoftware und damit bekam die NSA was sie wollte. Sie konnten nachlesen was geschrieben wird, Emails durchlesen und weiteres. Es ist auch bekannt, dass für die Politik wichtige Menschen belauscht worden sind mit Wanzen, welche heimlich befestigt worden sind, wo sie am meisten Nutzen erbringen. Auch Bundeskanzlerin Angela Merkel wurde von der NSA für eigennützige Wissensbegierde abgehört. Unter anderem hat die NSA auch Daten und persönliche Information von Apple, Facebook und Google abgegriffen mit einer Software namens PRISM. Wie man also erkennen kann, hat die USA hinter dem Rücken vieler Länder spioniert und überwacht. Wenn wir nun auf Edward Snowden zurückkommen, er spielt in dieser ganzen Geschichte eine riesige Rolle. Er brachte ans Tageslicht, was die NSA hinter dem Rücken halten wollte und verriet diese damit. Nun wurden die Datenschutzbehörden der ganzen Welt wach, jemand musste handeln und am besten sofort. Ein riesiger Prozess bildete sich, indem die USA durch Zusammenarbeit mit anderen Ländern einen „Zivilrechtspakt“ bildete. Nun mussten die Vereinigten Nationen das Vertrauen, das nun stark beschädigt ist, wiederherstellen. Mit dem sogenannten „Zivilrechtspakt“ kann Amerika in einen Prozess der Besserung reingerückt werden.
+            <br>
+            <br>
+            Es ist denkbar, dass dieser Akt von Edward Snowden auch Nachteile mit sich bringt. Laut der NSA soll durch die Veröffentlichung der Art und Weise wie spioniert wird, einige Terrorgruppen verloren gegangen sein. Da diese nun wissen in welcher Form und wie die USA sie ausspioniert hat.
         </p>
-
     </div>
 
-    <div class="flexelement">
-        <form action="/ggk/ueberwachungsstaaten/resuemee" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
 

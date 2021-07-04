@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy and security</title>
+    <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
+            <span>Privacy and security</span>
+        </div>
+
+        <div class="navItems">
+            <ul>
+                <li><a class="nav-item" href="{{url_for('home') }}">home</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('it') }}">informatik</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('ggk') }}">history and civics</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('me') }}">about me</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li>
+                    <div class="close-btn">
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="wrapper">
+                        <div class="search-btn">
+                            <span class="fas fa-search"></span>
+                        </div>
+                        <div class="search-data">
+                            <input type="text" required>
+                            <div class="line"></div>
+                            <label>Type to search..</label>
+                            <span class="fas fa-search"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="../static/scripts/searchButton.js"></script>
+
+</header>
+
+<body>
+
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Politische Rahmenbedingungen.
+        </p>
+        <p class="content">
+            Um diese Sicherheit und (digitale) Privatsphäre bieten zu können, muss es allerdings Regelungen geben. Größtenteils findet man diese in der Politik, soweit diese schon vorhanden sind. Diese Regelungen bzw. Bedingungen sind eigentlich relativ simpel, aber allerdings teilweise noch nicht ganz ausgereift oder werden von anderen nicht angenommen. Zuallererst ist die Voraussetzung eine funktionierende und stabile Regierung, ohne diese Voraussetzung wären alle anderen Faktoren relativ überflüssig. Diese Regierung muss die Demokratie schützen und unterstützen, denn ohne eine Demokratie haben Bürger und Bürgerinnen kein Recht sich über solch ein Thema zu beschweren. Ein weiterer Aspekt sind die Menschen, welche in der Regierung arbeiten. Setzen diese sich aktiv für die digitale Sicherheit und den Datenschutz der Bürger ein oder ist dieses Thema eher unrelevant für sie? Natürlich gibt es Behören, die sich aktiv für unseren Datenschutz einsetzten. Doch der wichtigste Punkt an dieser Sache ist, dass die Politiker die Datenschutzbehörden wahrnehmen und ihnen zuhören. Denn ohne die Politik, welche diese Gesetze verabschiedet, können die Datenschutzbehörden nichts machen. Auch müssen die gebildeten und durchgesetzten Gesetzte beachtet und kontrolliert werden. Wenn Gesetze existieren, die einfach nur „existieren“, braucht es diese gar nicht (“Nulla poena sine lege”). Gegebenenfalls sollten Menschen, die gegen diese Gesetzte verstoßen, auch bestraft werden. Die Politik kann viel bewirken, allerdings wenn niemand miteinander arbeitet oder das Thema gar ignoriert wird und nicht mal als Problem betrachtet wird, dann scheitert jeglicher Versuch der Bevölkerung etwas zu bieten, was eigentlich selbstverständlich sein sollte. Um es aber hier nicht nur auf ein Land zu beschränken, es müssen alle zusammen an diesem Problem arbeiten und es ernst nehmen. Es ist verlockend mit großen Firmen zu kooperieren und dann daraus Profit zu schlagen, sowie die USA es gemacht hat. Allerdings auch dies kommt irgendwann ans Tageslicht. Die Weltbevölkerung bzw. die Regierungen aller Welt besitzen die Aufgabe, uns Bürgern eine digitale Sicherheit zu bieten. Spezialisten des Datenschutzes haben viele Lösungen und Vorschläge. Wenn sich die Regierungen und die darin enthaltenen Politiker zusammentun und dann gemeinsam Gesetze erschaffen, wie es schon einmal nach dem Snowden Fall vorkam, würden sich viele Probleme erledigen oder wenigstens simpler werden.  Gemeinsam sollten Grundsätze gebildet werden, welche dann möglichst auf der ganzen Welt umgesetzt werden. Datenschutzbehörden besitzen bereits solche Grundsätze, hier aufgelistet:
+            <br>
+            <br>
+            1.	Erforderlichkeitsgrundsatz
+            Daten dürfen nur erhoben werden, wenn eine Aufgabe ohne diese Daten nicht vollständig erfüllt werden kann.
+            <br>
+            <br>
+            2.	Zweckbindungsgrundsatz
+            Dieser soll sicherstellen, dass Daten nur für den Zweck verarbeitet werden, für den sie erhoben worden sind. (Zweckidentität)
+            <br>
+            <br>
+            3.	Vertraulichkeit
+            Dies ist die Eigenschaft einer Nachricht, nur für einen beschränkten Empfängerkreis vorgesehen zu sein. Weitergabe und Veröffentlichung sind nicht erwünscht.
+            <br>
+            <br>
+            Diese vermeintlich einfachen Grundsätze sollten umgesetzt werden, allerdings konnten diese bis heute nicht komplett umgesetzt werden. Ein weiterer Faktor wäre auch die Offenheit der Regierungen was mit unseren Daten geschieht und für was sie verwendet werden. So können illegale Aktionen vermieden werden. Dies bedeutet aber, dass für Regierungen nicht der Profit an erster Stelle stehen darf, sondern das Wohl der Menschen. Damit komme ich zu den Problemen, welche hinter den politischen Rahmenbedingungen stecken und warum sie schwer umzusetzen sind. Internetgiganten wie Google, Facebook oder Amazon machen Regierungen verlockende Angebote. Da es in vielen Ländern oft an Geld fehlt wird den geforderten Vereinbarungen, Daten an diese Giganten weiterzugeben, zugestimmt. Wir Bürger können oft nichts, außer protestieren, dagegen unternehmen, wenn diese illegalen Machenschaften vonstattengehen. Zudem ist die Offenheit der Regierung oft beschränkt und kurzgehalten. Ohne Menschen, wie Edward Snowden, würde die ganze Welt noch im Dunklen sitzen.
+        </p>
+    </div>
+
+
+</div>
+
+</body>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>general</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>informatic</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>history and civics</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>about me</h4>
+                <ul>
+                    <li><a href="#">Me in this project</a></li>
+                </ul>
+                <br>
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="https://github.com/alphaPhantm"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <hr>
+        <div class="text">
+            <a class="out">© 2021 </a><a class="inner">Noah Kessinger</a><a class="out"> All rights reserved.</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>
