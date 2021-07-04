@@ -302,8 +302,10 @@ def calculate():
         ringPosW2 = request.form["ringPosW2"]
         ringPosW3 = request.form["ringPosW3"]
         steckerbrett = request.form["steckerbrett"]
-
-        erg = control.control(id, text, shift, passPhrase, ukw, walze1, walze2, walze3, walzenPos, ringPosW1, ringPosW2, ringPosW3, steckerbrett)
+        try:
+            erg = control.control(id, text, shift, passPhrase, ukw, walze1, walze2, walze3, walzenPos, ringPosW1, ringPosW2, ringPosW3, steckerbrett)
+        except:
+            return render_template("error.html")
         print(erg)
 
     return render_template("result.html", erg=erg)
