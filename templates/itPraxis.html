@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -12,7 +11,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
+            <img src="../static/icons/LogoIcon.svg" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -51,51 +50,90 @@
 
 </header>
 
+
 <body>
+
 
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            Caesar Chiffer.
+            caesar chiffre
         </p>
-        <p class="content">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            <br>
-            <br>
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet.
-        </p>
+
     </div>
 
     <div class="flexelement">
-        <div class="svg-bubbles">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <defs>
-                    <filter id="gooey">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
-                        <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
-                    </filter>
-                </defs>
-            </svg>
-        </div>
+        <form action="/it/praxis/caesar_cipher" method="post">
+            <button class="button-1" name="rsa" type="submit">
+                <img src="../static/icons/sec.png" alt="">
+                <span>Ausprobieren</span>
+            </button>
+        </form>
+    </div>
 
-        <form action="/it/praxis/caesar_cipher/algorithmus" method="post">
-            <input type="hidden" name="pageNumber" value="0">
-            <button id="gooey-button">
-                Teste es aus ...
-                <span class="bubbles">
-            <span class="bubble"></span>
-            <span class="bubble"></span>
-            <span class="bubble"></span>
-            <span class="bubble"></span>
-            <span class="bubble"></span>
-            <span class="bubble"></span>
-            <span class="bubble"></span>
-            <span class="bubble"></span>
-            <span class="bubble"></span>
-            <span class="bubble"></span>
-        </span>
+</div>
+
+<hr class="content-spacer">
+
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Vigener Ciffer
+        </p>
+
+    </div>
+
+    <div class="flexelement">
+        <form action="/it/praxis/vigenere_cipher" method="post">
+            <button class="button-1" name="rsa" type="submit">
+                <img src="../static/icons/sec.png" alt="">
+                <span>Ausprobieren</span>
+            </button>
+        </form>
+    </div>
+
+</div>
+
+<hr class="content-spacer">
+
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Skytale
+        </p>
+
+    </div>
+
+    <div class="flexelement">
+        <form action="/it/praxis/skytale" method="post">
+            <button class="button-1" name="rsa" type="submit">
+                <img src="../static/icons/sec.png" alt="">
+                <span>Ausprobieren</span>
+            </button>
+        </form>
+    </div>
+
+</div>
+
+<hr class="content-spacer">
+
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Enigma M3
+        </p>
+
+    </div>
+
+    <div class="flexelement">
+        <form action="/it/praxis/enigma" method="post">
+            <button class="button-1" name="rsa" type="submit">
+                <img src="../static/icons/sec.png" alt="">
+                <span>Ausprobieren</span>
             </button>
         </form>
     </div>

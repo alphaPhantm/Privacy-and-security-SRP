@@ -26,9 +26,3 @@ def skytale_decrypt(text, umfang):
     umfang = length/umfang
     plaintext = skytale_encrypt(text, umfang)
     return plaintext
-
-
-if __name__ == '__main__':
-    print(skytale_encrypt("Mein Name ist Noah", 4))
-    print(skytale_decrypt(skytale_encrypt("Mein Name ist Noah!", 4), 4))
-    print(skytale_decrypt("M etaeN  hiaiN nmso!", 4))
