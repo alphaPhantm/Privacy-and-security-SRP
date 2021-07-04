@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy and security</title>
+    <link rel="stylesheet" href="../static/styles/main_style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../static/icons/LogoIcon.svg" alt="">
+            <span>Privacy and security</span>
+        </div>
+
+        <div class="navItems">
+            <ul>
+                <li><a class="nav-item" href="{{url_for('home') }}">home</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('it') }}">informatik</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('ggk') }}">history and civics</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('me') }}">about me</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li>
+                    <div class="close-btn">
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="wrapper">
+                        <div class="search-btn">
+                            <span class="fas fa-search"></span>
+                        </div>
+                        <div class="search-data">
+                            <input type="text" required>
+                            <div class="line"></div>
+                            <label>Type to search..</label>
+                            <span class="fas fa-search"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="../static/scripts/searchButton.js"></script>
+
+</header>
+
+
+<body>
+
+<! Definitionen>
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Definitionen
+        </p>
+
+    </div>
+
+    <div class="flexelement">
+        <form action="/it/hacking_cracking/definitionen" method="post">
+            <button class="button-1" name="rsa" type="submit">
+                <img src="../static/icons/sec.png" alt="">
+                <span>Learn more ...</span>
+            </button>
+        </form>
+    </div>
+
+</div>
+<hr class="content-spacer">
+
+<! Hacking Techniken>
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Hacking-Techniken
+        </p>
+
+    </div>
+
+    <div class="flexelement">
+        <form action="/it/hacking_cracking/hacking_techniken" method="post">
+            <button class="button-1" name="rsa" type="submit">
+                <img src="../static/icons/sec.png" alt="">
+                <span>Learn more ...</span>
+            </button>
+        </form>
+    </div>
+
+</div>
+<hr class="content-spacer">
+
+<! Brute Force>
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Brute Force
+        </p>
+
+    </div>
+
+    <div class="flexelement">
+        <form action="/it/hacking_cracking/brute_force" method="post">
+            <button class="button-1" name="rsa" type="submit">
+                <img src="../static/icons/sec.png" alt="">
+                <span>Learn more ...</span>
+            </button>
+        </form>
+    </div>
+
+</div>
+<hr class="content-spacer">
+
+<! Häufigkeitsanalyse>
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Häufigkeitsanalyse
+        </p>
+
+    </div>
+
+    <div class="flexelement">
+        <form action="/it/hacking_cracking/haeufigkeitsanalyse" method="post">
+            <button class="button-1" name="rsa" type="submit">
+                <img src="../static/icons/sec.png" alt="">
+                <span>Learn more ...</span>
+            </button>
+        </form>
+    </div>
+
+</div>
+<hr class="content-spacer">
+
+<! Schwachstelle Mensch >
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Schwachstelle Mensch
+        </p>
+
+    </div>
+
+    <div class="flexelement">
+        <form action="/it/hacking_cracking/schwachstelle_mensch" method="post">
+            <button class="button-1" name="rsa" type="submit">
+                <img src="../static/icons/sec.png" alt="">
+                <span>Learn more ...</span>
+            </button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>general</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>informatic</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>history and civics</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>about me</h4>
+                <ul>
+                    <li><a href="#">Me in this project</a></li>
+                </ul>
+                <br>
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="https://github.com/alphaPhantm"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <hr>
+        <div class="text">
+            <a class="out">© 2021 </a><a class="inner">Noah Kessinger</a><a class="out"> All rights reserved.</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>

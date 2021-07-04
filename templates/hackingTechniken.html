@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy and security</title>
+    <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
+            <span>Privacy and security</span>
+        </div>
+
+        <div class="navItems">
+            <ul>
+                <li><a class="nav-item" href="{{url_for('home') }}">home</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('it') }}">informatik</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('ggk') }}">history and civics</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('me') }}">about me</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li>
+                    <div class="close-btn">
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="wrapper">
+                        <div class="search-btn">
+                            <span class="fas fa-search"></span>
+                        </div>
+                        <div class="search-data">
+                            <input type="text" required>
+                            <div class="line"></div>
+                            <label>Type to search..</label>
+                            <span class="fas fa-search"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="../static/scripts/searchButton.js"></script>
+
+</header>
+
+<body>
+
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Hacking-Techniken.
+        </p>
+        <p class="teaser">
+            Trojaner
+        </p>
+        <p class="content">
+            Trojaner kommt aus der griechischen Sagenwelt, ein Trojanisches Pferd sieht von außen unscheinbar aus, doch wird dieses geöffnet werden böse Überraschungen erscheinen. Genauso funktioniert auch der Trojaner, er zählt zu einem der unerwünschtesten schädlichen Programmen. Meist wird ein Trojaner auf einen PC geschleust oder aus Versehen heruntergeladen, er erscheint einem als ein nützliches Programm. Öffnet man dieses, ist es normal bedienbar doch im Hintergrund arbeitet der Trojaner und so können Programme auf den Rechner gelangen, welche eher unerwünscht sind. Das Schlimme daran ist, dass sich das Schadprogramm nur sehr schwer wieder entfernen lässt und nicht deaktiviert werden kann.
+        </p>
+        <br>
+        <p class="teaser">
+            Wurm
+        </p>
+        <p class="content">
+            Ein Computerwurm ist ein Programm, was als Skriptdatei auf dem Rechner erscheint. Diese Skriptdatei infiziert den ganzen Computer, denn sobald diese geöffnet worden ist, vervielfältigt der Wurm sich. Oft werden die Würme über Netzwerke oder Wechselmedien, wie USB-Sticks oder sonstiges verbreitet. Ein Wurm muss das Protokoll eines jeweiligen Netztes kennen und nimmt darauf für ihn wichtige Daten. Im Gegensatz zum Trojaner, welcher aufgerufen werden muss, um aktiv zu werden, macht dies der Wurm von ganz allein. Er arbeitet unter einem unscheinbaren Namen im Hintergrund, das System auf welchem er dann zum aktuellen Zeitpunkt ist, verändert dieser so, dass der Wurm bei jedem Neustart oder Hochfahren aufgerufen wird. Ein Wurm greift dort zu wo Sicherheitsprobleme existieren, im Fall des Wurmes sind dies häufig Netzwerkdienste, welche den Fehler machen schlechte oder gar keine Passwörter zu benutzten. Design- und Programmierfehler in Netzwerkdiensten oder Anwenderprogrammen gehören auch zu den Spezialitäten von Würmern. Hier können durch E-Mails weitere Würmer an die E-Mail-Adressen versenden, welche der Wurm findet. Durch das schnelle Ausbreiten und die Schwierigkeit den Wurm erst zu entdecken, gehört dieser zu den gefährlichsten Malware Programmen. Würmer richten einen immensen Schaden an. Durch den Angriff auf Fehler oder Lücken in Netzwerken verbraucht dieser hohe Netzwerkressourcen. Wenn ein Wurmanfall geringen Schaden zufügt, kann dies zu Überlastung von Servern führen, im schlimmsten Fall zu Server-Ausfällen.
+        </p>
+        <br>
+        <p class="teaser">
+            Virus
+        </p>
+        <p class="content">
+            Der Computervirus ist jedem ein Begriff und gefürchtet, allerdings sind Computerviren aktuell nicht die schlimmsten Schadprogramme. Ein Virus gelangt meist durch Wechselmedien, Datenträgeren oder weiteres auf den Rechner. Der Virus kann sich in Computerprogramme einschleusen und fortpflanzen. Allerdings ist das komplette Infizieren des Computers für den Virus schwieriger, da dieser erst aufgerufen werden muss, um sich entfalten zu können und andere Programme infizieren zu können. Doch wenn die infizierte Anwendung geöffnet wird kann der Virus die Hardware, sowie das Betriebssystem und die Software verändern. Ein Virus kann Dateien entfernen, allerdings hängt das von den Funktionen des Virus ab. Wie erwähnt richten Viren im Gegensatz zu Würmern wenig Schaden an. Dennoch hinterlassen sie ihre Spuren, der Virus könnte angegriffene Dateien über einen Zeitraum blockieren und Daten zerstören. Allerdings ist das Zerstören von Daten ineffektiv, da der Virus sich so selbst abbauen würde.
+        </p>
+        <br>
+        <p class="teaser">
+            Sniffer
+        </p>
+        <p class="c">
+            „Sniffer“ ist eine Software, die den Datenverkehr in einem Netzwerk aufnehmen, analysieren und meistens sogar auswerten. Diese Software wird in der Netzwerkanalyse verwendet und gilt auch als eine Hacking-Technik. Sniffer können so Passwörter ausspionieren oder Daten, welche übertragen werden, sichten.
+        </p>
+        <br>
+        <p class="teaser">
+            Keylogger
+        </p>
+        <p class="content">
+            Der Keylogger ist eine Hard- und Software, welche verwendet wird, um private bzw. vertrauliche Daten mitlesen zu können. Zudem können Keylogger Eingaben des Benutzers aufzeichnen. Ein Software-Keylogger kann sich zwischen das Betriebssystem und die Tasten schalten, dort fängt er dann die Eingaben des Benutzers ab oder liest vertrauliche Daten mit. Auch gibt es eine Hardware Version des Keyloggers, hier muss eine Person (der Schädiger) dem Opfer den Keylogger an der Hardware befestigen, um mitlesen oder aufzeichnen zu können.
+        </p>
+        <br>
+        <p class="teaser">
+            Backdoor
+        </p>
+        <p class="content">
+            Backdoors gibt es häufig mit Trojanern zusammen. Backdoors ist so ein Teil einer Software, welcher dem User ermöglicht durch Umgehungen in ein Programm zu kommen. Dies wird oft bei Programmen, welche zugriffsgesichert sind oder geschützt werden, durchgeführt, um hinter dessen Fassade zu kommen. Trojaner bringen Backdoors häufig mit sich oder installieren sie sich selbst, auch Backdoors verstecken sich meistens unter einer unscheinbaren Fassade. Eine Backdoor zu finden oder sich davor zu schützen ist oft schwierig, denn selbst mit Fachkenntnissen sind diese oft schwer zu erkennen und es bräuchte einen riesigen Zeitaufwand, um das Programm zu finden.
+        </p>
+        <br>
+        <p class="teaser">
+            Exploit
+        </p>
+        <p class="content">
+            Exploit ist ein kleines Schadprogramm, welches großen Schaden anrichten kann. Dieses Schadprogramm sucht sich Sicherheitslücken oder Fehlfunktionen von Hilfs- und Anwendungsprogrammen heraus, um dann diese auszunutzen. Das Exploit Schadprogramm verschafft sich dann so durch programmtechnische Möglichkeiten Zugriff auf den PC und Manipuliert PC-Aktivitäten. Auch kann das Programm im schlimmsten Fall Server lahmlegen.
+        </p>
+    </div>
+
+
+</div>
+
+</body>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>general</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>informatic</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>history and civics</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>about me</h4>
+                <ul>
+                    <li><a href="#">Me in this project</a></li>
+                </ul>
+                <br>
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="https://github.com/alphaPhantm"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <hr>
+        <div class="text">
+            <a class="out">© 2021 </a><a class="inner">Noah Kessinger</a><a class="out"> All rights reserved.</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>

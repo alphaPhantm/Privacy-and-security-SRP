@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,75 +51,41 @@
 
 </header>
 
-
 <body>
 
-<! C.I.A Prinzip>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            c.i.a prinzip
+            Quantencomputer
         </p>
-
+        <p class="teaser">
+            Was ist ein Quantencomputer?
+        </p>
+        <p class="content">
+            Ein Quantencomputer ist ein Prozessor, welcher die Gesetze der Quantenmechanik nutzt. Er arbeitet, im Unterschied zu herkömmlichen Computern, nicht auf Basis elektrischer, sondern quantenmechanischer Zustände.
+        </p>
+        <br>
+        <p class="teaser">
+            Qubits
+        </p>
+        <p class="content">
+            Die In der heutigen Informatik verwendeten Bits sind lediglich Maßeinheiten. Im Gegensatz zu ihnen gibt es Qubits wirklich, z.B. als Photonen. Sie entstehen durch Bestrahlen eines Kristalls mit Laserimpulsen einer bestimmten Energie. Der Kristall erzeugt dabei zwei Photonen, die durch den gemeinsamen Entstehungsprozess miteinander verbunden („verschränkt“) sind. Beide Lichtteilchen (Qubits) erhalten den eigenen und den Zustand des jeweils anderen. Es handelt sich um eine zusammenhängende Überlagerung, die sich durch eine Messung als 0 oder 1 interpretieren lassen.
+        </p>
+        <br>
+        <p class="teaser">
+            Spukhafte Fernwirkung
+        </p>
+        <p class="content">
+            Eine logische Schlussfolgerung ist, dass wenn bei der Messung des einen Qubits eine 1 herauskommt, dass dann bei der Messung des anderen eine 0 herauskommt. Dabei ist es auch egal wie weit diese Teilchen voneinander entfernt sind. Der Name spukhafte Fernwirkung stammt von dem Physiker Albert Einstein. Ihn brachte diese an die Verzweiflung, da es der Relativitätstheorie widerspricht.
+            <br>
+            <br>
+            Als Beispiel zur spukhaften Fernwirkung und Quantenverschränkung eignet sich gut eine Mutter-Kind-Beziehung. Da ein Kind 9 Monate im Bauch der Mutter ist, und auch von dieser auf die Welt gebracht wird, ist es schon fast selbstverständlich, dass das Kind und die Mutter eine gute Beziehung haben. Somit wird die Mutter es Spüren, wenn es ihrem Kind im Kindergarten nicht gut geht, obwohl sie keine Möglichkeit hat dies irgendwoher zu wissen.
+        </p>
     </div>
 
-    <div class="flexelement">
-        <form action="/it/sicherheit/cia" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
-<hr class="content-spacer">
-
-<! Verschlüsselung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Verschlüsselung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/verschluesselung" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Sicherheitskonzepte>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Sicherheitskonzepte
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/sicherheitskonzepte" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
 
 </body>
 

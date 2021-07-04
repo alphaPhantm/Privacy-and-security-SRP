@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,77 +51,43 @@
 
 </header>
 
-
 <body>
 
-<! C.I.A Prinzip>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            c.i.a prinzip
+            Der Tod von Datenschutz und Sicherheit in jeglicher Hinsicht?
         </p>
-
+        <p class="content">
+            Da die Quantencomputer eine enorme Rechenleistung haben, könnten sie die bisher verwendeten Verschlüsselungsalgorithmen ohne riesigen Zeitaufwand knacken. Der Quantencomputer mit dem Namen Jiuzhang auf Photonenbasis, soll anscheinend fast 100 Billionen Mal schneller rechnen als der leistungsstärkste Supercomputer. So können Quantencomputer Verschlüsselungen in wenigen Tagen bis Jahre knacken, wofür Supercomputer heutzutage Billionen von Jahren brauchen.
+        </p>
+        <br>
+        <p class="teaser">
+            Elliptische Kurven Kryptologie (ECC)
+        </p>
+        <p class="content">
+            Die Grundlage der Elliptische Kurven Kryptologie (englisch, Eliptic curve cryptography) ist eine Falltür-Funktion (Trapdoorfunktion). Eine Falltürfunktion ist eine Funktion, bei welcher man einfach von A auf B kommt, es aber nahezu unmöglich ist von B auf A zu kommen. Das gleiche Prinzip wird auch bei dem heutzutage oft verwendeten RSA Standard verwendet. Hier werden zwei Primzahlen miteinander multipliziert. Zwei Zahlen zu multiplizieren ist sehr einfach. Doch diese neue Primzahl zurück in ihren Ursprung zu zerlegen, bedarf hoher Rechenleistung. Die Elliptische Kurven Kryptologie hat den immensen Vorteil, dass man, um eine gleich große Sicherheit zu erreichen, einen wesentlich kleineren Schlüssel verwenden kann. Das US-amerikanische Government benutzt, um dessen Geheimnachrichten zu verschlüsseln, einen ECC Verschlüsselungsalgorithmus mit der Schlüssellänge 384bits. In der folgenden Tabelle ist zu sehen, welche Sicherheitsstandards welcher Schlüsselgröße entsprechen. Die Elliptische Kurven Kryptologie ist nicht nur effizient, sondern auch extrem sicher und hält auch Quantencomputer über einen längeren Zeitraum bei entsprechender Schlüsselgröße stand. Vereinfacht dargestellt, hat es bei der EC einen Punkt p und q, welche man über eine Gerade verbindet. Dadurch erhält man einen “Schnittpunkt” r. Durch die Addition von p und q bekommt man R’. Durch die Symmetrie an der X-Achse, kann man das r invertieren und den Vorgang wiederholen. An der Stelle an welcher die Linie von p nach r‘ die Kurve schneidet invertiert man. Diesen Vorgang nennt man „mod p“. Führt man diesen Vorgang n mal durch, so bekommt man einen Endpunkt Z. Das Maximum an der X-Achse Der private Schlüssel ist n.
+        </p>
     </div>
-
     <div class="flexelement">
-        <form action="/it/sicherheit/cia" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
+        <form onclick="openIMG()">
+            <img id="image" src="{{ url_for('static', filename='pictures/ecc.svg') }}" alt="Eliptische Kurve">
+        </form>
+    </div>
+    <br>
+    <div class="flexelement">
+        <form onclick="openIMG()">
+            <img id="image" src="{{ url_for('static', filename='pictures/eccTable.png') }}" alt="Tabelle">
         </form>
     </div>
 
-</div>
-<hr class="content-spacer">
-
-<! Verschlüsselung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Verschlüsselung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/verschluesselung" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
-<hr class="content-spacer">
-
-<! Sicherheitskonzepte>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Sicherheitskonzepte
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/sicherheitskonzepte" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
 
 </body>
+
+<script src="{{ url_for('static', filename='scripts/openIMG.js') }}"></script>
 
 
 <footer class="footer">

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,75 +51,31 @@
 
 </header>
 
-
 <body>
 
-<! C.I.A Prinzip>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            c.i.a prinzip
+            Phishing, Social Engineering – Schwachstelle Mensch
         </p>
-
+        <p class="teaser">
+            Social Engineering
+        </p>
+        <p class="content">
+            Social Engineering wird häufig verwendet, um Menschen zu schaden. Bei dieser Form einer Betrugsmache wird der Mensch als eine Schwachstelle gesehen und nicht eine Sicherheitslücke in einem Netzwerk oder Software. Der Täter täuscht eine Identität vor, möglicherweise gibt dieser sich als Techniker, Bankmitarbeiter, PayPal Mitarbeiter oder Mitarbeiter einer Sozialen Medien App aus. Die Opfer versuchen kooperativ und hilfsbereit zu sein. Dadurch, dass der Täter vertrauenswürdig wirkt, geben die Opfer vertrauliche Informationen preis. So kann der Täter zum Beispiel Sicherheitsfunktionen aushebeln, Überweisungen tätigen lassen, Schadsoftware auf dem privaten Gerät oder Computer des Firmennetzwerks installieren und vieles mehr. Das Opfer ist sich gar nicht im Bewusstsein darüber, was genau es gerade dem Täter erzählt und schon ist es geschehen.
+        </p>
+        <br>
+        <p class="teaser">
+            Phishing
+        </p>
+        <p class="content">
+            „Phishing“ besteht aus zwei Wörtern, Passwort und fischen. Es geht beim „Phishing“ um das Angeln nach Passwörtern. Meistens besitzen die Täter eine Liste aus echten E-Mail-Adressen. Auch entwickeln die Täter eine Kopie der Webseite eines bekannten Dienstleisters. Nun müssen die Täter nur noch Mails verschicken, von diesen „bekannten“ Dienstleistern. Die meisten Menschen fallen auf solche Mails herein, da diese den echten Mails sehr ähnlichsehen und kaum zu unterscheiden sind. Haben die Opfer nun ihre Passwörter und ihren Benutzernamen eingegeben, beginnt das Paradies für den Täter. Die Täter kaufen im Internet ein und nehmen keine Rücksicht auf das Opfer, welches alles erst dann mitbekommt, wenn auf einmal Rechnungen existieren von Produkten, die das Opfer selbst nicht gekauft hat.
+        </p>
     </div>
 
-    <div class="flexelement">
-        <form action="/it/sicherheit/cia" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
-<hr class="content-spacer">
-
-<! Verschlüsselung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Verschlüsselung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/verschluesselung" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Sicherheitskonzepte>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Sicherheitskonzepte
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/sicherheitskonzepte" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
 
 </body>
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,75 +51,24 @@
 
 </header>
 
-
 <body>
 
-<! C.I.A Prinzip>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            c.i.a prinzip
+            Brute Force.
         </p>
-
+        <p class="content">
+            Brute–Force ist Englisch und bedeutet „rohe Gewalt“. Die Brute–Force – Methode ist eine Informationstechnische Methode zum Lösen von Problemen, unter anderem in der Kryptologie. Dabei versucht man alle bzw. nahezu alle Möglichkeiten aus. In dem Teilgebiet der Kryptologie, die sich mit dem Entschlüsseln von Geheimtexten beschäftigt, kann die Brute–Force - Method dazu genutzt werden, einen Geheimtext, ohne die Kenntnis eines Schlüssels zu entschlüsseln. Dabei werden alle möglichen Schlüssel durchprobiert. Zur Beschleunigung kann die Reihenfolge der Probe-Schlüssel gegebenenfalls nach ihrer Wahrscheinlichkeit sortiert werden. Mit zunehmender Länge des Schlüssels steigt die Dauer und damit der Zeit- und/oder Kostenaufwand. Angriffe dieser Art auf moderne Verschlüsselungsalgorithmen bei Verwendung ausreichend langer Schlüssel sind in der Praxis aussichtslos, da der erforderliche Rechenaufwand (und damit Zeit- und/oder Kostenaufwand) zu groß wäre.
+            <br>
+            <br>
+            Eine spezielle Form der Brute–Force – Methode ist die Dictionary Attacke, welche sich für das Durchprobieren mit roher Gewalt an einer Passwort-Liste bedient. Diese könnte zum Beispiel aus einer Datenpanne eines großen Unternehmens kommen.
+        </p>
     </div>
 
-    <div class="flexelement">
-        <form action="/it/sicherheit/cia" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
-<hr class="content-spacer">
-
-<! Verschlüsselung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Verschlüsselung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/verschluesselung" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Sicherheitskonzepte>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Sicherheitskonzepte
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/sicherheitskonzepte" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
 
 </body>
 

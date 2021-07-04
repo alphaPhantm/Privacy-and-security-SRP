@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,75 +51,31 @@
 
 </header>
 
-
 <body>
 
-<! C.I.A Prinzip>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            c.i.a prinzip
+            Definitionen.
         </p>
-
+        <p class="teaser">
+            Hacking
+        </p>
+        <p class="content">
+            Das englische Verb dazu „to hack“, auf Deutsch in etwas eindringen. Hacker bezeichnet einen Menschen, welcher Freude daran hat Software und Hardware zu verändern. Der negative Kontext: Sicherheitslücken in fremden Systemen ausnutzen, um Informationen zu bekommen. Hacking ist die Suche nach Hard- oder Software technischen Schwachstellen oder Fehlern. Ursprünglich war der Begriff “Hacker” positiv belegt, leider jedoch wandelte sich dies über die Jahre ins Negative, den Einbrecher, der Einbruch in ein Computersystem oder Computernetze ausübt. Der heutzutage positive belegte Begriff ist der “Ethical-Hacker”.
+        </p>
+        <br>
+        <p class="teaser">
+            Cracking
+        </p>
+        <p class="content">
+            Gebrauch bei z.B Videospielen, mittlerweile gibt es Menschen, welche Spiele „cracken“ was so viel bedeutet wie, dass sie Zugriffsbarrieren entweder umgehen oder brechen. In diesem Kontext der Videospiele wird das Programm erst analysiert und danach versucht den Kopierschutz zu entfernen. So gelangen Spiele „kostenlos“ ins Internet.
+        </p>
     </div>
 
-    <div class="flexelement">
-        <form action="/it/sicherheit/cia" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
-<hr class="content-spacer">
-
-<! Verschlüsselung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Verschlüsselung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/verschluesselung" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Sicherheitskonzepte>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Sicherheitskonzepte
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/sicherheitskonzepte" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
 
 </body>
 

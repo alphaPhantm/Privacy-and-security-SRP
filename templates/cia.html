@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,75 +51,30 @@
 
 </header>
 
-
 <body>
 
-<! C.I.A Prinzip>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            c.i.a prinzip
+            c . i . a  Prinzip.
         </p>
-
+        <p class="content">
+            Für Unternehmen ist es besonders wichtig, dass nur autorisierte Benutzer ihre Daten anzeigen können. Dies bedeutet einerseits die Sicherheit gespeicherter Daten (data at rest), andererseits die Sicherheit von Informationen während der Datenübertragung (data in transit). In jedem Fall muss verhindert werden, dass vertrauliche Daten in unbefugte Hände gelangen. Auch wenn in den meisten Fällen die Vertraulichkeit der Daten gewährleistet sein muss, kann es erforderlich sein, Programme und Systemkonfigurationen vor unbefugten Personen geheim zu halten.
+            <br>
+            <br>
+            Unter der Integrität von Daten versteht man die Nachvollziehbarkeit von vorgenommenen Änderungen an diesen. Die Daten stehen immer bestimmten autorisierten Personen zur Verfügung. In täglichen Geschäftsprozessen können bzw. werden sich diese Daten ändern. Jegliche Änderungen an Dateien müssen von jeder autorisierten Person nachverfolgbar sein. Dies kann beispielsweise durch die Versionsverwaltung sichergestellt werden, die in vielen Repositories bereits enthalten ist. Zum Beispiel kann für Programm code GitHub oder GitLab verwendet werden. Die Versionsverwaltung ist dafür verantwortlich, alle Änderungen an Dokumenten oder Dateien in Archiven mit Zeitstempeln und Benutzerkennungen zu speichern. So kann man nachvollziehen, wer zu welchem Zeitpunkt welche Änderungen am Dokument vorgenommen hat. Über die Versionsverwaltung kann man alte Versionen von Dokumenten und Dateien sowie gelöschte Dateien wiederherstellen.
+            <br>
+            <br>
+            Die gespeicherten Daten müssen in einem größtmöglichen zeitlichen Rahmen verfügbar sein. Es unbedingt zu vermeiden, dass Daten verschwinden oder auf diese nicht zugegriffen werden kann, wenn sie gebraucht werden. Auch muss die Funktionsfähigkeit von Programmen jederzeit sichergestellt sein, um den betrieblichen Prozess nicht zu stören. Generell geht es darum, die gewünschten Funktionen eines Systems immer dann bereit zu stellen, wenn diese benötigt werden. Eine Bedrohung auf die Verfügbarkeit wäre zum Beispiel ein DoS bzw. DDoS Angriff. Dieser hat als Hauptziel, dass ein bestimmter Service nicht verfügbar ist. Das kann zum Beispiel ein Online-Buchungs-Portal sein, oder aber auch den Zugriff auf Daten verhindern. Meistens Zielen diese Angriffe auf das Datennetz des jeweiligen Service und überlasten dieses. Durch die Überlastung des Datennetzes kann auf dieses nicht mehr zugegriffen werden und ist somit nicht mehr verfügbar.
+            <br>
+            <br>
+            Da heutzutage sämtliche Daten elektronisch versendet werden, ist es gerade bei sensiblen Daten, wie bei z.B. Urkunden oder Zahlungsdaten wichtig, auf die korrekte Authentifizierung zu achten. Es muss alles Notwendige unternommen werden, um den Urheber der Daten korrekt authentifizieren zu können. Es dürfen keine Zweifel am Urheber der Dateien entstehen. Gerade auch im Zahlungsverkehr ist die Korrekte Authentifizierung besonders wichtig. In diesem Bereich kann es auch wichtig sein, Authentizität von Programmen und Hardware zu garantieren. Dies wurde mit der vermehrten Übermittlung von sehr sensiblen Daten über das Internet zu einer der dann vier Grundbausteine der Informationssicherheit. Ein überarbeitetes Prinzip, welches den vierten Grundbaustein integriert hat, ist das V.I.V.A-Prinzip (englisch: C.I.A.A - wobei das zuletzt hinzugefügte A im englischen nicht für “Authenticity” sondern für “Audit” steht).
+        </p>
     </div>
 
-    <div class="flexelement">
-        <form action="/it/sicherheit/cia" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
-<hr class="content-spacer">
-
-<! Verschlüsselung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Verschlüsselung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/verschluesselung" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Sicherheitskonzepte>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Sicherheitskonzepte
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/sicherheitskonzepte" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
 
 </body>
 

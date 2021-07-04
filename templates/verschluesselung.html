@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy and security</title>
+    <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
+            <span>Privacy and security</span>
+        </div>
+
+        <div class="navItems">
+            <ul>
+                <li><a class="nav-item" href="{{url_for('home') }}">home</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('it') }}">informatik</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('ggk') }}">history and civics</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('me') }}">about me</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li>
+                    <div class="close-btn">
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="wrapper">
+                        <div class="search-btn">
+                            <span class="fas fa-search"></span>
+                        </div>
+                        <div class="search-data">
+                            <input type="text" required>
+                            <div class="line"></div>
+                            <label>Type to search..</label>
+                            <span class="fas fa-search"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="../static/scripts/searchButton.js"></script>
+
+</header>
+
+<body>
+
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Verschlüsselung.
+        </p>
+        <p class="content">
+            Verschlüsselung, oder auch Chiffrierung genannt, ist wie der Name schon sagt, eine von einem Schlüssel abhängenden Umwandlung von Klartext in einen geheimen Text. Dieser Geheimtext kann auch „Chiffrat“ oder „Schlüsseltext“ genannt werden. Der Klartext kann aus dem geheimen Text nur durch Anwendung eines Schlüssels wiedergewonnen werden. Sie dient zur Geheimhaltung von Nachrichten, beispielsweise um Daten gegenüber unbefugtem Zugriff zu schützen oder um Nachrichten vertraulich übermitteln zu können.
+            <br>
+            <br>
+            Bei der Verschlüsselung wird also ein Klartext in eine nicht mehr verständliche Zeichenfolge umgewandelt. Es lassen sich nicht nur Textnachrichten verschlüsseln. Auch kann man Nachrichten anderer Art verschlüsseln, wie z.B. Sprachnachrichten, Bildaufzeichnungen oder der Quellcode von Programmen. In der Theorie aber kann man jegliche Art von Nachrichten verschlüsseln, dabei bleibt das kryptographische Prinzip auch gleich. Außer geheimen Codes gibt es auch offene Codes, wie den Morsecode und ASCII, die nicht kryptographischen Zwecken dienen und keine Verschlüsselung darstellen.
+            <br>
+            <br>
+            Als maßgebliche Parameter bei der Verschlüsselung dient der Schlüssel. Eine gute Wahl des Schlüssels ist maßgeblich für die Sicherheit. In der heutigen Zeit wird den Menschen die schwierige Wahl des richtigen Schlüssels abgenommen. Somit wird die Fehlerquelle des Menschen eliminiert (Siehe Phishing, Social Engineering – Schwachstelle Mensch).
+            <br>
+            <br>
+            Um nun aus einem Geheimtext einen Klartext zu gewinnen, muss man den Geheimtext entschlüsseln. Um diesen zu entschlüsseln, benötigt der berechtigte Empfänger den Schlüssel. Gerät dieser Schlüssel in die Hände anderer, können auch diese die Nachricht entschlüsseln.
+        </p>
+        <br>
+        <p class="teaser">
+            Klasifizierung
+            <br>
+            Symmetrische Verschlüsselung
+        </p>
+        <p class="content">
+            Bei der Symmetrischen Verschlüsselung wird zur Ver- und Entschlüsselung derselbe Schlüssel verwendet. Dabei wird zwischen zwei Verfahren unterschieden. Bei der Substitution werden die Buchstaben des Klartextes durch andere ersetzt (substituiert). Solche Verfahren nennt man Substitutionsverfahren. Bei den Transpositionsverfahren werden die Buchstaben des Klartextes nicht verändert, sondern ihre Position im Text wird verändert. Die Caesar-Verschlüsselung ist eine einfache Verschlüsselung mit dem Substitutionsverfahren aus dem letzten Jahrhundert vor Christus. Die Vigenère-Verschlüsselung ist eine Verschlüsselung, welche das Transpositionsverfahren anwendet. Sie stammt aus dem 16. Jahrhundert.
+        </p>
+        <br>
+        <p class="teaser">
+            Asymmetrische Verschlüsselung
+        </p>
+        <p class="content">
+            Lange Zeit war die Menschheit davon überzeugt, dass bei der Symmetrischen Verschlüsselung keine Alternativen vorliegen. Erst vor wenigen Jahrzehnten wurde die asymmetrische Verschlüsselung erfunden. Das Kennzeichen hierbei ist, dass zu Ver- und Entschlüsselung zwei völlig unterschiedliche Schlüssel verwendet werden. Dabei unterscheidet man zwischen dem Öffentlichen und Privaten Schlüssel. Der öffentliche Schlüssel wird dabei dem Kommunikationspartner übergeben oder komplett veröffentlicht. Mit diesem ist jedermann dann in der Lage die Daten zu verschlüsseln. Bekommt der Schlüsselersteller dann eine Nachricht, welche mit seinem Öffentlichen Schlüssel verschlüsselt wurde, ist er in der Lage diese Nachricht mit seinem Privaten Schlüssel zu entschlüsseln. Das Prinzip kann auch umgekehrt verwendet werden. Ein Schlüsselersteller verschlüsselt mit seinem Privaten Schlüssel eine Nachricht und ein anderer kann diese mit dem Öffentlichen Schlüssel entschlüsseln. Dieses Prinzip macht bei der geheimen Datenübertragung definitiv keinen Sinn, doch es kann verwendet werden, so dass der Empfänger sicher sein kann, dass der gewünschte Kommunikationspartner die Nachricht versendet hat, da nur dieser den Privaten Schlüssel hat. Da asymmetrische Verfahren algorithmisch aufwändiger sind als symmetrische und daher in der Ausführung langsamer, werden in der Praxis zumeist Kombinationen aus beiden, sogenannte Hybrid-Verfahren genutzt. Hierbei wird als erstes ein zufällig generierter Sitzungsschlüssel mithilfe eines asymmetrischen Verfahrens ausgetauscht. Dieser wird anschließend gemeinsam als Schlüssel für ein symmetrisches Verschlüsselungsverfahren benutzt. So hat man eine hohe Sicherheit bei kürzeren Berechnungszeiten.
+            <br>
+            <br>
+            Nehmen wir nun an Alice (Kommunikationspartner A) und Bob (Kommunikationspartner B) wollen sich gegenseitig Nachrichten senden, aber ohne, dass jemand Drittes diese mitlesen kann. Hierfür erstellen sich beide ein Schlüsselpaar (Öffentlicher und Privater Schlüssel). Anschließend teilen sie jeweils die Öffentlichen Schlüssel mit dem anderen. Nun kann die Kommunikation beginnen. Alice verschlüsselt ihre Nachricht mit dem Öffentlichen Schlüssel von Bob. Nun kann sie ihre Nachricht über jeden Kanal versenden. Bekommt nun Bob die Nachricht kann er die Nachricht von Alice mit seinem Privaten Schlüssel entschlüsseln. Im „Worst Case“ bekommt Eve (evil, das Böse) den Öffentlichen Schlüssel von beiden und die Nachrichten. Doch mit diesen Informationen kann sie nichts anfangen. Die Nachrichten sind irgendwelche Buchstabenkombinationen, die ihr nichts bringen. Mit dem öffentlichen Schlüssel kann sie auch nichts anfangen, da dieser nur für die Verschlüsselung verwendet werden kann. So kann sie den Buchstabensalat von Alice und Bob mitlesen und ihnen Nachrichten schicken, mehr aber nicht.
+        </p>
+    </div>
+
+
+</div>
+
+</body>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>general</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>informatic</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>history and civics</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>about me</h4>
+                <ul>
+                    <li><a href="#">Me in this project</a></li>
+                </ul>
+                <br>
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="https://github.com/alphaPhantm"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <hr>
+        <div class="text">
+            <a class="out">© 2021 </a><a class="inner">Noah Kessinger</a><a class="out"> All rights reserved.</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>

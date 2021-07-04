@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,75 +51,21 @@
 
 </header>
 
-
 <body>
 
-<! C.I.A Prinzip>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            c.i.a prinzip
+            Vor- und Nachteile im Bereich Datenschutz und Sicherheit
         </p>
-
+        <p class="content">
+            Um eine Künstliche Intelligenz anlernen zu können, benötigt man Millionen von Datensätzen. Mit Datensätzen kann ein weites Spektrum gemeint sein, es gibt verschiedene Formen von Daten. Einerseits gibt es Sachdachten, Auftragsdaten und personenbezogene Daten. Am meisten sorgt man sich um die personenbezogenen Daten, denn wenn diese in falsche Hände gelangen, kann dies zu einem riesigen Chaos führen. Zu diesen personenbezogenen Daten gehören schon lange nicht nur mehr die Augenfarbe oder wie die Katze des Nachbarn heißt. Personenbezogene Daten beinhalten viel mehr und vor allem sehr sensible und persönliche Daten. Große Konzerne wie Facebook können künstliche Intelligenzen ausnutzen für deren gewerbliche Zwecke, denn Profit steht oft bei derartigen Konzernen an erster Stelle. Mithilfe einer KI können eine Menge personenbezogener Daten herausgefiltert werden. Für Facebook ist es nicht nur interessant ob man in einer Beziehung lebt oder nicht, der Konzern interessiert sich für Vorlieben und Hobbys. Interessiert man sich nun für Autos, dann dauert es keine paar Tage und jede geschaltete Werbung, welche man zu sehen bekommt, hat entweder was mit Autoartikeln zu tun oder sogar Autos selbst. Mit KIs können aber nicht nur Konzerne wie Facebook gezielt Werbung schalten. Mittlerweile verwenden viele Unternehmen KIs, um gezielte Menschengruppen ansprechen zu können und Kaufverhalten zu analysieren. Hierfür werden KIs in Data Mining eingesetzt, um bereits vorhandene Daten anzusammeln, analysieren und auszuwerten. Sehen wir nun auch die positiven Seiten, denn KI und Datenschutz können auch miteinander vereinbar sein. Denn es gibt bereits von der DSGVO Anforderungen an KIs, welche sie erfüllen müssen, um legal in Betrieb genommen zu werden. Insbesondere sollen damit die Grundrechte der Menschen geschützt werden und deren personenbezogene Daten. KIs dürfen nur insofern diese Form von Daten sammeln soweit sie notwendig sind. Geht es über die Notwendigkeit hinaus, hat das negative Folgen für die produzierende Firma. Der DSGVO ist zudem die Transparenz der KI sehr wichtig, was genau macht die KI? Zu welchem Zweck wurde sie entwickelt? Was wird sie in Zukunft machen? Und welche Daten verarbeitet sie und in welchen Mengen? Es gibt noch viele weitere Grundsätze, welcher die KI folgen muss, um markttauglich zu werden. Wird, wie oben genannt, einer dieser Grundsätze nicht erfüllt, so droht den Firmen eine Bußgeldstrafe bis zu 20 Mio. Euro und jährliche Abgaben des Firmeneinkommens. Wird zum Beispiel der Zweck einer KI verändert, ohne dies zu melden und ist dieser Zweck nicht legitimiert, so kann eine Strafe gegenüber der Firma erhoben werden und die KI aus dem Markt genommen werden. KIs sollen nicht den Zweck haben andere zu diskriminieren, Datenmassen für Profit Zwecke nutzen und noch viel mehr. Der Zweck einer KI muss sinnvoll und begründet sein. Zumindest gilt dies in Deutschland und den meisten EU-Staaten.
+        </p>
     </div>
 
-    <div class="flexelement">
-        <form action="/it/sicherheit/cia" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
-<hr class="content-spacer">
-
-<! Verschlüsselung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Verschlüsselung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/verschluesselung" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Sicherheitskonzepte>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Sicherheitskonzepte
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/sicherheitskonzepte" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
 
 </body>
 

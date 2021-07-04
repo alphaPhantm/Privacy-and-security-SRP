@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Privacy and security</title>
     <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -11,7 +12,7 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="../static/icons/LogoIcon.svg" alt="">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
             <span>Privacy and security</span>
         </div>
 
@@ -50,75 +51,21 @@
 
 </header>
 
-
 <body>
 
-<! C.I.A Prinzip>
 <div class="flexbox">
 
     <div class="flexelement">
         <p class="caption">
-            c.i.a prinzip
+            Anwendungszwecke
         </p>
-
+        <p class="content">
+            Bis jetzt hat Data Mining schon viel bewirkt und einen wichtigen Nutzen beigetragen. Vor allem ist Data Mining vertreten in der Marktforschung, im Marketing, im Vertrieb sowie in der Produktion und überall wo eine Menge von Daten existieren. In der Marktforschung hilft Data Mining kommende Trends hervorzusagen. Auch wird es genutzt, um zu erkennen, welche Produkte ein Kunde zusammenkauft und welche Produkte er sich häufig ansieht. Das ist bekannt unter Angebot und Nachfrage, welche Produkte sind bei welchen Kunden beliebt, wo wird das Produkt am meisten bestellt oder gekauft? All diese Fragen können mit Data Mining gelöst werden. Der Marketing Bereich befasst sich dann eher mit der Frage: Wie schaffen wir es, dass ein Produkt gut bei einem Kunden ankommt? Hier werden Muster gesammelt, welche Designs Kunden am liebsten haben. Ist momentan ein auffälliges Produktdesign Trend oder setzten die Menschen eher auf schlichtere Varianten? Mit welcher Werbung erreiche ich den Kunden am besten? Mit Data Mining können unbeliebte Werbungen und Designs in etwa aussortiert werden, zu sehen bekommt das Marketing bzw. der Kunde schlussendlich eine auf ihn abgestimmte Werbung. Dasselbe passiert auch in Vertrieb und Produktion. Mit den verschiedenen Analysearten können Muster gefunden werden, welche genau abwägen können, was der nächste Schritt sein muss.
+        </p>
     </div>
 
-    <div class="flexelement">
-        <form action="/it/sicherheit/cia" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
 
 </div>
-<hr class="content-spacer">
-
-<! Verschlüsselung>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Verschlüsselung
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/verschluesselung" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
-<! Sicherheitskonzepte>
-<div class="flexbox">
-
-    <div class="flexelement">
-        <p class="caption">
-            Sicherheitskonzepte
-        </p>
-
-    </div>
-
-    <div class="flexelement">
-        <form action="/it/sicherheit/sicherheitskonzepte" method="post">
-            <button class="button-1" name="rsa" type="submit">
-                <img src="../static/icons/sec.png" alt="">
-                <span>Learn more ...</span>
-            </button>
-        </form>
-    </div>
-
-</div>
-<hr class="content-spacer">
-
 
 </body>
 

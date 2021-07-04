@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy and security</title>
+    <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='icons/LogoIcon.svg') }}" alt="">
+            <span>Privacy and security</span>
+        </div>
+
+        <div class="navItems">
+            <ul>
+                <li><a class="nav-item" href="{{url_for('home') }}">home</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('it') }}">informatik</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('ggk') }}">history and civics</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li><a class="nav-item" href="{{url_for('me') }}">about me</a></li>
+                <li><a class="nav-spacer"><img src="../static/icons/navSpacer.svg" alt=""></a></li>
+                <li>
+                    <div class="close-btn">
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="wrapper">
+                        <div class="search-btn">
+                            <span class="fas fa-search"></span>
+                        </div>
+                        <div class="search-data">
+                            <input type="text" required>
+                            <div class="line"></div>
+                            <label>Type to search..</label>
+                            <span class="fas fa-search"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="../static/scripts/searchButton.js"></script>
+
+</header>
+
+<body>
+
+<div class="flexbox">
+
+    <div class="flexelement">
+        <p class="caption">
+            Sicherheitskonzepte.
+        </p>
+        <p class="teaser">
+            Perimeter Schutz
+            <br>
+            Was ist ein Perimeter Schutz
+        </p>
+        <p class="content">
+            Der Perimeter-Schutz ist am einfachsten mit dem Burggraben einer Burg zu vergleichen. Der Burggraben schützt das Burginnere, deren Bewohner mit ihren Vermögenswerten, vor ungewollten Eindringlingen oder Bösewichten. Die gleiche Aufgabe hat ein Perimeter-Schutz der IT. Er soll das Unternehmensnetzwerk vor der Außenwelt, dem Internet, schützen und sicherstellen, dass nur bekannte Geräte und ihre Nutzer sich im Unternehmensnetzwerk befinden. Dieser Schutz basiert meist auf Firewalls, VPN und Proxys, welche den ein- und ausgehenden Verkehr überwachen und regeln. Damit wird in den meisten Fällen lediglich der Nord-Süd- und nicht der Ost-West-Verkehr geregelt. Dies bedeutet, dass wenn man den Burggraben überwinden konnte, kann man innerhalb der Burg alles machen kann.
+        </p>
+        <br>
+        <p class="teaser">
+            Warum wird ein Perimeter Schutz eingesetzt?
+        </p>
+        <p class="content">
+            Mit der Nutzung von Personal-Computern an Universitäten und in Unternehmen entstand schnell der Bedarf die auf dem lokalen PC gespeicherten Daten auch anderen Forschenden oder Mitarbeitenden zur Verfügung zu stellen. So entstanden die lokalen Netzwerke. Die lokale Begrenzung wurde mit dem Erschaffen des ARPAnets aufgehoben und die lokalen Daten konnten über den Globus verteilt werden. Zu Beginn des „Internets“, Anfang der 1980er Jahre, als mehr oder weniger nur Universitäten und Großkonzerne das junge Internet nutzten, ging man von einer freien Verteilung von Wissen aus und verschwendete keine Gedanken an Diebstahl von Daten oder Sicherheit. Erst Ende der 1980er / Anfang der 1990er Jahre wurden erste Internet-Sicherheitsüberlegungen begonnen. Diese wurden angestoßen durch die unkontrollierte Verbreitung eines „Virus“ in allen Netzwerken. „Eigentlich wollte der Informatikstudent, Robert Morris, im November 1988 lediglich die Anzahl der PCs, die am Internet angeschlossen sind, zählen. Leider hatte sein Programm einen Programmierfehler und setzte einige Tausend PCs und deren Netzwerke über Tage lahm. „Aus diesem „kleinen“ Programmierfehler entstand eine komplette Industrie, die IT-Sicherheits-Industrie, welche heute einen weltweiten jährlichen Umsatz von mehreren 100 Milliarden USD ausmacht.
+        </p>
+        <br>
+        <p class="teaser">
+            Was ist Perimeter Schutz nicht?
+        </p>
+        <p class="content">
+            Der Perimeter-Schutz kann nur bedingt bei Ost-West, sprich unternehmensinterner Kommunikation, einen Schutz bieten, denn alles was in der Burg stattfindet und durch die Nord-Süd-Kommunikation freigegeben wurde, gilt als autorisiert und sicher.
+        </p>
+        <br>
+        <p class="teaser">
+            Zero Trust
+            <br>
+            Was ist Zero Trust?
+        </p>
+        <p class="content">
+            Zero-Trust oder Zero-Trust-Architecture, dies sind die beiden gebräuchlichsten Fachausdrücke, ist eine Security Philosophie oder ein Security-Modell, das auf sieben Grundsätzen basiert:
+            <br>
+            <br>
+            <br>
+            1.	Alle Daten und Dienste werden als Ressourcen betrachtet
+            <br>
+            <br>
+            2.	Jegliche Kommunikation ist abgesichert (z.B. SSL bzw. TLS)
+            <br>
+            <br>
+            3.	Jeglicher einzelne Zugriff auf Ressourcen wird bewilligt / freigegeben
+            <br>
+            <br>
+            4.	Die Zugriffsbewilligungen basieren auf dynamischen Regeln
+            <br>
+            <br>
+            5.	Integrität und Sicherheit von allem wird überwacht (Monitoring) und beurteilt (Logging)
+            <br>
+            <br>
+            6.	Jegliche Authentifizierung und Autorisierung ist dynamisch und wird streng überprüft, bevor der Zugriff auf eine Ressource freigegeben wird.
+            <br>
+            <br>
+            7.	 Es werden so viele Informationen wie möglich und erlaubt, gesammelt und mit den gewonnenen Insides wird das Zero-Trust-Modell stetig verbessert.
+            <br>
+            <br>
+            <br>
+            Anhand dieser sieben Grundsätze des Zero-Trust lässt sich auch einfach das oberste Credo des Zero-Trust-Modells ableiten:
+            <br>
+            <br>
+            Never Trust, always verify.
+            <br>
+            <br>
+            Vertraue nichts und niemandem. Alles wird wiederkehrend verifiziert.
+            <br>
+            <br>
+            Innerhalb des Zero-Trust gibt es keine impliziten Vertrauensstellungen. Von jedem und allem wird ausgegangen, es handelt sich um einen Angreifer oder um ein kompromittiertes Gerät.
+            Ein Zero-Trust ist eine unternehmensweite Cybersicherheitsarchitektur oder -modell, die auf den Zero-Trust Grundsätzen basiert und darauf ausgelegt ist, Datenverletzungen zu verhindern und interne Seitwärtsbewegungen (Ost-West Bewegung) zu begrenzen.
+        </p>
+        <br>
+        <p class="teaser">
+            Warum Zero-Trust?
+        </p>
+        <p class="content">
+            Ein typisches Unternehmen kennt die heutigen Herausforderungen an immer komplexer werdenden Infrastrukturen und Sicherheitsanforderungen. Ein einzelnes Unternehmen kann mehrere interne Netzwerke, Außenstellen mit eigener lokaler Infrastruktur, entfernte und/oder mobile Mitarbeiter sowie Cloud-Dienste betreiben. Diese Komplexität hat herkömmliche Methoden der Perimeter basierten „Burg und Burggraben“ Netzwerksicherheit überholt, da es keinen einzigen, leicht identifizierbaren Perimeter für das Unternehmen gibt. Zudem hat sich die Perimeter-basierte Netzwerksicherheit als unzureichend erwiesen, da Angreifer, sobald sie den Perimeter durchbrochen haben, ungehindert weiter vordringen können.
+            <br>
+            <br>
+            Diese immer komplexer werdende IT-Welt hat zur Entwicklung des neuen Modells für Cybersecurity geführt, das „Zero Trust“.
+            <br>
+            <br>
+            Das Zero-Trust-Modell geht davon aus, dass ein Angreifer in der Umgebung vorhanden ist und dass eine unternehmenseigene Umgebung nicht anders - oder nicht vertrauenswürdiger – ist, als eine nicht unternehmenseigene Umgebung. In diesem neuen Paradigma muss ein Unternehmen von keinem impliziten Vertrauen ausgehen und kontinuierlich die Risiken für seine Vermögenswerte und Geschäftsfunktionen analysieren und bewerten und dann Schutzmaßnahmen ergreifen, um diese Risiken zu mindern. Never Trust, always verify.
+        </p>
+        <br>
+        <p class="teaser">
+            Was ist Zero-Trust nicht
+        </p>
+        <p class="content">
+            Zero-Trust ist keine einzelne Sicherheits-Lösung oder kein -Lösungsframework. Bei dem Zero-Trust-Modell oder der Zero-Trust-Architektur geht es um die Grundsätze der Security und dem Verlagern der Sicherheit von Großen Firewalls „Burggraben“ hin zu „Micro“ segmentieren Sicherheitssystemen ganz in der Nähe der Applikation oder der Services.
+            <br>
+            <br>
+            Im Zentrum steht nicht mehr länger der Client, Server und/oder das Netzwerk. Im Zentrum stehen die Daten und die Identitäten, welche diese Daten verwenden.
+        </p>
+        <br>
+        <p class="teaser">
+            Blockchain
+        </p>
+        <p class="content">
+            Die Blockchain (englisch für Blockkette) oder auch Distributed Ledger Technology (DLT) genannt, besteht aus einer Liste an Datensätzen, sogenannten Blöcken. Diese Blöcke beinhalten die eigentliche Transaktion (Information), einen Zeitstempel, einen Kryptographischen Hashwert, sowie den Hashwert des vorangegangenen Blocks. Diese Blöcke werden aneinandergehängt und bilden dadurch die Kette, die Blockchain. Diese Blockchain ist nicht wie übliche Datenbanken an einem sicheren zentralen Ort abgespeichert, sondern ist über das Internet (oder auch Intranet) auf möglichst vielen Rechnern verteilt. Im Vordergrund stehen die hohe Sicherheit sowie die Verfügbarkeit. Die Blockchain ist nicht daten-, sondern transaktionskonzentriert, d.h. die Konsistenz liegt in der Transaktion.  Sobald eine Transaktion erfolgreich in einen Block gespeichert wurde, ist er in der verteilten Blockchain und nicht mehr veränderbar. Ein Block hat, aus Performancegründen, eine begrenzte Speicherkapazität. Meistens liegt diese bei 1-2MB. Dies bedeutet allerdings, dass nur wenige Transaktionen innerhalb eines Blocks gespeichert werden können und der Hauptbestandteil eines Blocks viele Hashwerte und wiederkehrende Hashwerte sind. Aus diesem Grund gibt es aktuelle Überlegungen und Konzepte, dass a) die Blöcke mit höherer Kapazität erstellt werden können und dies, ohne die Performance zu beeinträchtigen und b) die Transaktionssignaturen separat in ausgelagerten Blöcken gespeichert werden. Letzteres hat den Vorteil, dass die Auslesegeschwindigkeit signifikant erhöht wird und dass viel mehr Transaktionen innerhalb eines Blockes gespeichert werden können. Damit wird auch dem eigentlichen Schwachpunkt der Blockchain entgegengewirkt, der Unwirtschaftlichkeit. Für einen neuen Block in der Blockchain wird sehr viel Energie zur Erzeugung benötigt.
+        </p>
+        <br>
+        <p class="teaser">
+            Wie entsteht ein Block für die Blockchain?
+        </p>
+        <p class="content">
+            Ein neuer Block für die Chain entsteht über das sogenannte Konsensverfahren, das populärste Konsensverfahren für die Erstellung eines Blockes ist die Proof-of-Work-Methode (PoW).
+        </p>
+        <br>
+        <p class="teaser">
+            Was sind die Einsatzgebiete?
+        </p>
+        <p class="content">
+            Das populärste Einsatzgebiet der Blockchain ist die Finanzwelt ohne Banken, der Bitcoin, oder andere digitale Währungen. Neben dem bekannten Einsatzgebiet gibt es weitere wie z.B. in der IT-Security das Audit-Trail (Log-Daten die revisionssicher gespeichert werden müssen) oder für PKI’s (Public-Key-Infrastructures), aber auch Vertragsrechtliches (z.B. Hauskauf) oder für andere «Smarte» Verträge, sowie in der Lebensmittelbranche zur Absicherung der Lieferketteninformationen. Weitere entstehende Einsatzmöglichkeiten werden bei der digitalen Identität, der Self-Sovereign-Identity oder Decentralized-Identity, gesehen.
+        </p>
+    </div>
+
+
+</div>
+
+</body>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>general</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>informatic</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>history and civics</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>about me</h4>
+                <ul>
+                    <li><a href="#">Me in this project</a></li>
+                </ul>
+                <br>
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="https://github.com/alphaPhantm"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <hr>
+        <div class="text">
+            <a class="out">© 2021 </a><a class="inner">Noah Kessinger</a><a class="out"> All rights reserved.</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>

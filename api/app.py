@@ -143,9 +143,41 @@ def it():
 def it_sicherheit():
     return render_template("sicherheit.html")
 
+@app.route("/it/sicherheit/cia", methods=["POST", "GET"])
+def it_sicherheit_cia():
+    return render_template("cia.html")
+
+@app.route("/it/sicherheit/verschluesselung", methods=["POST", "GET"])
+def it_sicherheit_verschluesselung():
+    return render_template("verschluesselung.html")
+
+@app.route("/it/sicherheit/sicherheitskonzepte", methods=["POST", "GET"])
+def it_sicherheit_sicherheitskonzepte():
+    return render_template("sicherheitskonzepte.html")
+
 @app.route("/it/hacking_cracking", methods=["POST", "GET"])
 def it_hacking_cracking():
     return render_template("hackingCracking.html")
+
+@app.route("/it/hacking_cracking/definitionen", methods=["POST", "GET"])
+def it_hacking_cracking_definitionen():
+    return render_template("definitionen.html")
+
+@app.route("/it/hacking_cracking/hacking_techniken", methods=["POST", "GET"])
+def it_hacking_cracking_hacking_techniken():
+    return render_template("hackingTechniken.html")
+
+@app.route("/it/hacking_cracking/brute_force", methods=["POST", "GET"])
+def it_hacking_cracking_brute_force():
+    return render_template("bruteForce.html")
+
+@app.route("/it/hacking_cracking/haeufigkeitsanalyse", methods=["POST", "GET"])
+def it_hacking_cracking_haeufigkeitsanalyse():
+    return render_template("haeufigkeitsanalyse.html")
+
+@app.route("/it/hacking_cracking/schwachstelle_mensch", methods=["POST", "GET"])
+def it_hacking_cracking_schwachstelle_mensch():
+    return render_template("schwachstelleMensch.html")
 
 @app.route("/it/enigma", methods=["POST", "GET"])
 def it_enigma():
@@ -155,13 +187,53 @@ def it_enigma():
 def it_data_mining():
     return render_template("itDataMining.html")
 
+@app.route("/it/data_mining/was_ist_data_mining", methods=["POST", "GET"])
+def it_data_mining_was_ist_data_mining():
+    return render_template("wasIstDataMining.html")
+
+@app.route("/it/data_mining/anwendungszwecke", methods=["POST", "GET"])
+def it_data_mining_anwendungszwecke():
+    return render_template("anwendungszwecke.html")
+
 @app.route("/it/kuenstliche_inteligenz", methods=["POST", "GET"])
 def it_kuenstliche_inteligenz():
     return render_template("kuenstliche_inteligenz.html")
 
+@app.route("/it/kuenstliche_inteligenz/was_ist_eine_kuenstliche_intelligenz", methods=["POST", "GET"])
+def it_kuenstliche_inteligenz_was_ist_eine_kuenstliche_intelligenz():
+    return render_template("wasIstEineKuenstlicheIntelligenz.html")
+
+@app.route("/it/kuenstliche_inteligenz/begriffserklaerung", methods=["POST", "GET"])
+def it_kuenstliche_inteligenz_begriffserklaerung():
+    return render_template("begriffserklaerung.html")
+
+@app.route("/it/kuenstliche_inteligenz/schwache_und_starke_ki", methods=["POST", "GET"])
+def it_kuenstliche_inteligenz_schwache_und_starke_ki():
+    return render_template("schwacheUndStarkeKi.html")
+
+@app.route("/it/kuenstliche_inteligenz/vor_und_nachteile", methods=["POST", "GET"])
+def it_kuenstliche_inteligenz_vor_und_nachteile():
+    return render_template("vorUndNachteile.html")
+
 @app.route("/it/quantentechnologie", methods=["POST", "GET"])
 def it_quantentechnologie():
     return render_template("quantentechnologie.html")
+
+@app.route("/it/quantentechnologie/superposition", methods=["POST", "GET"])
+def it_quantentechnologie_superposition():
+    return render_template("superposition.html")
+
+@app.route("/it/quantentechnologie/quantencomputer", methods=["POST", "GET"])
+def it_quantentechnologie_quantencomputer():
+    return render_template("quantencomputer.html")
+
+@app.route("/it/quantentechnologie/der_tod_von_datenschutz", methods=["POST", "GET"])
+def it_quantentechnologie_der_tod_von_datenschutz():
+    return render_template("derTodVonDatenschutz.html")
+
+@app.route("/it/quantentechnologie/quanten_internet", methods=["POST", "GET"])
+def it_quantentechnologie_quanten_internet():
+    return render_template("quantenInternet.html")
 
 @app.route("/it/praxis", methods=["POST", "GET"])
 def it_praxis():
