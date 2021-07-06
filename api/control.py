@@ -1,4 +1,4 @@
-from algorithm import caesar_cipher, skytale, vigenere_cipher, enigma_V2, caesar_brute_force, caesar_cipher_analysis, enigma_brute_force
+from algorithm import caesar_cipher, skytale, vigenere_cipher, enigma_V2, caesar_brute_force, caesar_cipher_analysis, enigma_brute_force, rsa
 
 def control(encryption_id, text, shift, passPhrase, ukw, walze1, walze2, walze3, walzenPos, ringPosW1, ringPosW2, ringPosW3, steckerbrett):
 
@@ -30,3 +30,7 @@ def control(encryption_id, text, shift, passPhrase, ukw, walze1, walze2, walze3,
         erg = enigma_brute_force.getText(text, passPhrase, steckerbrett)
 
     return erg
+
+
+def control_rsa(bits, text, public_key):
+    return rsa.run(bits, text, public_key)

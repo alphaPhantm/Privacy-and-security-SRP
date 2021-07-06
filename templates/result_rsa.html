@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy and security</title>
+    <link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+
+
+<div class="erg">
+
+    <h1>Dies ist dein Privater Schlüssel: </h1>
+    <input type="text" value ="{{privateKey}}" id="privateKey" readonly>
+    <input onclick="privateKey()" type="submit" value="Copy Text">
+
+    <h1>Dies ist dein Öffentlicher Schlüssel: </h1>
+    <input type="text" value ="{{publicKey}}" id="publicKey" readonly>
+    <input onclick="publicKey()" type="submit" value="Copy Text">
+
+    <h1>Dies ist deine Verschlüsselte Nachricht: </h1>
+    <input type="text" value ="{{geheim_text}}" id="geheim_text" readonly>
+    <input onclick="geheim_text()" type="submit" value="Copy Text">
+
+
+</div>
+
+
+<script>
+    function privateKey() {
+        var copyText = document.getElementById("privateKey");
+        copyText.select();
+        copyText.setSelectionRange(0, 9999999)
+        document.execCommand("copy");
+        alert("Copied the text!");
+    }
+
+    function publicKey() {
+        var copyText = document.getElementById("publicKey");
+        copyText.select();
+        copyText.setSelectionRange(0, 9999999)
+        document.execCommand("copy");
+        alert("Copied the text!");
+    }
+    function geheim_text() {
+        var copyText = document.getElementById("geheim_text");
+        copyText.select();
+        copyText.setSelectionRange(0, 9999999)
+        document.execCommand("copy");
+        alert("Copied the text!");
+    }
+</script>
+
+</body>
+</html>

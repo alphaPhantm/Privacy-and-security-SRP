@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy and security</title>
+    <!link rel="stylesheet" href="../static/styles/main_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+<body>
+
+<form class="box" action="/it/praxis/calculate/rsa" method="post">
+
+    <h1>RSA</h1>
+
+
+    <label>
+        <input type="text" name="bits" placeholder="Bits">
+    </label>
+
+    <label>
+        <input type="text" name="text" placeholder="Text">
+    </label>
+
+    <label>
+        <input type="text" name="publicKey" placeholder="Public Key">
+    </label>
+
+    <input id="submit" type="submit" name="" value="Verschlüsseln">
+
+</form>
+
+<script>
+    function myFunction() {
+        if (document.getElementById("id").getAttribute("value") === "1"){
+            document.getElementById("id").setAttribute("value", "0")
+            document.getElementById("submit").setAttribute("value", "Verschlüsseln")
+        }
+        else {
+            document.getElementById("id").setAttribute("value", "1")
+            document.getElementById("submit").setAttribute("value", "Entschlüsseln")
+        }
+
+    }
+</script>
+
+
+</body>
+</html>

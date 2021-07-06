@@ -166,61 +166,61 @@ button {
       display: block;
       z-index: -1; }
       #gooey-button .bubbles .bubble:nth-child(1) {
-        left: 15px;
+        left: 49px;
         width: 25px;
         height: 25px;
         animation: move-1 3.02s infinite;
         animation-delay: 0.2s; }
       #gooey-button .bubbles .bubble:nth-child(2) {
-        left: 147px;
+        left: 113px;
         width: 25px;
         height: 25px;
         animation: move-2 3.04s infinite;
         animation-delay: 0.4s; }
       #gooey-button .bubbles .bubble:nth-child(3) {
-        left: 107px;
+        left: 129px;
         width: 25px;
         height: 25px;
         animation: move-3 3.06s infinite;
         animation-delay: 0.6s; }
       #gooey-button .bubbles .bubble:nth-child(4) {
-        left: 132px;
+        left: 31px;
         width: 25px;
         height: 25px;
         animation: move-4 3.08s infinite;
         animation-delay: 0.8s; }
       #gooey-button .bubbles .bubble:nth-child(5) {
-        left: 82px;
+        left: 58px;
         width: 25px;
         height: 25px;
         animation: move-5 3.1s infinite;
         animation-delay: 1s; }
       #gooey-button .bubbles .bubble:nth-child(6) {
-        left: 60px;
+        left: 156px;
         width: 25px;
         height: 25px;
         animation: move-6 3.12s infinite;
         animation-delay: 1.2s; }
       #gooey-button .bubbles .bubble:nth-child(7) {
-        left: 49px;
+        left: 59px;
         width: 25px;
         height: 25px;
         animation: move-7 3.14s infinite;
         animation-delay: 1.4s; }
       #gooey-button .bubbles .bubble:nth-child(8) {
-        left: 142px;
+        left: 91px;
         width: 25px;
         height: 25px;
         animation: move-8 3.16s infinite;
         animation-delay: 1.6s; }
       #gooey-button .bubbles .bubble:nth-child(9) {
-        left: 88px;
+        left: 105px;
         width: 25px;
         height: 25px;
         animation: move-9 3.18s infinite;
         animation-delay: 1.8s; }
       #gooey-button .bubbles .bubble:nth-child(10) {
-        left: 97px;
+        left: 65px;
         width: 25px;
         height: 25px;
         animation: move-10 3.2s infinite;
@@ -233,7 +233,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 66px); }
+    transform: translate(0, 124px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -244,7 +244,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 115px); }
+    transform: translate(0, 125px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -255,7 +255,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 119px); }
+    transform: translate(0, 116px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -266,7 +266,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 57px); }
+    transform: translate(0, 81px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -277,7 +277,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 102px); }
+    transform: translate(0, 68px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -288,7 +288,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 104px); }
+    transform: translate(0, 127px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -299,7 +299,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 84px); }
+    transform: translate(0, 88px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -310,7 +310,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 57px); }
+    transform: translate(0, 94px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -321,7 +321,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 58px); }
+    transform: translate(0, 126px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -332,7 +332,7 @@ button {
   80% {
     background: linear-gradient(0deg, #ffa500 0%, #C40233 100%); }
   99% {
-    transform: translate(0, 70px); }
+    transform: translate(0, 92px); }
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
@@ -670,6 +670,54 @@ footer .copyrights {
   .box input[type="submit"]:hover {
     background: #c40233;
     color: #121212; }
+  .box input[type="submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #c40233;
+    padding: 14px 40px;
+    outline: none;
+    color: #F8F8FF;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: 1px 6px 11px #000000; }
+  .box input::placeholder {
+    color: #F8F8FF; }
+  .box input[type="button"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #c40233;
+    padding: 14px 40px;
+    outline: none;
+    color: #F8F8FF;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: 1px 6px 11px #000000; }
+  .box input::placeholder {
+    color: #F8F8FF; }
+  .box input[type="button"]:hover {
+    background: #c40233;
+    color: #121212; }
+  .box input[type="button"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #c40233;
+    padding: 14px 40px;
+    outline: none;
+    color: #F8F8FF;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: 1px 6px 11px #000000; }
+  .box input::placeholder {
+    color: #F8F8FF; }
 
 .btn {
   position: relative;

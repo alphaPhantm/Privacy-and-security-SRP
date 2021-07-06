@@ -302,6 +302,14 @@ def it_praxis_enigma_brute_force():
 def it_praxis_enigma_brute_force_algorithmus():
     return render_template("enigmaBruteForceAlgo.html")
 
+@app.route("/it/praxis/rsa", methods=["POST", "GET"])
+def it_praxis_enigma_rsa():
+    return render_template("rsa.html")
+
+@app.route("/it/praxis/rsa/algorithmus", methods=["POST", "GET"])
+def it_praxis_enigma_rsa_algorithmus():
+    return render_template("rsaAlgorithmus.html")
+
 
 
 @app.route("/it/praxis/calculate", methods=["POST"])
@@ -331,6 +339,19 @@ def calculate():
         print(erg)
 
     return render_template("result.html", erg=erg)
+
+@app.route("/it/praxis/calculate/rsa", methods=["POST"])
+def calculate_rsa():
+    if request.method == "POST":
+
+        bits = request.form["bits"]
+        bits = int(bits)
+        text = request.form["text"]
+        public_key = request.form["publicKey"]
+
+        privateKey, publicKey, geheim_text = control.control_rsa(bits, text, public_key)
+
+    return render_template("result_rsa.html", privateKey=privateKey, publicKey=publicKey, geheim_text=geheim_text)
 
 
 @app.errorhandler(404)

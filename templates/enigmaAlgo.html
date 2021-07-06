@@ -31,45 +31,64 @@
   </label>
 
   <label>
-    <input type="text" name="ukw" placeholder="UKW">
+    <input type="text" id="ukw" name="ukw" placeholder="UKW">
   </label>
 
   <label>
-    <input type="text" name="walze1" placeholder="Linke Walze">
+    <input type="text" id="walze1" name="walze1" placeholder="Linke Walze">
   </label>
 
   <label>
-    <input type="text" name="walze2" placeholder="Mittlere Walze">
+    <input type="text" id="walze2" name="walze2" placeholder="Mittlere Walze">
   </label>
 
   <label>
-    <input type="text" name="walze3" placeholder="Rechte Walze">
+    <input type="text" id="walze3" name="walze3" placeholder="Rechte Walze">
   </label>
 
   <label>
-    <input type="text" name="walzenPos" placeholder="Walzen Position">
+    <input type="text" id="walzenPos" name="walzenPos" placeholder="Walzen Position">
   </label>
 
   <label>
-    <input type="text" name="ringPosW1" placeholder="Ring Position">
+    <input type="text" id="ringPosW1" name="ringPosW1" placeholder="Ring Position">
   </label>
 
   <label>
-    <input type="text" name="ringPosW2" placeholder="Ring Position">
+    <input type="text" id="ringPosW2" name="ringPosW2" placeholder="Ring Position">
   </label>
 
   <label>
-    <input type="text" name="ringPosW3" placeholder="Ring Position">
+    <input type="text" id="ringPosW3" name="ringPosW3" placeholder="Ring Position">
   </label>
 
   <label>
-    <input type="text" name="steckerbrett" placeholder="Steckverbindungen">
+    <input type="text" id="steckerbrett" name="steckerbrett" placeholder="Steckverbindungen">
   </label>
+
+  <input type="button" value="O. Barbarossa" onclick="load()">
 
   <input id="submit" type="submit" name="" value="Ver- Entschlüsseln">
 
 </form>
 
+
+<script>
+
+  function load(){
+    document.getElementById("text").value = "EDPUD NRGYS ZRCXN UYTPO MRMBO FKTBZ REZKM LXLVE FGUEY SIOZV EQMIK UBPMM YLKLT TDEIS MDICA GYKUA CTCDO MOHWX MUUIA UBSTS LRNBZ SZWNR FXWFY SSXJZ VIJHI DISHP RKLKA YUPAD TXQSP INQMA TLPIF SVKDA SCTAC DPBOP VHJK-"
+    document.getElementById("ukw").value = "2"
+    document.getElementById("walze1").value = "2"
+    document.getElementById("walze2").value = "4"
+    document.getElementById("walze3").value = "5"
+    document.getElementById("walzenPos").value = "BLA"
+    document.getElementById("ringPosW1").value = "2"
+    document.getElementById("ringPosW2").value = "21"
+    document.getElementById("ringPosW3").value = "12"
+    document.getElementById("steckerbrett").value = "AV BS CG DL FU HZ IN KM OW RX"
+  }
+
+</script>
 
 </body>
 </html>

@@ -112,15 +112,16 @@ def run(ukw, walze1, walze2, walze3, walzenPos, ringPosW1, ringPosW2, ringPosW3,
     enigma = Enigma()
     enigma.setup(ukw, walzen, walzenPos, ringPos, steckerbrett)
     erg = umwandeln(enigma, text)
+    erg = erg.replace('X', ' ')
+    erg = erg.replace('Q', 'CH')
     return erg
 
 ###
 #enigma = Enigma()
 #enigma.setup(2, [2, 4, 5], "BLA", [2, 21, 12], "AV BS CG DL FU HZ IN KM OW RX")
 
-#print('##### ENIGMA SIMULATOR #####')
-#u_text = umwandeln(enigma,
-                   #"EDPUD NRGYS ZRCXN UYTPO MRMBO FKTBZ REZKM LXLVE FGUEY SIOZV EQMIK UBPMM YLKLT TDEIS MDICA GYKUA CTCDO MOHWX MUUIA UBSTS LRNBZ SZWNR FXWFY SSXJZ VIJHI DISHP RKLKA YUPAD TXQSP INQMA TLPIF SVKDA SCTAC DPBOP VHJK-")
+
+#u_text = umwandeln(enigma,"EDPUD NRGYS ZRCXN UYTPO MRMBO FKTBZ REZKM LXLVE FGUEY SIOZV EQMIK UBPMM YLKLT TDEIS MDICA GYKUA CTCDO MOHWX MUUIA UBSTS LRNBZ SZWNR FXWFY SSXJZ VIJHI DISHP RKLKA YUPAD TXQSP INQMA TLPIF SVKDA SCTAC DPBOP VHJK-")
 #u_text = u_text.replace('X', ' ')
 #u_text = u_text.replace('Q', 'CH')
 
