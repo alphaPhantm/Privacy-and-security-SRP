@@ -245,10 +245,25 @@ def it_praxis():
 def it_praxis_caesar_cipher():
     return render_template("ceasarCiffere.html")
 
-
 @app.route("/it/praxis/caesar_cipher/algorithmus", methods=["POST", "GET"])
 def it_praxis_caesar_cipher_algorithmus():
     return render_template("ceasarCiffereAlgo.html")
+
+@app.route("/it/praxis/caesar_cipher_brute_force", methods=["POST", "GET"])
+def it_praxis_caesar_cipher_brute_force():
+    return render_template("ceasarCiffereBruteForce.html")
+
+@app.route("/it/praxis/caesar_cipher_brute_force/algorithmus", methods=["POST", "GET"])
+def it_praxis_caesar_cipher_brute_force_algorithmus():
+    return render_template("ceasarCiffereBruteForceAlgo.html")
+
+@app.route("/it/praxis/caesar_cipher_analyse", methods=["POST", "GET"])
+def it_praxis_caesar_cipher_analyse():
+    return render_template("ceasarCiffereAnalyse.html")
+
+@app.route("/it/praxis/caesar_cipher_analyse/algorithmus", methods=["POST", "GET"])
+def it_praxis_caesar_cipher_analyse_algorithmus():
+    return render_template("ceasarCiffereAnalyseAlgo.html")
 
 @app.route("/it/praxis/vigenere_cipher", methods=["POST", "GET"])
 def it_praxis_vigenere_cipher():
@@ -279,6 +294,14 @@ def it_praxis_enigma():
 def it_praxis_enigma_algorithmus():
     return render_template("enigmaAlgo.html")
 
+@app.route("/it/praxis/enigma_brute_force", methods=["POST", "GET"])
+def it_praxis_enigma_brute_force():
+    return render_template("enigmaBruteForce.html")
+
+@app.route("/it/praxis/enigma_brute_force/algorithmus", methods=["POST", "GET"])
+def it_praxis_enigma_brute_force_algorithmus():
+    return render_template("enigmaBruteForceAlgo.html")
+
 
 
 @app.route("/it/praxis/calculate", methods=["POST"])
@@ -302,10 +325,9 @@ def calculate():
         ringPosW2 = request.form["ringPosW2"]
         ringPosW3 = request.form["ringPosW3"]
         steckerbrett = request.form["steckerbrett"]
-        try:
-            erg = control.control(id, text, shift, passPhrase, ukw, walze1, walze2, walze3, walzenPos, ringPosW1, ringPosW2, ringPosW3, steckerbrett)
-        except:
-            return render_template("error.html")
+
+        erg = control.control(id, text, shift, passPhrase, ukw, walze1, walze2, walze3, walzenPos, ringPosW1, ringPosW2, ringPosW3, steckerbrett)
+
         print(erg)
 
     return render_template("result.html", erg=erg)

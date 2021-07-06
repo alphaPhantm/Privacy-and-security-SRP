@@ -1,4 +1,5 @@
 from collections import deque
+from random import random
 
 
 def str2num(zeichenkette):
@@ -124,3 +125,6 @@ def run(ukw, walze1, walze2, walze3, walzenPos, ringPosW1, ringPosW2, ringPosW3,
 #u_text = u_text.replace('Q', 'CH')
 
 #print(f'Umgewandelter Text: {u_text}')
+
+
+

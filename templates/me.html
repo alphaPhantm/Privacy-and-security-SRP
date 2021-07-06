@@ -61,7 +61,11 @@
         </p>
 
         <p class="content">
-            Der Datenschutz wird sich stetig ändern und verbessern. Die DSGVO wird schon heute durch Experten verbessert und weiterentwickelt. Flächendeckendes DSL bzw. besseres Internet wird existieren, mehr Möglichkeiten seine Zeit im Internet zu verbringen wird aktuell. Durch das wachsende Internet, welches auch in Zukunft weiterwachsen wird, wird gerade Datenschutz immer wichtiger. Nicht nur wenn es um das Internet geht, auch autonomes Fahren könnte den Datenschutz beeinflussen, da diese Autos mehr Daten erfassen als herkömmliche Autos, welche kaum „Hightech“ besitzen. Datenschutz Experten arbeiten daran einen gesetzlich festgelegten Mindeststandard zu entwickeln und durchzusetzen, nicht nur in Deutschland, sondern auch weltweit. Der notwendigste Schutz, welcher benötigt wird und auch in Zukunft umgesetzt werden soll, sind strikte Beschränkungen der Datenverarbeitung auf die wirklich essentiell wichtigen Daten. Eine konsequente Zweckbindung, sowie die Selbstbestimmung, die vor allem viele Deutsche einfordern. Eine der wichtigsten Punkte ist die Transparenz, heutzutage ist es oft schwer nachvollziehbar was mit Daten geschieht, bei wem sie gerade sind und was mit ihnen gemacht wird. So wird in der Zukunft die Transparenz der Datenverarbeitung ein wichtiger Teil sein. Wie schon oft erwähnt, wird es aber weiterhin auch Konflikte geben, vor allem mit Konzernen wie Facebook, welche mittlerweile auch WhatsApp, Instagram und Pinterest besitzen. Diese Konzerne sind aufgrund ihrer Größe kaum bezwingbar. Auch wenn viele das unterschätzen, so spielt Geld in Gerichtsverfahren oft eine riesige Rolle. Und Unternehmen wie Facebook besitzen davon viel zu viel. Mit vielen Lichtblicken schauen wir in die Zukunft des Datenschutzes, mehr Selbstbestimmung, mehr Transparenz, Experten, welche sich mit Leidenschaft darum kümmern. Im Gegensatz zu anderen Weltproblemen, wird Datenschutz eine geringere Rolle spielen, allerdings sollten wir uns im Unterbewusstsein behalten, dass sobald wir den Datenschutz vernachlässigen sich das Blatt sehr schnell wenden kann.        </p>
+            Das Thema Verschlüsselung ist riesig, in der Thematik Informatik viel vertreten. Mit der Sicherheit auf unseren Geräten bzw. der Verschlüsselung setze ich mich schon seit mehreren Jahren auseinander.
+            <br>
+            <br>
+            Mein Name ist Noah Kessinger, ich bin 17 Jahre alt und komme aus dem Umkreis von Lörrach. Ich bin schon seit mehreren Jahren ein engagierter, leidenschaftlicher Programmierer. Programmieren ist ein Hobby, welches in meiner Freizeit viel vertreten ist. Ich mache verschiedene Projekte, allein und mit anderen. Gerade die Themen Verschlüsselung und Algorithmik prägen meinen Alltag sehr oft, da wir damit jeden Tag aufs Neue in Kontakt kommen. Selbst in meinem jetzigen Nebenjob, setze ich mich oft mit Verschlüsselung in meinen Projekten auseinander. Mein Ziel ist es, dass ich nach dem Abitur an einer renommierten Universität studieren kann. Selbstverständlich sollte es eine Universität sein, die speziell für Informatik bekannt ist. Ich möchte in der Branche “Sicherheit” bleiben und Menschen das bieten nach dem sie verlangen. Eine Sicherheit, damit sie keine Angst haben müssen, ihre Technologien zu verwenden.
+        </p>
     </div>
 
 
@@ -76,35 +80,37 @@
             <div class="footer-col">
                 <h4>general</h4>
                 <ul>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">our services</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">affiliate program</a></li>
+                    <li><a href="{{url_for('home') }}">Home</a></li>
+                    <li><a href="{{url_for('me') }}">about me</a></li>
+
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>informatic</h4>
                 <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">shipping</a></li>
-                    <li><a href="#">returns</a></li>
-                    <li><a href="#">order status</a></li>
-                    <li><a href="#">payment options</a></li>
+                    <li><a href="{{url_for('it_sicherheit') }}">sicherheit</a></li>
+                    <li><a href="{{url_for('it_hacking_cracking') }}">Hacking / Cracking</a></li>
+                    <li><a href="{{url_for('it_enigma') }}">Enigma</a></li>
+                    <li><a href="{{url_for('it_data_mining') }}">Data Mining</a></li>
+                    <li><a href="{{url_for('it_kuenstliche_inteligenz') }}">Künstliche Inteligenz</a></li>
+                    <li><a href="{{url_for('it_quantentechnologie') }}">Quantentechnologie</a></li>
+                    <li><a href="{{url_for('it_praxis') }}">Spielwiese</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>history and civics</h4>
                 <ul>
-                    <li><a href="#">watch</a></li>
-                    <li><a href="#">bag</a></li>
-                    <li><a href="#">shoes</a></li>
-                    <li><a href="#">dress</a></li>
+                    <li><a href="{{url_for('ggk_geschichte') }}">geschichte</a></li>
+                    <li><a href="{{url_for('ggk_ueberwachungsstaaten') }}">Überwachungsstaaten</a></li>
+                    <li><a href="{{url_for('ggk_data_mining') }}">Data Mining</a></li>
+                    <li><a href="{{url_for('ggk_die_bevoelkerung') }}">Die Bevölkerung</a></li>
+                    <li><a href="{{url_for('ggk_zukunft') }}">Zukunft</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>about me</h4>
                 <ul>
-                    <li><a href="#">Me in this project</a></li>
+                    <li><a href="{{url_for('me') }}">Me in this project</a></li>
                 </ul>
                 <br>
                 <h4>Social Media</h4>

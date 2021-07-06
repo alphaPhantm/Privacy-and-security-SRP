@@ -1,4 +1,3 @@
-
 from collections import deque
 from random import random
 
@@ -96,9 +95,7 @@ def umwandeln(e, text):
     return u_text
 
 
-
 def run(ukw, walze1, walze2, walze3, walzenPos, ringPosW1, ringPosW2, ringPosW3, steckerbrett, text):
-
     ukw = int(ukw)
     walze1 = int(walze1)
     walze2 = int(walze2)
@@ -124,7 +121,7 @@ def bruteforce(text, word, steckerbrett):
     for a in range(26):
         for b in range(26):
             for c in range(26):
-                walzen_pos.append(chr(a+65) + chr(b+65) + chr(c+65))
+                walzen_pos.append(chr(a + 65) + chr(b + 65) + chr(c + 65))
     ergC = []
     wordC = []
     for c in word:
@@ -139,7 +136,8 @@ def bruteforce(text, word, steckerbrett):
                         for ringPosW1 in range(1, 27):
                             for ringPosW2 in range(1, 27):
                                 for ringPosW3 in range(1, 27):
-                                    erg = run(ukw, walze1, walze2, walze3, pos, ringPosW1, ringPosW2, ringPosW3, steckerbrett, text)
+                                    erg = run(ukw, walze1, walze2, walze3, pos, ringPosW1, ringPosW2, ringPosW3,
+                                              steckerbrett, text)
 
                                     ergC = []
 
@@ -153,23 +151,60 @@ def bruteforce(text, word, steckerbrett):
                                         if s == word:
                                             end = time.time()
                                             time = end - start
-                                            #print(i)
-                                            #print("UKW", ukw)
-                                            #print("walze 1", walze1)
-                                            #print("walze 2", walze2)
-                                            #print("walze 3", walze3)
-                                            #print("walzenPos", pos)
-                                            #print("walzeRing1", ringPosW1)
-                                            #print("walzeRing2", ringPosW2)
-                                            #print("walzeRing3", ringPosW3)
-                                            #print(time)
-                                            #print("Finised")
-                                            #exit(0)
+                                            print(i)
+                                            print("UKW", ukw)
+                                            print("walze 1", walze1)
+                                            print("walze 2", walze2)
+                                            print("walze 3", walze3)
+                                            print("walzenPos", pos)
+                                            print("walzeRing1", ringPosW1)
+                                            print("walzeRing2", ringPosW2)
+                                            print("walzeRing3", ringPosW3)
+                                            print(time)
+                                            print("Finised")
+                                            exit(0)
 
-                                            return ukw, walze1, walze2, walze3, pos, ringPosW1, ringPosW2, ringPosW3, steckerbrett, text
 
-#Fehlt noch die Text Bearbeitung
+walzen_pos = []
 
-def getText(text, word, steckerbrett):
-    ukw, walze1, walze2, walze3, pos, ringPosW1, ringPosW2, ringPosW3, steckerbrett, text = bruteforce(text, word, steckerbrett)
-    return(run(ukw, walze1, walze2, walze3, pos, ringPosW1, ringPosW2, ringPosW3, steckerbrett, text))
+for a in range(26):
+    for b in range(26):
+        for c in range(26):
+            walzen_pos.append(chr(a + 65) + chr(b + 65) + chr(c + 65))
+
+one = {}
+two = {}
+tre = {}
+
+for i, c in enumerate(walzen_pos):
+    enigma = Enigma()
+    enigma.setup(2, [2, 1, 3], "AAA", [ord("E")-65, ord("Q")-65, ord("V")-65], "")
+    text = umwandeln(enigma, c + c)
+    one[text[0]] = text[3]
+    two[text[1]] = text[4]
+    tre[text[2]] = text[5]
+
+
+def findLoop(dict):
+    seen = []
+    lens = []
+
+    for i in range(26):
+        key = chr(i + 65)
+        if not key in seen:
+            len = 0
+            org_key = key
+            while True:
+                len += 1
+                seen.append(key)
+                key = dict[key]
+                if key == org_key:
+                    break
+
+            lens.append(len)
+
+    return lens
+
+print(findLoop(one))
+print(findLoop(two))
+print(findLoop(tre))

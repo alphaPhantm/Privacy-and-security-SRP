@@ -41,41 +41,25 @@ def decrypt(text, shift):
 
     return erg
 
-def brutforce(text, word):
-    import time
 
-    erg = []
-    wordC = []
-    shift = 0
-    orgWord = word
-    orgText = text
+def get_most_used_char(text):
+    text = text.upper()
+    anzahl = []
+    for i in range(26):
+        anzahl.append([text.count(chr(i+65)), chr(i+65)])
+
+    char = max(anzahl)
+    char = char[1]
+    return char
 
 
-    for c in word:
-        wordC.append(c)
+def get_verschiebung(char):
+    char = ord(char) - 65
+    e = ord("E") - 65
+    verschiebung = char - e
 
-    text = text.split()
-    word = word.split()
-    start = time.time()
+    return verschiebung
 
-    for w in text:
-        for i in range(26):
-            for s in word:
-                massage = decrypt(w, i)
-                char = []
-                for c in massage:
-                    char.append(c)
-                for b in range(len(char) - len(wordC) + 1):
-                    z = char[b: len(wordC) + b + 1]
-                    s = "".join(z)
 
-                    if s == orgWord:
-                        end = time.time()
-                        time = end - start
-                        shift = i
-
-    text = str(text)
-    erg = decrypt(orgText, shift)
-    string = "Schlüssel: " + str(shift), " in ", str(time), "s gefunden. Text: ", str(erg)
-    x = "".join(string)
-    return x
+def hack(text):
+    return decrypt(text, get_verschiebung(get_most_used_char(text)))
